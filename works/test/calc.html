@@ -1,0 +1,62 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	
+	<div class="calculator" id="app">
+		<h1>Калькулятор</h1>
+		<div id="slider" class="owl-carousel owl-theme">
+			<div class="question">
+				<p>Тип верстки?</p>
+				<form action="url">
+					<input type="radio" id="radioCB" name="typeHTML"><label for="radioCB">Фиксированная</label>
+					<br>
+					<input type="radio" id="radioCB" name="typeHTML"><label for="radioCB">Адаптивная</label>
+					<br>
+					<input type="radio" id="radioCB" name="typeHTML"><label for="radioCB">Резиновая(Responsive)</label>
+				</form>
+			</div>
+			<div class="question">
+				<p>Количество блоков?</p>
+				<form action="url">
+					<input v-model="block1" class="input" type="number" placeholder="0"><label>Простые блоки</label>
+					<input v-model="dfBlock1" class="input" type="number" placeholder="0"><label>Сложные блоки</label>
+					<input v-model="interBlock1"  class="input" type="number" placeholder="0"><label>Интерактивные блоки</label>
+				</form>
+			</div>
+			<div class="question">
+				<p>Дополнительно</p>
+				<form action="url">
+					<input v-model="form1" class="input" type="number" placeholder="0"><label>Формы</label>
+					<input v-model="slider1" class="input" type="number" placeholder="0"><label>Слайдеры</label>
+					<input v-model="modalWindow1" class="input" type="number" placeholder="0"><label>Модальные окна</label>
+				</form>
+			</div>
+			<div class="question">
+				<p>Адаптивность</p>
+				<form action="url">
+					<input type="checkbox" v-model="mobileAdaptive1" true-value="1" false-value="0" placeholder="0"><label>Адаптивность под планшет</label>
+					<br>
+					<input type="checkbox" v-model="tabletAdaptive1" true-value="1" false-value="0" placeholder="0"><label>Адаптивность под смартфон</label>
+					<br>
+					<input type="checkbox" v-model="menuHamburger1" true-value="1" false-value="0" placeholder="0"><label>Меню-гамбургер</label>
+				</form>
+			</div>
+		</div>
+		<div class="calc-block">
+			<div class="result"> {{ sum1 }} RUB</div>
+			<button class="calc_button1"> Заказать!
+			</button>
+			<div @click="sum" class="calc_button">
+				Посчитать!
+			</div>
+		</div>
+	</div> 
+	<script src="main.js"></script>
+</body>
+</html>
