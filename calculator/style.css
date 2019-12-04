@@ -221,16 +221,3 @@ input {
 	justify-content: space-between;
 }
 
-@media screen and (max-width: 1024px) {
-/*	.calculator {
-		flex-direction: column;
-	}
-
-	.calc {
-		width: 100%;
-	}
-
-	.calc-block {
-		width: 100%;
-	}*/
-}
