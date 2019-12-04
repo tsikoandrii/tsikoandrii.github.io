@@ -225,4 +225,12 @@ input {
 	.calculator {
 		flex-direction: column;
 	}
+
+	.calc {
+		width: 100%;
+	}
+
+	.calc-block {
+		width: 100%;
+	}
 }
