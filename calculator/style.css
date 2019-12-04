@@ -9,6 +9,7 @@ body {
 
 .calculator {
 	display: flex;
+	flex-wrap: wrap;
 } 
 
 .calc {
