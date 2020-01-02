@@ -1,0 +1,69 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>WEATHER PROJECT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Kulim+Park:300,400,600i,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"> 
+</head>
+<body>
+	<main>
+		<header>
+			<div class="logo">TSIKO</div>
+			<button id='menuToggle'><img  src="img/bar.png" alt="bar"></button>
+		</header>
+		<div class="info">
+			<div class="temp">16&deg</div>
+			<div class="name_date">
+				<div class="name">London</div>
+				<div class="date">
+					<p class="time">18:56 -&nbsp</p><p class="day">Вівторок, &nbsp</p><p class="date1">1 Січня 2020</p>
+				</div>
+			</div>
+			<div class="main_data">
+				<div class="iconBlock">
+					<img src="https://openweathermap.org/img/wn/04d@2x.png" alt="icon" class="icon">
+				</div>
+				<p id="sky">Хмарно</p>
+			</div>
+		</div>
+	</main>
+	<div class="another">
+		<div class="another__header">
+			<button class="another__bar" id='menuToggle2'><img  src="img/close.png" alt="bar"></button>
+			<div class="search">
+				<input type="search" id="search">
+				<button class="search_btn"><img src="img/search.png" alt="search"></button>
+			</div>
+		</div>
+		<div class="details">
+			<h4 class="d_title">Деталі</h4>
+			<ul>
+				<li class="detail">
+					<p class="detail__name">Хмарність</p>
+					<p class="detail_date" id='cloudy'>86%</p>
+				</li>
+				<li class="detail">
+					<p class="detail__name">Вологість</p>
+					<p class="detail_date" id='hum'>%</p>
+				</li>
+				<li class="detail">
+					<p class="detail__name">Вітер</p>
+					<p class="detail_date" id="wind">8км/год</p>
+				</li>
+			</ul>
+		</div>
+		<div class="another_loc">
+			<h4 class="d_title">Інші міста</h4>
+			<ul>
+				<li class="loc"><a href="#">New-York</a></li>
+				<li class="loc"><a href="#">Washington</a></li>
+				<li class="loc"><a href="#">Kiev</a></li>
+				<li class="loc"><a href="#">Moscow</a></li>
+			</ul>
+		</div>
+	</div>
+<script src="app.js"></script>
+</body>
+</html>
