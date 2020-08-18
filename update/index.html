@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TSIKO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/jpv1bvw.css">
+    <link rel="stylesheet" type="text/css" href="libs/magnetic-button/base.98fd6c19.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
+
+<body>
+    <!-- Mobile Menu-->
+    <div class="mobileMenu" id="mobileMenu">
+        <div class="mobileMenu-header">
+            <div class="lang-change" id="langSelect1"></div><select id="oldLangSelect1">
+                <option>ua</option>
+                <option>ru</option>
+                <option>en</option>
+            </select>
+            <div id="closeMenu">&times;</div>
+        </div>
+        <div class="mobileMenu-container">
+            <nav class="mobileMenu-navigation"><a class="mobileMenu-nav-link">Home</a><a class="mobileMenu-nav-link">works</a><a class="mobileMenu-nav-link">skills</a><a class="mobileMenu-nav-link">shop</a></nav>
+        </div>
+    </div><!-- Modal-->
+    <!--.modal-->
+    <!--    .overlay-->
+    <!--        .modal-body-->
+    <!--            .modal-header-->
+    <!--                .modal-close &times;-->
+    <!--            .modal-content-->
+    <div id="modal"><input class="input" placeholder="Name"><input class="input" placeholder="Email"><textarea class="input" placeholder="Message" rows="5"></textarea><button class="submit-button">SUBMIT</button></div>
+    <header>
+        <div class="wrapper"><a class="logo" href="/"><img src="img/Logotype.svg"></a>
+            <nav class="nav"><a class="nav-link active">home</a><a class="nav-link" href="#works">works</a><a class="nav-link" href="#works">skills</a><a class="nav-link" href="#works">shop</a></nav>
+            <div class="lang-change" id="langSelect"></div><select id="oldLangSelect">
+                <option>ua</option>
+                <option>ru</option>
+                <option>en</option>
+            </select>
+            <!--button.fill-button.button--><button class="fill-button button" id="openModal" data-type="open"><span class="button__text" data-type="open"><span class="button__text-inner" data-type="open">CONTACT ME</span></span></button><button class="menuBtn" id="burger"><img src="img/icons/menu.svg"></button>
+        </div>
+    </header>
+    <main class="offer">
+        <div class="wrapper">
+            <div class="text-block">
+                <h1 class="main-title">Hi, I’m Andrii Tsiko
+                    I’m web developer</h1>
+                <p class="main-desc">Website development of any complexity. <br>
+Support for finished projects. <br>
+Quality for an adequate price tag. <br></p>
+            </div>
+            <div class="main-image"><img src="img/graphic/Image.png" alt="macbook"></div>
+        </div>
+    </main><!-- Categories-->
+    <article class="works" id="works">
+        <div class="wrapper">
+            <div class="text-block">
+                <h2 class="block-title">MY WORKS</h2>
+                <p class="block-desc">My last works with screenshots and <br> implementation details</p>
+            </div>
+            <div class="works-toolbar">
+                <div class="works-toolbar-container"><select id="originalSelect">
+                        <option>landing</option>
+                        <option>shop</option>
+                        <option>application</option>
+                        <option>spa</option>
+                    </select>
+                    <div class="category-select" id="select"></div><span class="works-count">2 works</span>
+                </div><span class="hint"><img src="img/icons/hand.svg">
+                    <p class="hint-text">Please click on the work for details</p>
+                </span>
+            </div>
+            <div class="works-container">
+                <div class="work"><img src="img/works/bg-food.jpg">
+                    <div class="work-hidden">
+                        <h4 class="work-title">BG DELIVERY FOOD</h4>
+                        <div class="work-buttons"><a class="work-button green">GO TO</a><a class="work-button blue">DETAILS</a></div>
+                    </div>
+                </div>
+                <div class="work"><img src="img/works/mamon.jpg">
+                    <div class="work-hidden">
+                        <h4 class="work-title">MAMON</h4>
+                        <div class="work-buttons"><a class="work-button green">GO TO</a><a class="work-button blue">DETAILS</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="skills">
+        <div class="wrapper">
+            <div class="text-block">
+                <div class="block-title">MY SKILLS</div>
+                <div class="block-desc">What I can and practice in commerce and portfolio</div>
+            </div>
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="icon"><img src="img/icons/skills/frontend.svg"></div>
+                    <h4 class="skill-title">FRONT END</h4>
+                    <ul class="skill-techs">
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> html5 <span class='grey-text'>(pug)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> css3 <span class='grey-text'>(sass or scss)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> Js <span class='grey-text'>(jquery)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> babel
+                        </li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> gulp
+                        </li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> photoshop <span class='grey-text'>(avocode)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> figma <span class='grey-text'>(sketch)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> bootstrap4
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <div class="icon"><img src="img/icons/skills/frontend.svg"></div>
+                    <h4 class="skill-title">FRONT END</h4>
+                    <ul class="skill-techs">
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> html5 <span class='grey-text'>(pug)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> css3 <span class='grey-text'>(sass or scss)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> Js <span class='grey-text'>(jquery)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> babel
+                        </li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> gulp
+                        </li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> photoshop <span class='grey-text'>(avocode)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> figma <span class='grey-text'>(sketch)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> bootstrap4
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <div class="icon"><img src="img/icons/skills/frontend.svg"></div>
+                    <h4 class="skill-title">FRONT END</h4>
+                    <ul class="skill-techs">
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> html5 <span class='grey-text'>(pug)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> css3 <span class='grey-text'>(sass or scss)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> Js <span class='grey-text'>(jquery)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> babel
+                        </li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> gulp
+                        </li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> photoshop <span class='grey-text'>(avocode)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> figma <span class='grey-text'>(sketch)</span< /li>
+                        <li class="skills-tech">
+                            <div class='ul-decor'>+</div> bootstrap4
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="wrapper">
+            <div class="logo"><img src="img/Logotype.svg"></div>
+            <div class="socials">
+                <div class="social"><img src="img/icons/socials/instagram.svg"></div>
+                <div class="social"><img src="img/icons/socials/facebook.svg"></div>
+                <div class="social"><img src="img/icons/socials/telegram.svg"></div>
+            </div>
+            <div class="copyright">© TSIKO 2020. All rights reserved</div>
+        </div>
+    </footer>
+</body>
+<script src="js/index.js"></script><svg class="cursor" width="25" height="25" viewBox="0 0 25 25">
+    <circle class="cursor__inner" cx="12.5" cy="12.5" r="6.25"></circle>
+</svg>
+<script src="libs/magnetic-button/demo.9ce5c2ea.js"></script>
+<script src="libs/magnetic-button/cursor.f70347af.js"></script>
+<script src="libs/magnetic-button/buttonCtrl.b962c9ef.js"></script>
+<script src="libs/magnetic-button/demo1.151408fb.js"></script>
+
+</html>
