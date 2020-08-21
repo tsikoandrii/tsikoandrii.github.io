@@ -533,15 +533,27 @@
 // Fourth Block
 
 .fourthblock {
-  &__subtitle {
-    .Курс_ДПО_«Специалист_по_психологическому_консул {
-      font-size: 12px;
-      color: rgb(44, 54, 65);
-      font-weight: 400;
-      line-height: 1.095;
-    }
-
+  background: #F1D9C1;
+  padding-bottom: 50px;
+  .sect-title {
+    padding-top: 67px;
   }
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.24px;
+    line-height: 60px;
+    padding-left: 100px;
+  }
+}
+
+.number-sect {
+  color: #ffead5;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1.2px;
+  padding-top: 20px;
 }
 
 .fourth-fblock {
