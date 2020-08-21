@@ -557,6 +557,7 @@
 }
 
 .fourth-fblock {
+  padding-bottom: 100px;
   .sect-container {
     width: 1120px;
     margin: 0 auto;
@@ -733,12 +734,361 @@
 }
 
 .number-label {
-  display: block;
-  padding: 153px 25px 48px 23px;
+  width: 175px;
+  display: flex;
+  justify-content: center;
+  padding: 153px 0 48px 0;
   color: #ffead5;
   font-size: 85px;
   font-weight: 700;
   line-height: 33.95px;
   letter-spacing: -1.2px;
   background: #f1d9c1;
+}
+
+.fourth-sblock {
+  background: $brown-dark;
+  padding-bottom: 100px;
+  .number-label {
+    background: $brown-light;
+    color: $brown-dark;
+  }
+  .sect-container {
+    width: 1120px;
+    margin: 0 auto;
+    .title {
+      color: #2c3641;
+      font-size: 30px;
+      line-height: 26px;
+      font-weight: 400;
+      letter-spacing: -0.3px;
+      margin-left: 37px;
+      padding-top: 114px;
+      span {
+        font-family: Mont;
+        font-weight: 700;
+        letter-spacing: -0.3px;
+      }
+    }
+
+    .offers {
+      padding-top: 47px;
+    }
+
+    .offer {
+      width: 539px;
+      background: #fff7ee;
+      padding: 20px;
+      margin-right: 42px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.white {
+        background: #fff;
+        .offer-title {
+          margin-bottom: 98px;
+        }
+        .study-time {
+          .text {
+            width: auto;
+            white-space: nowrap;
+            font-size: 80px;
+            font-weight: 800;
+            text-transform: uppercase;
+            /* Text style for "6 месяцев" */
+            letter-spacing: -0.83px;
+          }
+          img {
+            width: 298px;
+            margin-top: -140px;
+          }
+        }
+        .study-timeline {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding-left: 30px;
+          padding-right: 56px;
+          justify-content: space-between;
+          .dates {
+            display: flex;
+            margin-top: -20px;
+            margin-left: 5px;
+          }
+          .question {
+            color: #b22c2c;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 24px;
+            text-decoration: underline;
+            letter-spacing: -0.15px;
+          }
+          span {
+            color: #bc3234;
+          }
+          .start-time {
+            margin-right: 38px !important;
+          }
+          .start-time, .end-time {
+            margin: 0;
+            align-self: center;
+          }
+          img {
+            width: 210px;
+            align-self: flex-start;
+          }
+        }
+        .offer-wrapper {
+          padding-left: 23px;
+          padding-right: 21px;
+        }
+        .offer-text {
+          padding-left: 35px;
+          padding-right: 15px;
+          span {
+            letter-spacing: -0.2px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+          }
+        }
+      }
+      &-wrapper {
+        display: flex;
+        border:2px solid #f1d9c1;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 37px 74px 41px;
+      }
+      .study-timeline {
+        display: flex;
+        flex-direction: column;
+        span {
+          color: #416894;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 30px;
+          letter-spacing: -0.15px;
+        }
+        .end-time {
+          align-self: flex-end;
+          margin-bottom: -24px;
+          padding-right: 65px;
+        }
+        .start-time {
+          margin-top: -20px;
+        }
+        img {
+          width: 410px;
+        }
+      }
+      &-text {
+        padding-left: 10px;
+        padding-top: 52px;
+        color: #2c3641;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: -0.15px;
+      }
+      .study-time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 37px;
+        .text {
+          color: #f1d9c1;
+          font-size: 115px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: -1.2px;
+        }
+        img {
+          width: 261px;
+          margin-top: -95px;
+        }
+      }
+      &-title {
+        text-align: center;
+        /* Style for "Получить в" */
+        width: 380px;
+        color: #2c3641;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: -0.2px;
+        line-height: 36px;
+        margin-bottom: 42px;
+        span {
+          font-weight: 700;
+          letter-spacing: -0.2px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+.fourth-tblock {
+  background: $brown-light1;
+  padding-bottom: 100px;
+  .number-label {
+    background: $brown-dark;
+    color: $brown-light1;
+  }
+  .sect-container {
+    width: 1120px;
+    margin: 0 auto;
+    .title {
+      color: #2c3641;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 36px;
+
+      letter-spacing: -0.3px;
+      margin-left: 37px;
+      padding-top: 114px;
+    }
+    .first {
+      margin-top: -90px;
+    }
+    img.human {
+      width: 691px;
+      position: relative;
+      z-index: 1;
+      left: -290px;
+      top: -20px;
+    }
+    .rates {
+      display: flex;
+      flex-direction: column;
+
+    }
+    .rate {
+      background: #955436;
+      display: flex;
+      margin-bottom: 43px;
+      position: relative;
+      z-index: 0;
+      p {
+        margin-bottom: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &.blue {
+        z-index: 2;
+        background-color: #2e4c6d;
+        .rate-cost {
+          background-color: #416894;
+        }
+      }
+      .rate-cost {
+        width: 175px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: -0.18px;
+        background-color: #d28e6e;
+        padding: 41px 29px 37px 28px;
+
+        span {
+          display: block;
+          padding: 5px 0;
+          color: #ffffff;
+          font-size: 50px;
+          line-height: 36px;
+        }
+      }
+      .rate-desc {
+        display: flex;
+        align-items: center;
+        padding: 0px 84px 0px 34px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        p {
+          width: auto;
+          white-space: nowrap;
+        }
+        span {
+          font-weight: 700;
+          letter-spacing: -0.16px;
+        }
+      }
+    }
+    .name-label {
+      position: relative;
+      z-index: 2;
+      left: 200px;
+      bottom: 64px;
+      align-self: flex-end;
+      width: 161px;
+      height: 130px;
+      background-color: #416894;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      padding: 28px 48px 26px 23px;
+      padding-bottom: 26px !important;
+      margin-bottom: 0;
+      color: #fff7ee;
+      font-size: 14px;
+      font-weight: 400;
+      span  {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: -0.15px;
+        line-height: 20px;
+      }
+    }
+    .second {
+      margin-left: -430px;
+      .quot {
+        display: flex;
+        align-items: center;
+        margin-left: -42px;
+        span.text {
+          width: 242px;
+          color: #2c3641;
+          font-size: 20px;
+          font-weight: 400;
+        }
+        img {
+          margin-right: 35px;
+          width: 50px;
+          height: 43px;
+        }
+      }
+      .quot-text {
+        display: flex;
+        flex-direction: column;
+        .title {
+          padding: 0;
+          margin: 0;
+          width: 347px;
+          color: #2c3641;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 34px;
+          padding-top: 43px;
+          padding-bottom: 38px;
+          span {
+            color: #2e4c6d;
+            font-weight: 700;
+          }
+        }
+        p {
+          width: 335px;
+          font-weight: 400;
+          letter-spacing: -0.16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
 }
