@@ -554,6 +554,10 @@
   line-height: 48px;
   letter-spacing: -1.2px;
   padding-top: 20px;
+  margin-top: -2px;
+  &.blue {
+    color: $dark-blue;
+  }
 }
 
 .fourth-fblock {
@@ -1203,4 +1207,71 @@
   line-height: 30px;
   letter-spacing: -0.13px;
   border: none;
+}
+
+.fifthblock {
+  background: $light-blue1;
+  position: relative;
+  top: -2px;
+  z-index: 2;
+  z-index: 2;
+  padding-bottom: 216px;
+  &-container {
+    width: 1120px;
+    .first-row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      .text {
+        width: 570px;
+        .sect-title {
+          margin-bottom: 30px;
+        }
+        .desc {
+          font-size: 24px;
+          font-weight: 400;
+          letter-spacing: -0.24px;
+          line-height: 33px;
+          span {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.24px;
+            line-height: 33px;
+          }
+        }
+
+      }
+      img {
+        width: 395px;
+        margin-top: -40px;
+      }
+    }
+    .reviews {
+      display: flex;
+      justify-content: space-between;
+      margin-top: -13px;
+      .review {
+        padding: 10px;
+        border: 2px solid #ffffff;
+        .review-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 518px;
+          height: 461px;
+          background: white;
+          //
+          opacity: 0.62;
+          color: #2c3641;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 60px;
+          /* Text style for "Текстовый" */
+          letter-spacing: -0.24px;
+        }
+      }
+    }
+  }
 }
