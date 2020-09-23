@@ -15,6 +15,7 @@
 
 <body>
     <header class="header">
+        <div class="back"></div>
         <div class="top-header">
             <div class="wrapper">
                 <div class="socials-container">
@@ -32,15 +33,38 @@
         </div>
         <div class="main-header">
             <div class="wrapper"><a class="logotype" href="#"><img src="img/logotype.png"></a><label class="search-input" for="search"><input id="search" type="search" placeholder="Поиск по марке, модели, описанию , #VIN, # лота"><img src="img/icons/search.svg"></label>
-                <div class="address">
-                    <div class="address-item"><span>Главный офис:</span> Москва</div>
-                    <div class="address-item"><span>Адрес:</span> ул. Новокостан 12</div>
-                </div>
-                <div class="phones"><a class="phone" href="tel:74955105555"><img src="img/icons/phone.svg"><span> +7(495)510-5555</span></a>
-                    <div class="phone"><img src="img/icons/phone.svg"><span> +7(495)510-5555</span></div>
-                    <div class="phone"><img src="img/icons/phone.svg"><span> +7(495)510-5555</span></div>
+                <div class="info-c">
+                    <div class="address">
+                        <div class="address-item"><span>Главный офис:</span> Москва</div>
+                        <div class="address-item"><span>Адрес:</span> ул. Новокостан 12</div>
+                    </div>
+                    <div class="phones"><a class="phone" href="tel:74955105555"><img src="img/icons/phone.svg"><span> +7(495)510-5555</span></a>
+                        <div class="phone"><img src="img/icons/phone.svg"><span> +7(495)510-5555</span></div>
+                        <div class="phone"><img src="img/icons/phone.svg"><span> +7(495)510-5555</span></div>
+                    </div>
                 </div><a class="phone-button" href="#"><img src="img/icons/white-phone.svg"><span>Заказать звонок</span></a>
+                <div id="burgerMenuButton"><img src="img/icons/burger.svg"></div>
             </div>
+        </div>
+        <div class="mobileMenu" id="mobileMenu">
+            <ul class="menu-list">
+                <div class="nav-link">Каталог автомобилей</div>
+                <div class="nav-link">Электромобили</div>
+                <div class="nav-link">Tesla</div>
+                <div class="nav-link">Гибриды</div>
+                <div class="nav-link">Мотоциклы</div>
+                <div class="nav-link">Услуги</div>
+                <div class="nav-link">Сервис</div>
+                <div class="nav-link">Новости</div>
+                <div class="nav-link">Отзывы</div>
+                <div class="nav-link">Контакты</div>
+                <div class="nav-link">Эра-Глонасс</div>
+                <div class="nav-link">О компании</div>
+                <div class="nav-link">Зарядные станции</div>
+                <div class="nav-link">Вакансии</div>
+                <div class="nav-link">Запчасти</div>
+                <div class="nav-link">Блог </div>
+            </ul>
         </div>
     </header>
     <div class="menu-container">
@@ -374,9 +398,9 @@
     </div>
     <footer>
         <div class="wrapper">
-            <div class="first-col"><a class="logotype" href="#"><img src="img/logotype.png"></a>
-                <p class="address">Волгоградский пр-т., 43, к. 3, Москва, 109316</p>
-                <p class="time">Пн.-Вс. 9:00 - 21:40</p><a class="phone" href="tel:74955105555"><img src="img/icons/phone.svg"><span>+7(495)510-5555</span></a><a class="phone-button" href="#">Заказать звонок</a>
+            <div class="first-col"><a class="logotype" href="#"><img src="img/logotype.png"></a><span class="l">Наш адрес:</span>
+                <p class="address">Волгоградский пр-т., 43, к. 3, Москва, 109316</p><span class="l">График работы:</span>
+                <p class="time">Пн.-Вс. 9:00 - 21:40</p><span class="l">Наши контакты:</span><a class="phone" href="tel:74955105555"><img src="img/icons/phone.svg"><span>+7(495)510-5555</span></a><a class="phone-button" href="#">Заказать звонок</a><span class="l">Наши соцсети:</span>
                 <div class="socials">
                     <div class="socials"><a class="social" href="#" id="vk-soc" target="_blank"><svg fill="none" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.4473 4.58743C12.2048 4.30743 12.2742 4.18286 12.4473 3.93257C12.4504 3.92971 14.4524 1.40057 14.6586 0.542857L14.6599 0.542286C14.7624 0.229714 14.6599 0 14.1642 0H12.5242C12.1067 0 11.9142 0.197143 11.811 0.417714C11.811 0.417714 10.976 2.24514 9.79471 3.42971C9.41345 3.772 9.2372 3.88171 9.02906 3.88171C8.92656 3.88171 8.76718 3.772 8.76718 3.45943V0.542286C8.76718 0.167429 8.6503 0 8.30466 0H5.72582C5.46394 0 5.30831 0.174857 5.30831 0.337714C5.30831 0.693143 5.89895 0.774857 5.96021 1.77486V3.94457C5.96021 4.42 5.86583 4.50743 5.65645 4.50743C5.09893 4.50743 3.74575 2.67257 2.94385 0.572571C2.78197 0.165143 2.62384 0.000571387 2.2032 0.000571387H0.562519C0.0943782 0.000571387 0 0.197714 0 0.418286C0 0.808 0.557519 2.74571 2.59259 5.30571C3.94889 7.05314 5.85895 8 7.59651 8C8.64092 8 8.76843 7.78971 8.76843 7.428C8.76843 5.75829 8.67405 5.60057 9.19719 5.60057C9.4397 5.60057 9.85722 5.71029 10.8322 6.55314C11.9467 7.55257 12.1298 8 12.7536 8H14.3936C14.8611 8 15.098 7.78971 14.9618 7.37486C14.6499 6.50229 12.5423 4.70743 12.4473 4.58743Z" />
