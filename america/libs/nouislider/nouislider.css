@@ -136,7 +136,7 @@
   display: none;
 }
 
-#range {
+#range, #range1 {
   height: 2px !important;
   margin-top: 5px;
 }

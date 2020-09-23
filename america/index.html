@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>America Motors</title>
     <link href="libs/nouislider/nouislider.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=2.0">
+    <link rel="stylesheet" href="css/style.css?v=3.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&amp;display=swap" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet">
 </head>
@@ -73,6 +73,7 @@
     </div>
     <div class="content">
         <div class="wrapper">
+            <div class="filt-back"></div>
             <div class="path"><a href="#">Главная</a>/Каталог</div>
             <h1 class="page-title">Каталог автомобилей</h1>
             <div class="open-filter">Поисковый фильтр</div>
@@ -98,155 +99,242 @@
                 <div class="all-link" id="brandsButton">Показать больше марок</div>
             </div>
             <div class="columns">
-                <div class="filter">
-                    <div class="criterion"><span class="criterion-title">Статус</span>
-                        <div class="checkbox"><input type="checkbox" id="availability"><label for="availability">
-                                <div class="checkbox-container">
-                                    <div class="element"></div>
+                <div class="filt-container">
+                    <div class="filter">
+                        <div class="criterion"><span class="criterion-title">Статус</span>
+                            <div class="checkbox"><input type="checkbox" id="availability"><label for="availability">
+                                    <div class="checkbox-container">
+                                        <div class="element"></div>
+                                    </div>
+                                    <div class="label">В наличии</div>
+                                </label></div>
+                            <div class="checkbox"><input type="checkbox" id="order"><label for="order">
+                                    <div class="checkbox-container">
+                                        <div class="element"></div>
+                                    </div>
+                                    <div class="label">Под заказ</div>
+                                </label></div>
+                        </div>
+                        <!--.criterion-->
+                        <!--    span.criterion-title Тип транспорта-->
+                        <!--    .simple-checkbox-->
+                        <!--        input(type='checkbox')#auto-->
+                        <!--        label(for='auto')-->
+                        <!--            .simple-checkbox-container-->
+                        <!--                img.icon(src="img/icons/check.svg")-->
+                        <!--            .label Автомобили-->
+                        <!--    .simple-checkbox-->
+                        <!--        input(type='checkbox')#electro-->
+                        <!--        label(for='electro')-->
+                        <!--            .simple-checkbox-container-->
+                        <!--                img.icon(src="img/icons/check.svg")-->
+                        <!--            .label Электромобили-->
+                        <!--    .simple-checkbox-->
+                        <!--        input(type='checkbox')#hybrid-->
+                        <!--        label(for='hybrid')-->
+                        <!--            .simple-checkbox-container-->
+                        <!--                img.icon(src="img/icons/check.svg")-->
+                        <!--            .label Гибриды-->
+                        <!--    .simple-checkbox-->
+                        <!--        input(type='checkbox')#moto-->
+                        <!--        label(for='moto')-->
+                        <!--            .simple-checkbox-container-->
+                        <!--                img.icon(src="img/icons/check.svg")-->
+                        <!--            .label Мотоциклы-->
+                        <div class="criterion"><span class="criterion-title">Марка</span><select>
+                                <option value="audi">Audi</option>
+                                <option value="bmw">BMW</option>
+                                <option value="tesla">Tesla</option>
+                            </select><span class="criterion-title">Модель</span><select class="cselect">
+                                <option></option>
+                                <option value="m3">Modal 3</option>
+                                <option value="cla">CLA 310</option>
+                                <option value="mx">Modal X</option>
+                            </select><span class="criterion-title">Год</span>
+                            <!--.inputs-->
+                            <!--    input(type="number", placeholder="От").inputs-input-->
+                            <!--    div.decoration-->
+                            <!--    input(type="number", placeholder="До").inputs-input-->
+                            <div class="cl-container">
+                                <div class="check-list"><span class="decor"></span>
+                                    <div class="simple-checkbox"><input type="checkbox" id="2020"><label for="2020">
+                                            <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
+                                            <div class="label">2020</div>
+                                        </label></div>
+                                    <div class="simple-checkbox"><input type="checkbox" id="2019"><label for="2019">
+                                            <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
+                                            <div class="label">2019</div>
+                                        </label></div>
+                                    <div class="simple-checkbox"><input type="checkbox" id="2018"><label for="2018">
+                                            <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
+                                            <div class="label">2018</div>
+                                        </label></div>
+                                    <div class="simple-checkbox"><input type="checkbox" id="2017"><label for="2017">
+                                            <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
+                                            <div class="label">2017</div>
+                                        </label></div>
+                                    <div class="simple-checkbox"><input type="checkbox" id="2016"><label for="2016">
+                                            <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
+                                            <div class="label">2016</div>
+                                        </label></div>
+                                    <div class="simple-checkbox"><input type="checkbox" id="2015"><label for="2015">
+                                            <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
+                                            <div class="label">2015</div>
+                                        </label></div>
+                                    <div class="simple-checkbox"><input type="checkbox" id="2014"><label for="2014">
+                                            <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
+                                            <div class="label">2014</div>
+                                        </label></div>
                                 </div>
-                                <div class="label">В наличии</div>
-                            </label></div>
-                        <div class="checkbox"><input type="checkbox" id="order"><label for="order">
-                                <div class="checkbox-container">
-                                    <div class="element"></div>
-                                </div>
-                                <div class="label">Под заказ</div>
-                            </label></div>
-                    </div>
-                    <div class="criterion"><span class="criterion-title">Тип транспорта</span>
-                        <div class="simple-checkbox"><input type="checkbox" id="auto"><label for="auto">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Автомобили</div>
-                            </label></div>
-                        <div class="simple-checkbox"><input type="checkbox" id="electro"><label for="electro">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Электромобили</div>
-                            </label></div>
-                        <div class="simple-checkbox"><input type="checkbox" id="hybrid"><label for="hybrid">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Гибриды</div>
-                            </label></div>
-                        <div class="simple-checkbox"><input type="checkbox" id="moto"><label for="moto">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Мотоциклы</div>
-                            </label></div>
-                    </div>
-                    <div class="criterion"><span class="criterion-title">Марка</span><select>
-                            <option value="audi">Audi</option>
-                            <option value="bmw">BMW</option>
-                            <option value="tesla">Tesla</option>
-                        </select><span class="criterion-title">Модель</span><select class="cselect">
-                            <option></option>
-                            <option value="m3">Modal 3</option>
-                            <option value="cla">CLA 310</option>
-                            <option value="mx">Modal X</option>
-                        </select><span class="criterion-title">Год</span>
-                        <div class="inputs"><input class="inputs-input" type="number" placeholder="От">
-                            <div class="decoration"></div><input class="inputs-input" type="number" placeholder="До">
-                        </div><span class="criterion-title">Пробег</span>
-                        <div class="inputs"><input class="inputs-input" type="number" placeholder="От">
-                            <div class="decoration"></div><input class="inputs-input" type="number" placeholder="До">
-                        </div><span class="criterion-title">Объем двигателя</span>
-                        <div class="inputs"><input class="inputs-input" type="number" placeholder="От">
-                            <div class="decoration"></div><input class="inputs-input" type="number" placeholder="До">
-                        </div><span class="criterion-title">Цена</span>
-                        <div class="inputs"><input class="inputs-input" type="number" placeholder="От" id="minInput">
-                            <div class="decoration"></div><input class="inputs-input" type="number" placeholder="До" id="maxInput">
+                            </div>
+                            <!--span.criterion-title Пробег-->
+                            <!--.inputs-->
+                            <!--    input(type="number", placeholder="От").inputs-input-->
+                            <!--    div.decoration-->
+                            <!--    input(type="number", placeholder="До").inputs-input-->
+                            <!--span.criterion-title Объем двигателя-->
+                            <!--.inputs-->
+                            <!--    input(type="number", placeholder="От").inputs-input-->
+                            <!--    div.decoration-->
+                            <!--    input(type="number", placeholder="До").inputs-input--><span class="criterion-title">Цена</span>
+                            <div class="inputs"><input class="inputs-input" type="number" placeholder="От" id="minInput">
+                                <div class="decoration"></div><input class="inputs-input" type="number" placeholder="До" id="maxInput">
+                            </div>
+                            <div id="range"></div>
                         </div>
-                        <div id="range"></div>
-                    </div>
-                    <div class="criterion"><span class="criterion-title">Тип транспорта</span>
-                        <div class="simple-checkbox"><input type="checkbox" id="sedan"><label for="sedan">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Седан</div>
-                            </label></div>
-                        <div class="simple-checkbox"><input type="checkbox" id="cross"><label for="cross">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Кроссовер</div>
-                            </label></div>
-                        <div class="simple-checkbox"><input type="checkbox" id="hetch"><label for="hetch">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Хэтчбек</div>
-                            </label></div>
-                        <div class="simple-checkbox"><input type="checkbox" id="kupe"><label for="kupe">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Купе</div>
-                            </label></div>
-                        <div class="hidden">
-                            <div class="simple-checkbox"><input type="checkbox" id="universal"><label for="universal">
+                        <!--.criterion-->
+                        <!--    span.criterion-title Тип транспорта-->
+                        <!--    .simple-checkbox-->
+                        <!--        input(type='checkbox', id="sedan")-->
+                        <!--        label(for='sedan')-->
+                        <!--            .simple-checkbox-container-->
+                        <!--                img.icon(src="img/icons/check.svg")-->
+                        <!--            .label Седан-->
+                        <!--    .simple-checkbox-->
+                        <!--        input(type='checkbox')#cross-->
+                        <!--        label(for='cross')-->
+                        <!--            .simple-checkbox-container-->
+                        <!--                img.icon(src="img/icons/check.svg")-->
+                        <!--            .label Кроссовер-->
+                        <!--    .simple-checkbox-->
+                        <!--        input(type='checkbox')#hetch-->
+                        <!--        label(for='hetch')-->
+                        <!--            .simple-checkbox-container-->
+                        <!--                img.icon(src="img/icons/check.svg")-->
+                        <!--            .label Хэтчбек-->
+                        <!--    .simple-checkbox-->
+                        <!--        input(type='checkbox')#kupe-->
+                        <!--        label(for='kupe')-->
+                        <!--            .simple-checkbox-container-->
+                        <!--                img.icon(src="img/icons/check.svg")-->
+                        <!--            .label Купе-->
+                        <!--    .hidden-->
+                        <!--        .simple-checkbox-->
+                        <!--            input(type='checkbox')#universal-->
+                        <!--            label(for='universal')-->
+                        <!--                .simple-checkbox-container-->
+                        <!--                    img.icon(src="img/icons/check.svg")-->
+                        <!--                .label Универсал-->
+                        <!--        .simple-checkbox-->
+                        <!--            input(type='checkbox')#lift-->
+                        <!--            label(for='lift')-->
+                        <!--                .simple-checkbox-container-->
+                        <!--                    img.icon(src="img/icons/check.svg")-->
+                        <!--                .label Лифтбэк-->
+                        <!--    .all-button-->
+                        <!--        img(src="img/icons/caret.svg")-->
+                        <!--.criterion-->
+                        <!--    span.criterion-title Коробка передач-->
+                        <!--    .simple-checkbox-->
+                        <!--        input(type='checkbox', id="mech")-->
+                        <!--        label(for='mech')-->
+                        <!--            .simple-checkbox-container-->
+                        <!--                img.icon(src="img/icons/check.svg")-->
+                        <!--            .label Ручная/Механика-->
+                        <!--    .simple-checkbox-->
+                        <!--        input(type='checkbox')#autom-->
+                        <!--        label(for='autom')-->
+                        <!--            .simple-checkbox-container-->
+                        <!--                img.icon(src="img/icons/check.svg")-->
+                        <!--            .label Автомат-->
+                        <!--    .hidden-->
+                        <!--        .simple-checkbox-->
+                        <!--            input(type='checkbox')#variator-->
+                        <!--            label(for='variator')-->
+                        <!--                .simple-checkbox-container-->
+                        <!--                    img.icon(src="img/icons/check.svg")-->
+                        <!--                .label Вариатор-->
+                        <!--        .simple-checkbox-->
+                        <!--            input(type='checkbox')#robot-->
+                        <!--            label(for='robot')-->
+                        <!--                .simple-checkbox-container-->
+                        <!--                    img.icon(src="img/icons/check.svg")-->
+                        <!--                .label Pоботизированная-->
+                        <!--    .all-button-->
+                        <!--        img(src="img/icons/caret.svg")-->
+                        <div class="criterion"><span class="criterion-title">Топливо</span>
+                            <div class="simple-checkbox"><input type="checkbox" id="benzine"><label for="benzine">
                                     <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                    <div class="label">Универсал</div>
+                                    <div class="label">Бензин</div>
                                 </label></div>
-                            <div class="simple-checkbox"><input type="checkbox" id="lift"><label for="lift">
+                            <div class="simple-checkbox"><input type="checkbox" id="dizel"><label for="dizel">
                                     <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                    <div class="label">Лифтбэк</div>
+                                    <div class="label">Дизель</div>
                                 </label></div>
+                            <div class="simple-checkbox"><input type="checkbox" id="hybridgas"><label for="hybridgas">
+                                    <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
+                                    <div class="label">Гибрид</div>
+                                </label></div>
+                            <div class="simple-checkbox"><input type="checkbox" id="electrogas"><label for="electrogas">
+                                    <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
+                                    <div class="label">Електро</div>
+                                </label></div>
+                            <div class="hidden">
+                                <div class="simple-checkbox"><input type="checkbox" id="gaz"><label for="gaz">
+                                        <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
+                                        <div class="label">Газ</div>
+                                    </label></div>
+                                <div class="simple-checkbox"><input type="checkbox" id="propan"><label for="propan">
+                                        <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
+                                        <div class="label">Пропан</div>
+                                    </label></div>
+                            </div>
+                            <!--.all-button-->
+                            <!--    img(src="img/icons/caret.svg")--><span class="criterion-title">Привод</span><select>
+                                <option value="audi">Задний</option>
+                                <option value="bmw">Передний</option>
+                                <option value="tesla">Полный</option>
+                            </select><span class="criterion-title">Повреждения</span><select>
+                                <option value="audi">Audi</option>
+                                <option value="bmw">BMW</option>
+                                <option value="tesla">Tesla</option>
+                            </select><span class="criterion-title">Объем двигателя, л</span>
+                            <div class="inputs"><input class="inputs-input" type="number" placeholder="От" id="minInput1">
+                                <div class="decoration"></div><input class="inputs-input" type="number" placeholder="До" id="maxInput1">
+                            </div>
+                            <div id="range1"></div>
+                            <div class="search-button">Найти</div>
+                            <div class="reset-button">Сбросить фильтр</div>
                         </div>
-                        <div class="all-button"><img src="img/icons/caret.svg"></div>
-                    </div>
-                    <div class="criterion"><span class="criterion-title">Коробка передач</span>
-                        <div class="simple-checkbox"><input type="checkbox" id="mech"><label for="mech">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Ручная/Механика</div>
-                            </label></div>
-                        <div class="simple-checkbox"><input type="checkbox" id="autom"><label for="autom">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Автомат</div>
-                            </label></div>
-                        <div class="hidden">
-                            <div class="simple-checkbox"><input type="checkbox" id="variator"><label for="variator">
-                                    <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                    <div class="label">Вариатор</div>
-                                </label></div>
-                            <div class="simple-checkbox"><input type="checkbox" id="robot"><label for="robot">
-                                    <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                    <div class="label">Pоботизированная</div>
-                                </label></div>
-                        </div>
-                        <div class="all-button"><img src="img/icons/caret.svg"></div>
-                    </div>
-                    <div class="criterion"><span class="criterion-title">Топливо</span>
-                        <div class="simple-checkbox"><input type="checkbox" id="benzine"><label for="benzine">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Бензин</div>
-                            </label></div>
-                        <div class="simple-checkbox"><input type="checkbox" id="dizel"><label for="dizel">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Дизель</div>
-                            </label></div>
-                        <div class="simple-checkbox"><input type="checkbox" id="hybridgas"><label for="hybridgas">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Гибрид</div>
-                            </label></div>
-                        <div class="simple-checkbox"><input type="checkbox" id="electrogas"><label for="electrogas">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Електро</div>
-                            </label></div>
-                        <div class="hidden">
-                            <div class="simple-checkbox"><input type="checkbox" id="gaz"><label for="gaz">
-                                    <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                    <div class="label">Газ</div>
-                                </label></div>
-                            <div class="simple-checkbox"><input type="checkbox" id="propan"><label for="propan">
-                                    <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                    <div class="label">Пропан</div>
-                                </label></div>
-                        </div>
-                        <div class="all-button"><img src="img/icons/caret.svg"></div>
-                    </div>
-                    <div class="criterion"><span class="criterion-title">Привод</span>
-                        <div class="simple-checkbox"><input type="checkbox" id="rear"><label for="rear">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Задний</div>
-                            </label></div>
-                        <div class="simple-checkbox"><input type="checkbox" id="front"><label for="front">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Передний</div>
-                            </label></div>
-                        <div class="simple-checkbox"><input type="checkbox" id="four"><label for="four">
-                                <div class="simple-checkbox-container"><img class="icon" src="img/icons/check.svg"></div>
-                                <div class="label">Полный</div>
-                            </label></div>
+                        <!--.criterion//span.criterion-title Привод
+//.simple-checkbox
+//    input(type='checkbox', id="rear")
+//    label(for='rear')
+//        .simple-checkbox-container
+//            img.icon(src="img/icons/check.svg")
+//        .label Задний
+//.simple-checkbox
+//    input(type='checkbox')#front
+//    label(for='front')
+//        .simple-checkbox-container
+//            img.icon(src="img/icons/check.svg")
+//        .label Передний
+//.simple-checkbox
+//    input(type='checkbox')#four
+//    label(for='four')
+//        .simple-checkbox-container
+//            img.icon(src="img/icons/check.svg")
+//        .label Полный-->
                     </div>
                 </div>
                 <div class="second-col">
