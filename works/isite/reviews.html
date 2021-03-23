@@ -13,14 +13,53 @@
 
 <body>
     <header class="header">
-        <div class="container"><a class="logotype" href="#"><img src="img/Logotype.svg"></a>
-            <nav class="nav"><a class="nav-link" href="#">Our works</a><a class="nav-link" href="#">Payment Methods</a><a class="nav-link" href="#">Reviews</a><a class="nav-link" href="#">Promotion</a><a class="nav-link" href="#">Discounts</a><a class="nav-link" href="#">Contacts</a></nav><a class="button" href="#">Get a consultation</a>
+        <div class="container"><a class="logotype" href="/"><img src="img/Logotype.svg"></a>
+            <nav class="nav"><a class="nav-link" href="/works.html">Our works</a><a class="nav-link" href="/payment.html">Payment Methods</a><a class="nav-link active" href="/reviews.html">Reviews</a><a class="nav-link" href="/promotion.html">Promotion</a><a class="nav-link" href="/discounts.html">Discounts</a><a class="nav-link" href="/contacts.html">Contacts</a></nav><a class="button" href="#" data-type="consultation">Get a consultation</a>
             <div class="burger" id="burger"><img src="img/menu-icon.svg"></div>
             <div class="mobile-navigation closed" id="nav"><span class="close" id="close">&times;</span>
-                <nav class="navigation"><a class="nav-link" href="#">Our works</a><a class="nav-link" href="#">Payment Methods</a><a class="nav-link" href="#">Reviews</a><a class="nav-link" href="#">Promotion</a><a class="nav-link" href="#">Discounts</a><a class="nav-link" href="#">Contacts</a></nav>
+                <nav class="navigation"><a class="nav-link" href="/works.html">Our works</a><a class="nav-link" href="/payment.html">Payment Methods</a><a class="nav-link active" href="/reviews.html">Reviews</a><a class="nav-link" href="/promotion.html">Promotion</a><a class="nav-link" href="/discounts.html">Discounts</a><a class="nav-link" href="/contacts.html">Contacts</a></nav>
             </div>
         </div>
     </header>
+    <div class="backdrop" id="modal" data-el="backdrop">
+        <div class="modal-wrapper">
+            <div class="modal-body">
+                <div class="modal-title">Which site are you interested in?<div class="close-modal" id="closeModal"><span>&times;</span></div>
+                </div>
+                <form class="modal-form default-form" id="modal-form">
+                    <div class="first-line"><label class="rb"><input type="radio" name="fline">
+                            <div class="radiobutton"></div><span class="text">Don't know yet</span>
+                        </label><label class="rb"><input type="radio" name="fline">
+                            <div class="radiobutton"></div><span class="text">Promotion</span>
+                        </label></div>
+                    <div class="second-line"><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Business card site<span class="price-tag">130 $<span class="line-through">200 $</span></span></span>
+                        </label><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Business website<span class="price-tag">185 $<span class="line-through">260 $</span></span></span>
+                        </label><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Landing Page<span class="price-tag">211 $<span class="line-through">330 $</span></span></span>
+                        </label><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Online store<span class="price-tag">200 $<span class="line-through">260 $</span></span></span>
+                        </label><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Corporate website<span class="price-tag">395 $<span class="line-through">525 $</span></span></span>
+                        </label></div>
+                    <div class="third-line">
+                        <div class="modal-title">Get a consultation</div>
+                    </div>
+                    <div class="fourth-line">
+                        <div class="inputs1">
+                            <div class="line"><input class="default-input" type="text" placeholder="Your name"><input class="default-input" type="text" placeholder="Your phone"></div><textarea class="default-input" placeholder="Your comment"></textarea>
+                        </div>
+                        <div class="inputs2"><input class="default-input" type="email" placeholder="Your email">
+                            <div class="send-block"><button class="submit">Send</button><label class="personal-data-cb"><input type="checkbox">
+                                    <div class="checkbox"></div><span class="text">I agree to the terms of personal data processing</span>
+                                </label></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <div class="content-header">
         <div class="container">
             <h1 class="default-h1">Reviews</h1>
@@ -48,33 +87,32 @@
                     </p>
                 </div>
                 <div class="review">
-                    <div class="review-title">NPA Global</div>
-                    <p class="review-text">isite.ru great company, the website has made the agreed deadlines are satisfied, I would especially like to mention our Manager Ilya Gusev is very comfortable to work with him, runs fast, very attentive to the requests of the client, since a full understanding. Well done, keep it up.
+                    <div class="review-title">Almaz</div>
+                    <p class="review-text">For the first time, I was faced with the need to create a website for a pawnshop. This company came out by accident - I was pleased with the prices, first of all. And, as it turned out later, excellent specialists were hiding behind a pleasant shell. The layout was prepared quickly and took into account my opinion on all issues.</p>
+                </div>
+                <div class="review">
+                    <div class="review-title">Garant</div>
+                    <p class="review-text">We thank the company "AiSite" for its professionalism, attention to customers, patience and continued support; for helping us even after completing your work. We and our customers like our website made by you :) http://advokatgarant.com/
                     </p>
                 </div>
                 <div class="review">
-                    <div class="review-title">Youdis</div>
-                    <p class="review-text">I don't like beautiful phrases. What site I was counting on, this is what I got. The optimal choice of price/quality. I am happy with the technical support.
+                    <div class="review-title">LEONARDO</div>
+                    <p class="review-text">The site was developed well, took into account all the wishes, did all the work clearly and on time. Thank you very much.
                     </p>
                 </div>
                 <div class="review">
-                    <div class="review-title">TOYSFLOWERS.COM</div>
-                    <p class="review-text">I thank the team of " ISITE.EN " for a well-done job in creating, filling, and promoting an online store "TOYSFLOWERS.COM" . Your professionalism and deep knowledge of your business helped us to significantly increase sales and rating. I especially want to acknowledge the work Lezhneva Vladimir Ivanovich.
+                    <div class="review-title">Gals</div>
+                    <p class="review-text">The site was made within the established time frame and within the agreed technical conditions. Managers Viamonte always help and don't forget to respond to comments and suggestions. Hosting is normal. In general, we are happy with our cooperation.
                     </p>
                 </div>
                 <div class="review">
-                    <div class="review-title">NPA Global</div>
-                    <p class="review-text">isite.ru great company, the website has made the agreed deadlines are satisfied, I would especially like to mention our Manager Ilya Gusev is very comfortable to work with him, runs fast, very attentive to the requests of the client, since a full understanding. Well done, keep it up.
+                    <div class="review-title">PROMRESURS</div>
+                    <p class="review-text">Our company, LLC «PROMRESURS», is pleased with the cooperation with the company Aisite. Employees are always in touch and respond instantly to requests.
                     </p>
                 </div>
                 <div class="review">
-                    <div class="review-title">Youdis</div>
-                    <p class="review-text">I don't like beautiful phrases. What site I was counting on, this is what I got. The optimal choice of price/quality. I am happy with the technical support.
-                    </p>
-                </div>
-                <div class="review">
-                    <div class="review-title">TOYSFLOWERS.COM</div>
-                    <p class="review-text">I thank the team of " ISITE.EN " for a well-done job in creating, filling, and promoting an online store "TOYSFLOWERS.COM" . Your professionalism and deep knowledge of your business helped us to significantly increase sales and rating. I especially want to acknowledge the work Lezhneva Vladimir Ivanovich.
+                    <div class="review-title">Private kindergarten</div>
+                    <p class="review-text">We ordered a website for a kindergarten. We did it quickly and quite acceptable in quality. Well, for the money they charge - they really have the best offer. (We gave them free advice on promotion, for which we thank them very much. Generally-positive guys. Nice to work with).
 
                     </p>
                 </div>
@@ -82,12 +120,16 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="container"><a class="logotype" href="#"><img src="img/Logotype.svg"></a>
-            <nav class="nav"><a class="nav-link" href="#">Our works</a><a class="nav-link" href="#">Payment Methods</a><a class="nav-link" href="#">Reviews</a><a class="nav-link" href="#">Promotion</a><a class="nav-link" href="#">Discounts</a><a class="nav-link" href="#">Contacts</a></nav><a class="button" href="#">Get a consultation</a>
+        <div class="container"><a class="logotype" href="/"><img src="img/Logotype.svg"></a>
+            <nav class="nav"><a class="nav-link" href="/works.html">Our works</a><a class="nav-link" href="/payment.html">Payment Methods</a><a class="nav-link active" href="/reviews.html">Reviews</a><a class="nav-link" href="/promotion.html">Promotion</a><a class="nav-link" href="/discounts.html">Discounts</a><a class="nav-link" href="/contacts.html">Contacts</a></nav><a class="button" href="#" data-type="consultation">Get a consultation</a>
         </div>
         <div class="container">
-            <div class="emails"><span>info@isite.ru</span><span>ceo@isite.ru</span></div>
+            <div class="address">BOUBOULINAS STREET 3rd floor, Flat/Office 31, Nicosia, Cyprus <br>
+Name LOOPLAB LTD <br>
+Reg. Number ΗΕ 415324 <br>
+            </div>
             <div class="copyright">ISITE 2020</div>
+            <div class="emails"><span><a href="mailto:info@isite.pw">info@isite.pw</a></span><span><a href="mailto:ceo@isite.pw">ceo@isite.pw</a></span></div>
         </div>
     </footer>
 </body>

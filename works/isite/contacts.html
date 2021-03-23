@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>I-SITE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=38efdd15-a754-417d-88e2-d8678583ab97&amp;lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container"><a class="logotype" href="/"><img src="img/Logotype.svg"></a>
+            <nav class="nav"><a class="nav-link" href="/works.html">Our works</a><a class="nav-link" href="/payment.html">Payment Methods</a><a class="nav-link" href="/reviews.html">Reviews</a><a class="nav-link" href="/promotion.html">Promotion</a><a class="nav-link" href="/discounts.html">Discounts</a><a class="nav-link active" href="/contacts.html">Contacts</a></nav><a class="button" href="#" data-type="consultation">Get a consultation</a>
+            <div class="burger" id="burger"><img src="img/menu-icon.svg"></div>
+            <div class="mobile-navigation closed" id="nav"><span class="close" id="close">&times;</span>
+                <nav class="navigation"><a class="nav-link" href="/works.html">Our works</a><a class="nav-link" href="/payment.html">Payment Methods</a><a class="nav-link" href="/reviews.html">Reviews</a><a class="nav-link" href="/promotion.html">Promotion</a><a class="nav-link" href="/discounts.html">Discounts</a><a class="nav-link active" href="/contacts.html">Contacts</a></nav>
+            </div>
+        </div>
+    </header>
+    <div class="backdrop" id="modal" data-el="backdrop">
+        <div class="modal-wrapper">
+            <div class="modal-body">
+                <div class="modal-title">Which site are you interested in?<div class="close-modal" id="closeModal"><span>&times;</span></div>
+                </div>
+                <form class="modal-form default-form" id="modal-form">
+                    <div class="first-line"><label class="rb"><input type="radio" name="fline">
+                            <div class="radiobutton"></div><span class="text">Don't know yet</span>
+                        </label><label class="rb"><input type="radio" name="fline">
+                            <div class="radiobutton"></div><span class="text">Promotion</span>
+                        </label></div>
+                    <div class="second-line"><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Business card site<span class="price-tag">130 $<span class="line-through">200 $</span></span></span>
+                        </label><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Business website<span class="price-tag">185 $<span class="line-through">260 $</span></span></span>
+                        </label><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Landing Page<span class="price-tag">211 $<span class="line-through">330 $</span></span></span>
+                        </label><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Online store<span class="price-tag">200 $<span class="line-through">260 $</span></span></span>
+                        </label><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Corporate website<span class="price-tag">395 $<span class="line-through">525 $</span></span></span>
+                        </label></div>
+                    <div class="third-line">
+                        <div class="modal-title">Get a consultation</div>
+                    </div>
+                    <div class="fourth-line">
+                        <div class="inputs1">
+                            <div class="line"><input class="default-input" type="text" placeholder="Your name"><input class="default-input" type="text" placeholder="Your phone"></div><textarea class="default-input" placeholder="Your comment"></textarea>
+                        </div>
+                        <div class="inputs2"><input class="default-input" type="email" placeholder="Your email">
+                            <div class="send-block"><button class="submit">Send</button><label class="personal-data-cb"><input type="checkbox">
+                                    <div class="checkbox"></div><span class="text">I agree to the terms of personal data processing</span>
+                                </label></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="content-header contacts-content-header">
+        <div class="container">
+            <h1 class="default-h1">Contacts</h1>
+            <p class="default-text grey-text first-content-text">We created the "ISite" project for those who need a high-quality, convenient website, often urgently needed, for those who want to get it for an adequate price and in the shortest possible time. We also don't understand why some studios ask for tens of thousands of rubles for a website! We have automated the process of interaction with the client, the process of developing the design and software, which allows us to offer you the lowest price and the shortest possible time!
+                <br>
+                <br>
+In the section "Our works" you can get acquainted with the sites developed by us within the framework of the "ISite" project.
+            </p>
+            <p class="default-text">Opening hours: Mon-Fri 10: 00-19: 00, Sat, Sun-day off. If it is more convenient for you to discuss the development of the site after 19 hours, you can agree on the time in advance, then our specialists can stay and arrange a meeting until 20:00
+                <br>
+                <br>
+Address: BOUBOULINAS STREET 3rd floor, Flat/Office 31, Nicosia, Cyprus <br>
+E-mail: <a href="mailto:info@isite.pw">info@isite.pw</a><br>
+E-mail (CEO): <a href="mailto:ceo@isite.pw">ceo@isite.pw</a> <br>
+            </p>
+        </div>
+    </div>
+    <div class="map" id="map"></div>
+    <footer class="footer">
+        <div class="container"><a class="logotype" href="/"><img src="img/Logotype.svg"></a>
+            <nav class="nav"><a class="nav-link" href="/works.html">Our works</a><a class="nav-link" href="/payment.html">Payment Methods</a><a class="nav-link" href="/reviews.html">Reviews</a><a class="nav-link" href="/promotion.html">Promotion</a><a class="nav-link" href="/discounts.html">Discounts</a><a class="nav-link active" href="/contacts.html">Contacts</a></nav><a class="button" href="#" data-type="consultation">Get a consultation</a>
+        </div>
+        <div class="container">
+            <div class="address">BOUBOULINAS STREET 3rd floor, Flat/Office 31, Nicosia, Cyprus <br>
+Name LOOPLAB LTD <br>
+Reg. Number ΗΕ 415324 <br>
+            </div>
+            <div class="copyright">ISITE 2020</div>
+            <div class="emails"><span><a href="mailto:info@isite.pw">info@isite.pw</a></span><span><a href="mailto:ceo@isite.pw">ceo@isite.pw</a></span></div>
+        </div>
+    </footer>
+</body>
+<script src="js/index.js"></script>
+
+</html>

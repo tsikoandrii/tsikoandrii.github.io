@@ -7,28 +7,316 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>I-SITE</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=38efdd15-a754-417d-88e2-d8678583ab97&amp;lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
     <header class="header">
-        <div class="container"><a class="logotype" href="#"><img src="img/Logotype.svg"></a>
-            <nav class="nav"><a class="nav-link" href="#">Our works</a><a class="nav-link" href="#">Payment Methods</a><a class="nav-link" href="#">Reviews</a><a class="nav-link" href="#">Promotion</a><a class="nav-link" href="#">Discounts</a><a class="nav-link" href="#">Contacts</a></nav><a class="button" href="#">Get a consultation</a>
+        <div class="container"><a class="logotype" href="/"><img src="img/Logotype.svg"></a>
+            <nav class="nav"><a class="nav-link" href="/works.html">Our works</a><a class="nav-link" href="/payment.html">Payment Methods</a><a class="nav-link" href="/reviews.html">Reviews</a><a class="nav-link" href="/promotion.html">Promotion</a><a class="nav-link" href="/discounts.html">Discounts</a><a class="nav-link" href="/contacts.html">Contacts</a></nav><a class="button" href="#" data-type="consultation">Get a consultation</a>
             <div class="burger" id="burger"><img src="img/menu-icon.svg"></div>
             <div class="mobile-navigation closed" id="nav"><span class="close" id="close">&times;</span>
-                <nav class="navigation"><a class="nav-link" href="#">Our works</a><a class="nav-link" href="#">Payment Methods</a><a class="nav-link" href="#">Reviews</a><a class="nav-link" href="#">Promotion</a><a class="nav-link" href="#">Discounts</a><a class="nav-link" href="#">Contacts</a></nav>
+                <nav class="navigation"><a class="nav-link" href="/works.html">Our works</a><a class="nav-link" href="/payment.html">Payment Methods</a><a class="nav-link" href="/reviews.html">Reviews</a><a class="nav-link" href="/promotion.html">Promotion</a><a class="nav-link" href="/discounts.html">Discounts</a><a class="nav-link" href="/contacts.html">Contacts</a></nav>
             </div>
         </div>
     </header>
+    <div class="backdrop" id="modal" data-el="backdrop">
+        <div class="modal-wrapper">
+            <div class="modal-body">
+                <div class="modal-title">Which site are you interested in?<div class="close-modal" id="closeModal"><span>&times;</span></div>
+                </div>
+                <form class="modal-form default-form" id="modal-form">
+                    <div class="first-line"><label class="rb"><input type="radio" name="fline">
+                            <div class="radiobutton"></div><span class="text">Don't know yet</span>
+                        </label><label class="rb"><input type="radio" name="fline">
+                            <div class="radiobutton"></div><span class="text">Promotion</span>
+                        </label></div>
+                    <div class="second-line"><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Business card site<span class="price-tag">130 $<span class="line-through">200 $</span></span></span>
+                        </label><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Business website<span class="price-tag">185 $<span class="line-through">260 $</span></span></span>
+                        </label><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Landing Page<span class="price-tag">211 $<span class="line-through">330 $</span></span></span>
+                        </label><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Online store<span class="price-tag">200 $<span class="line-through">260 $</span></span></span>
+                        </label><label class="rb"><input type="radio" name="sline">
+                            <div class="radiobutton"></div><span class="text"> Corporate website<span class="price-tag">395 $<span class="line-through">525 $</span></span></span>
+                        </label></div>
+                    <div class="third-line">
+                        <div class="modal-title">Get a consultation</div>
+                    </div>
+                    <div class="fourth-line">
+                        <div class="inputs1">
+                            <div class="line"><input class="default-input" type="text" placeholder="Your name"><input class="default-input" type="text" placeholder="Your phone"></div><textarea class="default-input" placeholder="Your comment"></textarea>
+                        </div>
+                        <div class="inputs2"><input class="default-input" type="email" placeholder="Your email">
+                            <div class="send-block"><button class="submit">Send</button><label class="personal-data-cb"><input type="checkbox">
+                                    <div class="checkbox"></div><span class="text">I agree to the terms of personal data processing</span>
+                                </label></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="first-block">
+        <div class="container">
+            <div class="text-block">
+                <h1 class="default-h1 price-h1">Landing Page for&nbsp;<span>189.99$</span></h1>
+                <div class="default-subtitle">the product promotion is valid until February 21</div>
+                <ul class="default-list prefs">
+                    <li class="pref"><img src="img/index/pie-chart.svg"><span>3 main functional features of the module</span></li>
+                    <li class="pref"><img src="img/index/strategic-plan.svg"><span>Stylish modern exclusive design</span></li>
+                    <li class="pref"><img src="img/index/medal.svg"><span>Development of the original font logo of the company</span></li>
+                    <li class="pref"><img src="img/index/target.svg"><span>Creation structures and instructions for working with the site</span></li>
+                    <li class="pref"><img src="img/index/present.svg"><span>Domain and hosting in a gift!</span></li>
+                    <li class="pref"><img src="img/index/lightbulb.svg"><span>Developing a strategy promotions of the site</span></li>
+                    <li class="pref"><img src="img/index/optimization.svg"><span>Optimization for SEO promotion in all search engines.</span></li>
+                    <li class="pref"><img src="img/index/time-is-money.svg"><span>Operational terms of site development-from 8 hours</span></li>
+                    <li class="pref"><img src="img/index/collaborative.svg"><span>The opportunity to come to our office and sign an official contract</span></li>
+                    <li class="pref"><img src="img/index/calendar.svg"><span>Up-to-date, free, and up-to-date CMS</span></li>
+                </ul><a class="button button-decor" href="#" data-type="consultation">Get a consultation</a>
+            </div>
+        </div>
+    </div>
+    <div class="questions grey">
+        <div class="container questions-container">
+            <div class="tabs">
+                <div class="tab active" data-tabname="faq">F.A.Q.</div>
+                <div class="tab" data-tabname="get">What you get</div>
+                <div class="tab" data-tabname="work">Working procedure</div>
+            </div>
+            <div class="tabs-content">
+                <ul class="num-list active" data-tab="faq">
+                    <li>«Why is the cost so low?»
+                        <br>
+                        <br>
+                        <span>The fact is that we offer a solution that has been worked out for years, and most of the process is automated. However, this is not a template site. It includes a unique design, a font logo, and a management system. For 9,990 rubles, you get a full-fledged website.</span>
+                    </li>
+                    <li>«Do you really make websites for 9,990 rubles? / The current price on the site is 9,990 rubles.?»
+                        <br>
+                        <br>
+                        <span>Yes, the price is current, for 189.99$ you will get a full-fledged business card website, with an original design, a font logo and a management system</span>
+                    </li>
+                    <li>«Will the site and domain belong to me?»
+                        <br>
+                        <br>
+                        <span>Yes, the domain is registered to you and all copyrights to the site will belong to you.</span>
+                    </li>
+                    <li>«Can I continue to manage the site myself? Is it difficult?»
+                        <br>
+                        <br>
+                        <span>Yes, you can! The management system is very simple, PLUS we will provide you with detailed step-by-step instructions, where the steps in the PICTURES describe how to manage the site, where and what buttons to click. We will also conduct free training in our office.</span>
+                    </li>
+                    <li>«For this price, do you offer a template design?»
+                        <br>
+                        <br>
+                        <span>We don't work with templates! You will have a unique design, drawn according to your wishes</span>
+                    </li>
+                    <li>«What do you need to get started?»
+                        <br>
+                        <br>
+                        <span>In order to get started, we need to get your requirements for a future project, for this you can fill out an application on our website</span>
+                    </li>
+                    <li>«What mailboxes do you offer and how many? Will it be possible to create a corporate email address?»
+                        <br>
+                        <br>
+                        <span>For the sake of solidity, we suggest that you create an email of the form info@yourwebsitename.com for example. We will create as many corporate mailboxes as you need. This service is included in the cost of website development.</span>
+                    </li>
+                    <li>«How many pages will the site have?»
+                        <br>
+                        <br>
+                        <span>Unlimited quantity. To do this, the site is installed on the management system, so that you can create any number of pages.</span>
+                    </li>
+                    <li>«Is it possible to increase the functionality of the site later? For example, how can I turn a business card site into an online store?»
+                        <br>
+                        <br>
+                        <span>Yes, it is possible. To do this, the site is installed on the management system, so that in the future you can expand its functionality.</span>
+                    </li>
+                    <li>«Can we sign a contract with you and work officially?»
+                        <br>
+                        <br>
+                        <span>We conclude a contract with all our clients and all copyrights to the future site belong to the customer.</span>
+                    </li>
+                </ul>
+                <ul class="num-list" data-tab="get"><strong>When ordering website development from us, you get the following set of turnkey services</strong>
+                    <li>Development of a unique website design layouts and font of the logo. Layouts are developed completely according to your wishes, in accordance with all modern trends. For each client, we make their personal website, and do not use these developments for other clients! Your site will only be yours! We don't make templates.</li>
+                    <li>A modern, free, up-to-date CMS (Content management system) is a content management system used to create, edit, and manage your site's content.</li>
+                    <li>Create and configure all the sections and pages of the site (an unlimited number) that you need, so that you can continue to fill in and edit them. We also provide you with complete and detailed instructions for self-editing a website using a CMS.</li>
+                    <li>Selection and registration of a domain name in the .ru or zone .russian Federation (for example site-prosto-cosmos.ru) and its regular renewal. The domain will belong exclusively to you.</li>
+                    <li>Development of 3 functional modules: contacts, feedback form, news.</li>
+                    <li>Install the most popular and convenient session counters.</li>
+                    <li>After the development of the site, we provide our clients with a month of free placement of the site on the hosting platform. In addition, you can check the level of our technical support.</li>
+                    <li>You get 1 GB of disk space, which allows you not to worry about the amount of information on the site and meets the needs of 99% of site owners.</li>
+                    <li>We create and configure an unlimited number of corporate mailboxes. You can choose any e-mail address of the form info@vash-site.ru and we'll set it up for you.</li>
+                    <li>A backup copy of your site is created once a day. Copies of your site for the last 3 days are stored at any given time. In order that in case of any problem with the site, we can restore the earlier version of the site.</li>
+                    <li>Development of a promotion strategy: Selection and evaluation of key phrases for promotion in Yandex, Google search engines. Strategy of promotion in Social networks.</li>
+                    <li>Site registration in Yandex, Google search engines</li>
+                    <li>Website optimization for SEO promotion in all search engines: The ability to specify meta tags keywords and description through the site management system (CMS).</li>
+                </ul>
+                <ul class="num-list" data-tab="work"><strong>After the layout of the main page of the site is developed and agreed with you, you pay for the work in any way that is convenient for you:</strong>
+                    <li>In our office</li>
+                    <li>By Bank transfer.</li>
+                    <p>Within 8 working hours after payment, you will receive a fully ready and working website!
+                        <br>
+                        <br>
+To start working with us, you need to call the specified phone numbers or fill out the feedback form so that our managers will contact you. After that, we will send you a brief in which you can indicate to us the type of your activity, the sections that you would like to see on the site, your preferred colors, etc. After receiving the completed brief, we immediately start developing the site design.
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="our-works">
+        <div class="container">
+            <div class="head">
+                <div class="text">
+                    <h4 class="default-h4">Our works</h4>
+                    <div class="sub">We create the best websites for you</div>
+                </div><a class="all-works underline" href="/works.html" style="text-decoration: none">View all our works</a>
+            </div>
+            <div class="works-wrapper">
+                <div class="works"><a class="work" href="/work.html"><img src="img/all-works/works01.png"></a><a class="work" href="/work.html"><img src="img/all-works/works02.png"></a><a class="work" href="/work.html"><img src="img/all-works/works03.png"></a><a class="work" href="/work.html"><img src="img/all-works/works04.png"></a><a class="work" href="/work.html"><img src="img/all-works/works05.png"></a><a class="work" href="/work.html"><img src="img/all-works/works06.png"></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="content grey index-page">
+        <div class="container">
+            <div class="form">
+                <form class="default-form">
+                    <h4 class="title">Get a consultation</h4><span class="subtitle">We will call you back for free</span>
+                    <div class="inputs"><input class="default-input" type="text" placeholder="Your name"><input class="default-input" type="text" placeholder="Your phone"><button class="submit">Send</button><label class="personal-data-cb"><input type="checkbox">
+                            <div class="checkbox"></div><span class="text">I agree to the terms of personal data processing</span>
+                        </label></div>
+                </form>
+                <div class="image-block"><img src="img/payment/form-image.png"></div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews-slider">
+        <div class="container">
+            <div class="head">
+                <div class="text">
+                    <h4 class="default-h4">Reviews</h4>
+                    <div class="sub">We have been working for more than 13 years</div>
+                </div>
+            </div>
+            <div class="swiper-container rev-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slides-->
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review-title">NPA Global</div>
+                            <p class="review-text">isite.ru great company, the website has made the agreed deadlines are satisfied, I would especially like to mention our Manager Ilya Gusev is very comfortable to work with him, runs fast, very attentive to the requests of the client, since a full understanding. Well done, keep it up.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review-title">Youdis</div>
+                            <p class="review-text">I don't like beautiful phrases. What site I was counting on, this is what I got. The optimal choice of price/quality. I am happy with the technical support.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review-title">TOYSFLOWERS.COM</div>
+                            <p class="review-text">I thank the team of " ISITE.EN " for a well-done job in creating, filling, and promoting an online store "TOYSFLOWERS.COM" . Your professionalism and deep knowledge of your business helped us to significantly increase sales and rating. I especially want to acknowledge the work Lezhneva Vladimir Ivanovich.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review-title">Almaz</div>
+                            <p class="review-text">For the first time, I was faced with the need to create a website for a pawnshop. This company came out by accident - I was pleased with the prices, first of all. And, as it turned out later, excellent specialists were hiding behind a pleasant shell. The layout was prepared quickly and took into account my opinion on all issues.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review-title">Garant</div>
+                            <p class="review-text">We thank the company "AiSite" for its professionalism, attention to customers, patience and continued support; for helping us even after completing your work. We and our customers like our website made by you :) http://advokatgarant.com/</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review-title">LEONARDO</div>
+                            <p class="review-text">The site was developed well, took into account all the wishes, did all the work clearly and on time. Thank you very much.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review-title">Gals</div>
+                            <p class="review-text">The site was made within the established time frame and within the agreed technical conditions. Managers Viamonte always help and don't forget to respond to comments and suggestions. Hosting is normal. In general, we are happy with our cooperation.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review-title">PROMRESURS</div>
+                            <p class="review-text">Our company, LLC «PROMRESURS», is pleased with the cooperation with the company Aisite. Employees are always in touch and respond instantly to requests.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review">
+                            <div class="review-title">Private kindergarten</div>
+                            <p class="review-text">We ordered a website for a kindergarten. We did it quickly and quite acceptable in quality. Well, for the money they charge - they really have the best offer. (We gave them free advice on promotion, for which we thank them very much. Generally-positive guys. Nice to work with).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div class="map" id="map"></div>
     <footer class="footer">
-        <div class="container"><a class="logotype" href="#"><img src="img/Logotype.svg"></a>
-            <nav class="nav"><a class="nav-link" href="#">Our works</a><a class="nav-link" href="#">Payment Methods</a><a class="nav-link" href="#">Reviews</a><a class="nav-link" href="#">Promotion</a><a class="nav-link" href="#">Discounts</a><a class="nav-link" href="#">Contacts</a></nav><a class="button" href="#">Get a consultation</a>
+        <div class="container"><a class="logotype" href="/"><img src="img/Logotype.svg"></a>
+            <nav class="nav"><a class="nav-link" href="/works.html">Our works</a><a class="nav-link" href="/payment.html">Payment Methods</a><a class="nav-link" href="/reviews.html">Reviews</a><a class="nav-link" href="/promotion.html">Promotion</a><a class="nav-link" href="/discounts.html">Discounts</a><a class="nav-link" href="/contacts.html">Contacts</a></nav><a class="button" href="#" data-type="consultation">Get a consultation</a>
         </div>
         <div class="container">
-            <div class="emails"><span>info@isite.ru</span><span>ceo@isite.ru</span></div>
+            <div class="address">BOUBOULINAS STREET 3rd floor, Flat/Office 31, Nicosia, Cyprus <br>
+Name LOOPLAB LTD <br>
+Reg. Number ΗΕ 415324 <br>
+            </div>
             <div class="copyright">ISITE 2020</div>
+            <div class="emails"><span><a href="mailto:info@isite.pw">info@isite.pw</a></span><span><a href="mailto:ceo@isite.pw">ceo@isite.pw</a></span></div>
         </div>
     </footer>
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const reviews = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 41,
+        slidesPerGroup: 3,
+        // Optional parameters
+        loop: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            1140: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            },
+            800: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+            },
+            1: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 <script src="js/index.js"></script>
 
 </html>

@@ -8,10 +8,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="preload" href="css/libs.min.css" as="style">
-<link rel="preload" href="css/app.css" as="style">
-<link rel="stylesheet" href="css/libs.min.css">
-<link rel="stylesheet" href="css/app.css">
+<link rel="preload" href="/css/libs.min.css?cbh=c9661ff9f87bdf26074bf3a9de1f55c3" as="style">
+<link rel="preload" href="/css/app.css?cbh=9cd3d7a771fa8c5588208ab593628d29" as="style">
+<link rel="stylesheet" href="/css/libs.min.css?cbh=c9661ff9f87bdf26074bf3a9de1f55c3">
+<link rel="stylesheet" href="/css/app.css?cbh=9cd3d7a771fa8c5588208ab593628d29">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
@@ -23,11 +23,11 @@
             <img src="img/logotype.svg" alt="logo">
         </a>
         <nav class="navigation">
-            <a href="#" class="nav-link">О нас</a>
-            <a href="#" class="nav-link">Отзывы</a>
-            <a href="#" class="nav-link">Вопросы-ответы</a>
+            <a href="/#about" class="nav-link">О нас</a>
+            <a href="/#reviews" class="nav-link">Отзывы</a>
+            <a href="/#faq" class="nav-link">Вопросы-ответы</a>
         </nav>
-        <a href="#" class="default-button header-button">
+        <a href="/quiz.html" class="default-button header-button">
             Начать сейчас
         </a>
         <div id="openMenu" class="menuBurger">
@@ -37,9 +37,9 @@
 </header>
 <div id="mobileNav" class="mobile-menu">
     <ul class="mob-nav">
-        <li><a href="#" class="nav-link">О нас</a></li>
-        <li><a href="#" class="nav-link">Отзывы</a></li>
-        <li><a href="#" class="nav-link">Вопросы-ответы</a></li>
+        <li><a href="/#about" class="nav-link">О нас</a></li>
+        <li><a href="/#reviews" class="nav-link">Отзывы</a></li>
+        <li><a href="/#faq" class="nav-link">Вопросы-ответы</a></li>
     </ul>
     <div id="closeMenu" class="close-button">
         &times;
@@ -50,15 +50,15 @@
       <div class="container">
           <div class="text-block">
               <h1 class="default-title default-h1">
-                  Безлимитоное онлайн общение <br>
+                  <span>Безлимитное <br class="br-500"> онлайн общение</span> <br>
                   с профессиональным психологом
               </h1>
               <p class="default-subtitle">
                   Анонимно. В любое время суток. Whats App, Telegram, Skype.
               </p>
-              <div class="default-button block01-button">
+              <a href="/quiz.html" class="default-button block01-button">
                   Начать сейчас
-              </div>
+              </a>
               <p class="default-subtitle mini">
                   Подберем лучшего <br>
                   специалиста для вас
@@ -66,7 +66,7 @@
           </div>
       </div>
   </section>
-  <section class="stats">
+  <section id="about" class="stats">
       <div class="container">
           <div class="stats-list">
               <div class="stats-item">
@@ -191,7 +191,7 @@
                   </div>
               </div>
           </div>
-          <a href="#" class="default-link other-topics decor">
+          <a href="/quiz.html" class="default-link other-topics decor">
               Подобрать психолога
           </a>
       </div>
@@ -343,7 +343,7 @@
                   </p>
               </div>
           </div>
-          <div class="default-link decor">И еще 70 специалистов. Подобрать психолога</div>
+          <a href="/quiz.html" class="default-link decor">И еще 70 специалистов. Подобрать психолога</a>
       </div>
   </section>
   <section class="block01 block-changed grey">
@@ -358,13 +358,13 @@
                   конфиденциальность. О взаимодействии с <br>
                   нашим сервисом не узнает никто кроме вас.
               </p>
-              <div class="default-button block01-button">
+              <a href="/quiz.html" class="default-button block01-button">
                   Подобрать психолога
-              </div>
+              </a>
           </div>
       </div>
   </section>
-  <section class="reviews">
+  <section id="reviews" class="reviews">
       <div class="container">
           <h2 class="default-title">
               Отзывы наших клиентов
@@ -373,7 +373,7 @@
               <div class="swiper-container">
                   <div class="swiper-wrapper">
                       <div class="review swiper-slide">
-                          <img src="img/avatars/avatar01.png" alt="avatar" class="avatar">
+                          <img src="img/reviews/01.png" alt="avatar" class="avatar">
                           <div class="review-info">
                             <span class="name">
                                 Ксения Шнайдер
@@ -383,80 +383,59 @@
                             </p>
                           </div>
                       </div>
+
                       <div class="review swiper-slide">
-                          <img src="img/avatars/avatar02.png" alt="avatar" class="avatar">
+                          <img src="img/reviews/02.png" alt="avatar" class="avatar">
                           <div class="review-info">
                             <span class="name">
                                 Георгий Карамов
                             </span>
                               <p class="review-body">
-                                  Уверен каждый должен попробовать PSYС, даже если думаете, что чувствуете себя хорошо.
+                                  Я начинал работу с огромным количеством негативных эмоций, которые тянули меня вниз. Уверен каждый должен попробовать PSY-PSY, даже если он думает, что чувствует себя хорошо.
                               </p>
                           </div>
                       </div>
                       <div class="review swiper-slide">
-                          <img src="img/avatars/avatar01.png" alt="avatar" class="avatar">
+                          <img src="img/reviews/03.png" alt="avatar" class="avatar">
                           <div class="review-info">
                             <span class="name">
-                                Ксения Шнайдер
+                                Анна Островская
                             </span>
                               <p class="review-body">
-                                  PSY-PSY терапия это одна из лучших вещей, которую я когда либо пробовала для себя.
+                                  Раньше ходила к обычному психологу, но имела возможность ходить только раз в месяц. Благодаря PSY-PSY я постоянно на связи со своим психологом и чувствую себя гораздо лучше.
                               </p>
                           </div>
                       </div>
                       <div class="review swiper-slide">
-                          <img src="img/avatars/avatar02.png" alt="avatar" class="avatar">
+                          <img src="img/reviews/04.png" alt="avatar" class="avatar">
                           <div class="review-info">
                             <span class="name">
-                                Георгий Карамов
+                                Владислав Калганов
                             </span>
                               <p class="review-body">
-                                  Уверен каждый должен попробовать PSYС, даже если думаете, что чувствуете себя хорошо.
+                                  Душевное равновесие гораздо важнее, чем кажется на первый взгляд. Оказалось, что оно отлично помогает в бизнесе и личной жизни.
                               </p>
                           </div>
                       </div>
                       <div class="review swiper-slide">
-                          <img src="img/avatars/avatar01.png" alt="avatar" class="avatar">
+                          <img src="img/reviews/05.png" alt="avatar" class="avatar">
                           <div class="review-info">
                             <span class="name">
-                                Ксения Шнайдер
+                                Алла Сороколет
                             </span>
                               <p class="review-body">
-                                  PSY-PSY терапия это одна из лучших вещей, которую я когда либо пробовала для себя.
+                                  Хорошо и удобно, когда под рукой всегда есть специалист, который тебя выслушает, поймёт и поддержит.
                               </p>
                           </div>
                       </div>
                       <div class="review swiper-slide">
-                          <img src="img/avatars/avatar02.png" alt="avatar" class="avatar">
+                          <img src="img/reviews/06.png" alt="avatar" class="avatar">
                           <div class="review-info">
                             <span class="name">
-                                Георгий Карамов
+                                Иоланта Самойлова
                             </span>
                               <p class="review-body">
-                                  Уверен каждый должен попробовать PSYС, даже если думаете, что чувствуете себя хорошо.
-                              </p>
-                          </div>
-                      </div>
-                      <div class="review swiper-slide">
-                          <img src="img/avatars/avatar01.png" alt="avatar" class="avatar">
-                          <div class="review-info">
-                            <span class="name">
-                                Ксения Шнайдер
-                            </span>
-                              <p class="review-body">
-                                  PSY-PSY терапия это одна из лучших вещей, которую я когда либо пробовала для себя.
-                              </p>
-                          </div>
-                      </div>
-                      <div class="review swiper-slide">
-                          <img src="img/avatars/avatar02.png" alt="avatar" class="avatar">
-                          <div class="review-info">
-                            <span class="name">
-                                Георгий Карамов
-                            </span>
-                              <p class="review-body">
-                                  Уверен каждый должен попробовать PSYС, даже если думаете, что чувствуете себя хорошо.
+                                  Современной женщине тяжело сохранить ментальное спокойствие живя в большом городе. Стрессы, работа, отношения. PSY-PSY помогли мне больше, чем я думала. Спасибо и до новых сессий.
                               </p>
                           </div>
                       </div>
@@ -466,7 +445,7 @@
           </div>
       </div>
   </section>
-  <section class="faq">
+  <section id="faq" class="faq">
       <div class="container">
           <h2 class="default-title">
               Часто задаваемые вопросы
@@ -502,9 +481,22 @@
                   </div>
                   <div class="tab-content">
                       <span class="text-wrapper">
-                          Первые результаты вы начнёте ощущать уже во время первой недели. <br>
-                          Онлайн сессия вкупе с чат-поддержкой обладает куда большим фокусирующим эффектом, позволяя фактически не прерывать процесс консультаций.<br>
-                          В США, где технологический и терапевтический процесс в психологии ушёл далеко вперёд, такой тип консультаций популярен более 7 лет и начинает преобладать над классическими методами.<br>
+                          Мы работаем только с психологами, у которых есть:
+                          <br>
+                          <br>
+                          <ul>
+                              <li>Высшее образование.</li>
+                              <li>Практика не менее 8 лет.</li>
+                              <li>Подтвержденная квалификация.</li>
+                              <li>Опыт онлайн-консультаций.</li>
+                          </ul>
+                          У каждого психолога есть супервизор — специалист более высокой квалификации, к которому он ходит на сессии. Это мировой стандарт психологической практики, подтверждает профпригодность психолога и помогает ему в работе.
+                          <br>
+                          <br>
+                          Работу психолога автоматически анализирует нейросеть. Сотрудники подключатся только тогда, когда надо выяснить детали или доработать алгоритмы. Это позволяет оценить эффективность работы психолога, не раскрывая никому детали сессии и личные данные клиента.
+                          <br>
+                          <br>
+                          Чтобы получить полную информацию о дипломах, сертификатах и практическом опыте вашего психолога — просто напишите нам.
                       </span>
                   </div>
               </div>
@@ -520,9 +512,7 @@
                   </div>
                   <div class="tab-content">
                       <span class="text-wrapper">
-                          Первые результаты вы начнёте ощущать уже во время первой недели. <br>
-                          Онлайн сессия вкупе с чат-поддержкой обладает куда большим фокусирующим эффектом, позволяя фактически не прерывать процесс консультаций.<br>
-                          В США, где технологический и терапевтический процесс в психологии ушёл далеко вперёд, такой тип консультаций популярен более 7 лет и начинает преобладать над классическими методами.<br>
+                          Вы можете писать своему психологу 24/7 всё время пока действует ваша подписка.
                       </span>
                   </div>
               </div>
@@ -538,9 +528,11 @@
                   </div>
                   <div class="tab-content">
                       <span class="text-wrapper">
-                          Первые результаты вы начнёте ощущать уже во время первой недели. <br>
-                          Онлайн сессия вкупе с чат-поддержкой обладает куда большим фокусирующим эффектом, позволяя фактически не прерывать процесс консультаций.<br>
-                          В США, где технологический и терапевтический процесс в психологии ушёл далеко вперёд, такой тип консультаций популярен более 7 лет и начинает преобладать над классическими методами.<br>
+                          Ваше общение проходит в формате асинхронной переписки и скорее напоминает электронную почту. Психолог будет отвечать несколько раз в день в зависимости от своей загрузки. Мы стараемся распределять нагрузку на психологов, чтобы у них было достаточно времени на полноценное и вдумчивое общение.
+                          <ul>
+                              <li>Вы можете писать психологу когда и сколько захотите, 24/7</li>
+                              <li>Психолог отвечает 5 дней в неделю минимум 1 - 2 раза в день</li>
+                          </ul>
                       </span>
                   </div>
               </div>
@@ -556,9 +548,8 @@
                   </div>
                   <div class="tab-content">
                       <span class="text-wrapper">
-                          Первые результаты вы начнёте ощущать уже во время первой недели. <br>
-                          Онлайн сессия вкупе с чат-поддержкой обладает куда большим фокусирующим эффектом, позволяя фактически не прерывать процесс консультаций.<br>
-                          В США, где технологический и терапевтический процесс в психологии ушёл далеко вперёд, такой тип консультаций популярен более 7 лет и начинает преобладать над классическими методами.<br>
+                          На данный момент мы выбрали общедоступные средства общения: WhatsApp, Skype, Viber, Telegram и прочие.
+Вы можете выбрать один или несколько удобных для вас способов общения и менять их в любое время по согласованию с вашим психологом.
                       </span>
                   </div>
               </div>
@@ -574,9 +565,13 @@
                   </div>
                   <div class="tab-content">
                       <span class="text-wrapper">
-                          Первые результаты вы начнёте ощущать уже во время первой недели. <br>
-                          Онлайн сессия вкупе с чат-поддержкой обладает куда большим фокусирующим эффектом, позволяя фактически не прерывать процесс консультаций.<br>
-                          В США, где технологический и терапевтический процесс в психологии ушёл далеко вперёд, такой тип консультаций популярен более 7 лет и начинает преобладать над классическими методами.<br>
+                          Вы можете поменять психолога в любой момент, связавшись с вашим менеджером. Вы можете не объяснять причин. Но если вы о них расскажете — это повысит шанс подобрать более подходящего специалиста.
+                          <br>
+                          <br>
+                          Если работа сервиса не устроит — вы можете вернуть деньги в течение двух дней после оплаты. Мы переведем их на привязанную к вашему аккаунту карту.
+                          <br>
+                          <br>
+                          Какая бы проблема у вас не возникла — свяжитесь с вашим менеджером. Он проконсультирует вас и поможет ее решить.
                       </span>
                   </div>
               </div>
@@ -592,9 +587,7 @@
                   </div>
                   <div class="tab-content">
                       <span class="text-wrapper">
-                          Первые результаты вы начнёте ощущать уже во время первой недели. <br>
-                          Онлайн сессия вкупе с чат-поддержкой обладает куда большим фокусирующим эффектом, позволяя фактически не прерывать процесс консультаций.<br>
-                          В США, где технологический и терапевтический процесс в психологии ушёл далеко вперёд, такой тип консультаций популярен более 7 лет и начинает преобладать над классическими методами.<br>
+                          Вы всегда можете обратиться к вашему менеджеру, который добавляется к вам вместе с психологом. Менеджер не имеет никакой информации о сути вашего общения с психологом, но может решить любой спорный или непонятный вопрос касаемо взаимодействия, подписки или технических аспектов.
                       </span>
                   </div>
               </div>
@@ -610,13 +603,23 @@
                   </div>
                   <div class="tab-content">
                       <span class="text-wrapper">
-                          Первые результаты вы начнёте ощущать уже во время первой недели. <br>
-                          Онлайн сессия вкупе с чат-поддержкой обладает куда большим фокусирующим эффектом, позволяя фактически не прерывать процесс консультаций.<br>
-                          В США, где технологический и терапевтический процесс в психологии ушёл далеко вперёд, такой тип консультаций популярен более 7 лет и начинает преобладать над классическими методами.<br>
+                          Для вашего удобства и улучшения опыта пользованием сервиса, мы работаем по системе рекуррентных платежей:
+                          <br>
+                          <br>
+                          Рекуррентные платежи — это автоматические платежи, которые осуществляются периодически и на регулярной основе после успешного осуществления первого платежа. За 2 дня до последующего списания мы предупредим вас по email.
+                          <br>
+                          <br>
+                          Вы в любой момент времени можете отменить подписку и предотвратить последующее списание одним из трёх способов:
+                          <br>
+                          <br>
+                          1. Нажать на кнопку «отменить подписку» в личном кабинете. <br>
+                          2. Перейти по ссылке из информационного письма о предстоящем списании. <br>
+                          3. Написать нам на почту service@psypsy.online <br>
+                          4. Написать своему менеджеру. <br>
+                          5. Написать психологу. <br>
                       </span>
                   </div>
               </div>
-
               <div class="tab">
                   <div data-element="header" class="tab-header">
                       <span class="faq-title">
@@ -628,13 +631,11 @@
                   </div>
                   <div class="tab-content">
                       <span class="text-wrapper">
-                          Первые результаты вы начнёте ощущать уже во время первой недели. <br>
-                          Онлайн сессия вкупе с чат-поддержкой обладает куда большим фокусирующим эффектом, позволяя фактически не прерывать процесс консультаций.<br>
-                          В США, где технологический и терапевтический процесс в психологии ушёл далеко вперёд, такой тип консультаций популярен более 7 лет и начинает преобладать над классическими методами.<br>
+                          Мы надеемся, что такое желание возникнет у вас только в случае крупного прогресса в сессиях. =)
+Вы можете в любое время написать своему менеджеру, перейти по ссылке в почте или выбрать в личном кабинете отмену подписки и тем самым прекратить последующие списания.
                       </span>
                   </div>
               </div>
-
               <div class="tab">
                   <div data-element="header" class="tab-header">
                       <span class="faq-title">
@@ -646,9 +647,8 @@
                   </div>
                   <div class="tab-content">
                       <span class="text-wrapper">
-                          Первые результаты вы начнёте ощущать уже во время первой недели. <br>
-                          Онлайн сессия вкупе с чат-поддержкой обладает куда большим фокусирующим эффектом, позволяя фактически не прерывать процесс консультаций.<br>
-                          В США, где технологический и терапевтический процесс в психологии ушёл далеко вперёд, такой тип консультаций популярен более 7 лет и начинает преобладать над классическими методами.<br>
+                          Мы не храним данные карт и не имеем к ним доступ. На данный момент все расчёты обслуживаются надёжными платёжными системами: CloudPayments (Tinkoff Bank), Яндекс.Касса (Yandex) и Сбербанк Эквайринг (ПАО «Сбербанк»). Они входят в топ рейтинга самых надёжных и доверительных платёжных провайдеров.
+Ваши деньги всегда только ваши и всегда в безопасности.
                       </span>
                   </div>
               </div>
@@ -664,7 +664,7 @@
               Получить помощь психолога теперь просто как никогда. Регистрируйтесь
               в сервисе и получайте поддержку 24/7 в удобном вам формате!
           </p>
-          <a href="#" class="default-button">
+          <a href="/quiz.html" class="default-button">
               Зарегистрироваться
           </a>
       </div>
@@ -673,41 +673,88 @@
   <footer class="footer">
     <div class="container">
         <div class="about-company">
-            <div class="logo">
+            <a href="/" class="logo">
                 <img src="img/logotype.svg" alt="logo">
-            </div>
+            </a>
             <p class="about-info">
-                <span>ООО «Бриз»</span> <br>
-                <span>Москва, ул Переулок Большой Симоновский, дом 2, этаж 1</span> <br>
-                <span>ИНН: 9709067996  ОГРН: 1207700482758  КПП: 770901001</span> <br>
+                <span>ИП КАМЫШНИКОВ КОНСТАНТИН ВЛАДИМИРОВИЧ</span> <br>
+                <span>г. Липецк ул. Неделина д4 корп А</span> <br>
+                <span>ИНН: 480304272230  ОГРНИП: 320482700041823    ИНН: 480304272230</span> <br>
             </p>
         </div>
         <div class="footer-navigation">
-            <a href="#" class="nav-link">О нас</a>
-            <a href="#" class="nav-link">Отзывы</a>
-            <a href="#" class="nav-link">Вопросы-ответы</a>
+            <a href="/#about" class="nav-link">О нас</a>
+            <a href="/#reviews" class="nav-link">Отзывы</a>
+            <a href="/#faq" class="nav-link">Вопросы-ответы</a>
         </div>
         <div class="footer-documents">
-            <a href="#" class="doc">Соглашение</a>
-            <a href="#" class="doc">Политика обработки данных</a>
-            <a href="#" class="doc">Публичная оферта</a>
-            <a href="#" class="doc">Согласие на обработку персональных данных</a>
-            <a href="#" class="doc">Соглашение по услуге «Рекуррентный платеж»</a>
+            <a href="/agreement.html" class="doc">Соглашение</a>
+            <a href="/politics.html" class="doc">Политика обработки данных</a>
+            <a href="/oferta.html" class="doc">Публичная оферта</a>
+            <a href="/consent.html" class="doc">Согласие на обработку персональных данных</a>
+            <a href="/recurrent.html" class="doc">Соглашение по услуге «Рекуррентный платеж»</a>
         </div>
         <div class="email">
-            <a href="mailto:info@psyс.pw" class="value">info@psyс.pw</a>
+            <a href="mailto:info@psypsy.xyz" class="value">info@psypsy.xyz</a>
             <div class="label">Напишите нам</div>
         </div>
     </div>
 </footer>
 <div class="bottom-footer">
-    © PSYС 2020. Все права защищены
+    © PSYPSY 2021. Все права защищены
 </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<div class="backdrop" data-isBackdrop="true" id="backdrop">
+    <div id="main-modal" class="popup main-popup">
+        <button data-element="close" class="close-modal">&times;</button>
+        <form id="modalForm" class="popup-wrapper">
+            <div class="text-block">
+                <h4 class="default-title">
+                    Неделя с психологом PSYPSY.XYZ
+                </h4>
+                <p class="default-subtitle">
+                    Подобранный психолог сам напишет Вам в выбранный мессенджер и начнёт процесс консультирования.
+                </p>
+            </div>
+            <div class="modal-form">
+                <div class="form-input">
+                    <span class="input-title">Ваш телефон</span>
+                    <div class="input-desc">Чтобы психолог знал как с Вами связаться</div>
+                    <input class="default-input" name="tel" type="tel" placeholder="+ 7 (999) 999-99-99">
+                </div>
+                <div class="form-input">
+                    <span class="input-title">Предпочитаемый мессенджер</span>
+                    <div class="input-desc">Чтобы психолог знал как с Вами связаться</div>
+                    <select class="default-select" name="consul-type">
+                        <option selected="" value="whatsapp">WhatsApp</option>
+                        <option value="telegram">Telegram</option>
+                        <option value="viber">Viber</option>
+                    </select>
+                </div>
+            </div>
+            <strong>Первая неделя со скидкой 1990 ₽</strong>
+            <button class="default-button">Оплатить первую неделю</button>
+        </form>
+    </div>
+    <div id="thanks-modal" class="popup thanks-popup">
+        <button data-element="close" class="close-modal">&times;</button>
+        <div class="popup-wrapper">
+            <div class="text-block">
+                <h4 class="default-title">
+                    Отлично!
+                </h4>
+                <p class="default-subtitle">
+                    Подобранный психолог сам напишет Вам в выбранный мессенджер и начнёт процесс консультирования.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
-<script defer="" src="js/libs.min.js"></script>
-<script defer="" src="js/app.js"></script>
+
+<script defer="" src="/js/libs.min.js?cbh=8a58bac8b6aac862758e210c36995fd7"></script>
+<script defer="" src="/js/app.js?cbh=fff438f76dab37a357a1ae3b9e6af69d"></script>
 
   <script>
     const swiper = new Swiper('.swiper-container', {
