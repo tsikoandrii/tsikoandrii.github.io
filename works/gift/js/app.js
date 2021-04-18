@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   // Subscribe Modal //
   var subscribeModal = document.querySelector('#subscribeModal');
   var subscribeButton = document.querySelector('#subscribeButton');
@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
   var deleteContestModal = document.querySelector('#deleteContestModal');
   var changeModalButton = document.querySelector('#changeModal');
   var subscribeButtonClose = document.querySelector('#subClose');
-  changeModalButton.addEventListener('click', function () {
+  changeModalButton.addEventListener('click', function() {
     subscribeModal.classList.add('changed');
   });
-  subscribeButtonClose.addEventListener('click', function () {
+  subscribeButtonClose.addEventListener('click', function() {
     closeHandler(subscribeModal);
   }); // Delete Card Modal
 
@@ -24,21 +24,25 @@ document.addEventListener('DOMContentLoaded', function () {
     openHandler(deleteCardButton, deleteCardModal);
   }
 
-  deleteCardModal.querySelector('[data-control="cancel"]').addEventListener('click', function () {
-    closeHandler(deleteCardModal);
-  }); // Delete Contest Button
+  deleteCardModal
+    .querySelector('[data-control="cancel"]')
+    .addEventListener('click', function() {
+      closeHandler(deleteCardModal);
+    }); // Delete Contest Button
 
   var deleteContestButtons = document.querySelectorAll('.deleteContest');
 
   if (deleteContestButtons.length) {
-    deleteContestButtons.forEach(function (button) {
+    deleteContestButtons.forEach(function(button) {
       openHandler(button, deleteContestModal);
     });
   }
 
-  deleteContestModal.querySelector('[data-control="cancel"]').addEventListener('click', function () {
-    closeHandler(deleteContestModal);
-  }); // Register Modal
+  deleteContestModal
+    .querySelector('[data-control="cancel"]')
+    .addEventListener('click', function() {
+      closeHandler(deleteContestModal);
+    }); // Register Modal
 
   var registerModal = document.querySelector('#registerModal');
   var registerModalButton = document.querySelector('#registerModalButton');
@@ -47,38 +51,43 @@ document.addEventListener('DOMContentLoaded', function () {
     openHandler(registerModalButton, registerModal, registerClickFunc);
   } // Add New Card
 
-
   var addNewCard = document.querySelector('#addNewCard');
 
   if (addNewCard) {
-    addNewCard.addEventListener('click', function (e) {
+    addNewCard.addEventListener('click', function(e) {
       if (e.target.dataset.component === 'addNewCardButton') {
         addNewCard.classList.add('active');
       }
     });
   } // Update Date Input Function
 
-
   var dateInput = document.querySelector('#dateInput');
 
   var updateDateInput = function updateDateInput(type) {
     if (dateInput.value) {
-      dateInput.value = "".concat(String(currentDate.day).padStart(2, '0'), "-").concat(String(currentDate.month).padStart(2, '0'), " ").concat(String(currentDate.hours).padStart(2, '0'), ":").concat(String(currentDate.minutes).padStart(2, '0'));
+      dateInput.value = ''
+        .concat(String(currentDate.day).padStart(2, '0'), '-')
+        .concat(String(currentDate.month).padStart(2, '0'), ' ')
+        .concat(String(currentDate.hours).padStart(2, '0'), ':')
+        .concat(String(currentDate.minutes).padStart(2, '0'));
     } else {
       if (type === 'date') {
-        dateInput.value = "".concat(String(currentDate.day).padStart(2, '0'), "-").concat(String(currentDate.month).padStart(2, '0'));
+        dateInput.value = ''
+          .concat(String(currentDate.day).padStart(2, '0'), '-')
+          .concat(String(currentDate.month).padStart(2, '0'));
       }
 
       if (type === 'time') {
-        dateInput.value = "".concat(String(currentDate.hours).padStart(2, '0'), ":").concat(String(currentDate.minutes).padStart(2, '0'));
+        dateInput.value = ''
+          .concat(String(currentDate.hours).padStart(2, '0'), ':')
+          .concat(String(currentDate.minutes).padStart(2, '0'));
       }
     }
   }; // DatePicker
 
-
   if (datePickerButton) {
     openHandler(datePickerButton, datePicker);
-    datePicker.addEventListener('click', function (e) {
+    datePicker.addEventListener('click', function(e) {
       if (e.target.dataset.type === 'day') {
         var action = e.target.dataset.datepicker;
 
@@ -87,7 +96,10 @@ document.addEventListener('DOMContentLoaded', function () {
           changeDay(currentDate.day);
 
           if (currentDate.day === 1) {
-            dayElements.prev.innerHTML = daysInMonth(currentDate.month - 1, currentDate.year);
+            dayElements.prev.innerHTML = daysInMonth(
+              currentDate.month - 1,
+              currentDate.year,
+            );
           }
 
           if (currentDate.day < 1) {
@@ -102,15 +114,24 @@ document.addEventListener('DOMContentLoaded', function () {
         if (action === 'next') {
           currentDate.day++;
 
-          if (currentDate.day > daysInMonth(currentDate.month, currentDate.year)) {
+          if (
+            currentDate.day > daysInMonth(currentDate.month, currentDate.year)
+          ) {
             currentDate.day = 1;
-            changeDay(currentDate.day, daysInMonth(currentDate.month, currentDate.year), true);
+            changeDay(
+              currentDate.day,
+              daysInMonth(currentDate.month, currentDate.year),
+              true,
+            );
             currentDate.month++;
             changeMonth(currentDate.month);
             return 0;
           }
 
-          changeDay(currentDate.day, daysInMonth(currentDate.month, currentDate.year));
+          changeDay(
+            currentDate.day,
+            daysInMonth(currentDate.month, currentDate.year),
+          );
         }
       }
 
@@ -148,17 +169,18 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       if (e.target.dataset.type === 'submit') {
-        datePickerButton.innerHTML = "".concat(currentDate.day, " ").concat(namesOfMonths[currentDate.month]);
+        datePickerButton.innerHTML = ''
+          .concat(currentDate.day, ' ')
+          .concat(namesOfMonths[currentDate.month]);
         updateDateInput('date');
         closeHandler(datePicker);
       }
     });
   } // TimePickerButton
 
-
   if (timePickerButton) {
     openHandler(timePickerButton, timePicker);
-    timePicker.addEventListener('click', function (e) {
+    timePicker.addEventListener('click', function(e) {
       if (e.target.dataset.type === 'hour') {
         var action = e.target.dataset.timepicker;
         var obj = getNewHours(currentDate.hours, action);
@@ -174,21 +196,22 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       if (e.target.dataset.type === 'submit') {
-        timePickerButton.innerHTML = "".concat(String(currentDate.hours).padStart(2, '0'), ":").concat(String(currentDate.minutes).padStart(2, '0'));
+        timePickerButton.innerHTML = ''
+          .concat(String(currentDate.hours).padStart(2, '0'), ':')
+          .concat(String(currentDate.minutes).padStart(2, '0'));
         updateDateInput('time');
         closeHandler(timePicker);
       }
     });
   } // Timer
 
-
   var date_timer = document.querySelector('#timer');
 
   function getTimeRemaining(time) {
     var days,
-        hours,
-        minutes,
-        seconds = 0;
+      hours,
+      minutes,
+      seconds = 0;
 
     if (time.days.name) {
       days = time.days.value;
@@ -204,10 +227,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!days && !hours && !minutes && !seconds) {
       return {
-        'days': 0,
-        'hours': 0,
-        'minutes': 0,
-        'seconds': 0
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
       };
     }
 
@@ -229,22 +252,42 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     return {
-      'days': {
-        name: days === 1 ? 'день' : days === 2 || days === 3 || days === 4 ? 'дня' : 'дней',
-        value: days
+      days: {
+        name:
+          days === 1
+            ? 'день'
+            : days === 2 || days === 3 || days === 4
+            ? 'дня'
+            : 'дней',
+        value: days,
       },
-      'hours': {
-        name: hours === 1 ? 'час' : hours === 2 || hours === 3 || hours === 4 ? 'часа' : 'часов',
-        value: hours
+      hours: {
+        name:
+          hours === 1
+            ? 'час'
+            : hours === 2 || hours === 3 || hours === 4
+            ? 'часа'
+            : 'часов',
+        value: hours,
       },
-      'minutes': {
-        name: minutes === 1 ? 'минута' : minutes === 2 || minutes === 3 || minutes === 4 ? 'минуты' : 'минут',
-        value: minutes
+      minutes: {
+        name:
+          minutes === 1
+            ? 'минута'
+            : minutes === 2 || minutes === 3 || minutes === 4
+            ? 'минуты'
+            : 'минут',
+        value: minutes,
       },
-      'seconds': {
-        name: seconds === 1 ? 'секунда' : seconds === 2 || seconds === 3 || seconds === 4 ? 'секунды' : 'секунд',
-        value: seconds
-      }
+      seconds: {
+        name:
+          seconds === 1
+            ? 'секунда'
+            : seconds === 2 || seconds === 3 || seconds === 4
+            ? 'секунды'
+            : 'секунд',
+        value: seconds,
+      },
     };
   }
 
@@ -257,10 +300,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateClock() {
       time = getTimeRemaining(time);
-      daysSpan.innerHTML = "".concat(('0' + time.days.value).slice(-2), " <span>").concat(time.days.name, "</span>");
-      hoursSpan.innerHTML = "".concat(('0' + time.hours.value).slice(-2), " <span>").concat(time.hours.name, "</span>");
-      minutesSpan.innerHTML = "".concat(('0' + time.minutes.value).slice(-2), " <span>").concat(time.minutes.name, "</span>");
-      secondsSpan.innerHTML = "".concat(('0' + time.seconds.value).slice(-2), " <span>").concat(time.seconds.name, "</span>");
+      daysSpan.innerHTML = ''
+        .concat(('0' + time.days.value).slice(-2), ' <span>')
+        .concat(time.days.name, '</span>');
+      hoursSpan.innerHTML = ''
+        .concat(('0' + time.hours.value).slice(-2), ' <span>')
+        .concat(time.hours.name, '</span>');
+      minutesSpan.innerHTML = ''
+        .concat(('0' + time.minutes.value).slice(-2), ' <span>')
+        .concat(time.minutes.name, '</span>');
+      secondsSpan.innerHTML = ''
+        .concat(('0' + time.seconds.value).slice(-2), ' <span>')
+        .concat(time.seconds.name, '</span>');
     }
 
     updateClock();
