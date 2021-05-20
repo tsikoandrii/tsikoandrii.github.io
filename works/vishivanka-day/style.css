@@ -298,6 +298,11 @@ body, html {
         font-size: 40px !important;
         text-align: center;
     }
+
+    iframe {
+        width: 100vw !important;
+        height: 100vh !important;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -308,10 +313,6 @@ body, html {
         text-align: center;
     }
 
-    iframe {
-        width: 100vw;
-        height: 100vh;
-    }
 
     .song-info {
         padding-left: 30px !important;
