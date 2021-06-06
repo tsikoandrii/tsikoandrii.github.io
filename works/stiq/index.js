@@ -1,13 +1,16 @@
-const languageSwitcher = document.querySelector('#languageSwitcher');
+"use strict";
 
-languageSwitcher.addEventListener('click', () => languageSwitcher.classList.toggle('active'))
-
-const menu = document.querySelector('#nav');
-const menuOpen = document.querySelector('#nav-open');
-const menuClose = document.querySelector('#nav-close');
-
-menuOpen.addEventListener('click', () => menu.classList.add('active'))
-menuClose.addEventListener('click', () => {
-  menu.classList.remove('active')
-  menu.classList.add('closed')
-})
+var languageSwitcher = document.querySelector('#languageSwitcher');
+languageSwitcher.addEventListener('click', function () {
+  return languageSwitcher.classList.toggle('active');
+});
+var menu = document.querySelector('#nav');
+var menuOpen = document.querySelector('#nav-open');
+var menuClose = document.querySelector('#nav-close');
+menuOpen.addEventListener('click', function () {
+  return menu.classList.add('active');
+});
+menuClose.addEventListener('click', function () {
+  menu.classList.remove('active');
+  menu.classList.add('closed');
+});
