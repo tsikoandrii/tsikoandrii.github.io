@@ -336,7 +336,7 @@ main.left .main-title {
     line-height: 160px !important;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
   main.left .main-title {
     font-size: 50px !important;
     line-height: 120px !important;
@@ -361,6 +361,11 @@ main.left .text p {
 }
 main.left .button {
   margin-top: 44px;
+}
+@media screen and (max-width: 500px) {
+  main.left .button {
+    max-width: 200px;
+  }
 }
 
 .main-title {
