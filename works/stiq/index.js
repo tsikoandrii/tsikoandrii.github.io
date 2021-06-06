@@ -2,7 +2,6 @@
 
 var languageSwitcher = document.querySelector('#languageSwitcher');
 languageSwitcher.addEventListener('click', function () {
-  console.log('slsl')
   return languageSwitcher.classList.toggle('active');
 });
 var menu = document.querySelector('#nav');
