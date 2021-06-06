@@ -15,7 +15,7 @@ body {
 }
 @media screen and (max-width: 1200px) {
   body {
-    background-size: 1300px auto;
+    background-size: auto 100%;
   }
 }
 
