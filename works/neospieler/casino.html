@@ -18,7 +18,7 @@
 <body>
     <?xml-stylesheet type="text/css" href="css/main.min.css"?>
 <svg display="none">
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" id="close">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440" id="close">
     <g clip-path="url(#clip0)">
       <path d="M260.311 219.999L431.638 48.666c11.15-11.144 11.15-29.163 0-40.308-11.144-11.144-29.164-11.144-40.308 0L219.998 179.691 48.67 8.358c-11.15-11.144-29.163-11.144-40.308 0-11.15 11.145-11.15 29.164 0 40.308L179.69 220 8.362 391.331c-11.15 11.145-11.15 29.164 0 40.308a28.415 28.415 0 0020.154 8.352 28.424 28.424 0 0020.154-8.352l171.328-171.332L391.33 431.639a28.424 28.424 0 0020.154 8.352 28.424 28.424 0 0020.154-8.352c11.15-11.144 11.15-29.163 0-40.308L260.311 219.999z"></path>
     </g>
@@ -126,7 +126,9 @@
     </defs>
   </symbol>
 </svg>
-    <header class="header">
+    
+
+<header class="header">
 	<div class="container">
 		<button class="mobileMenuButton" id="mobileMenuButton">
 			<svg>
@@ -136,121 +138,919 @@
 		<a href="#" class="header__logotype">
 			<img src="images/ui/logotype.png" alt="logotype"/>
 		</a>
-		<div id="nav" class="ui accordion nav">
-			<a class="nav__link" data-component='menuLink'>
-				Online Casinos 1
-				<svg>
-					<use xlink:href="#down-arrow"></use>
-				</svg>
-			</a>
-			<div class="ui fluid popup dropdown-menu" data-component='menuLinkBody'>
-				<div class="container">
-					<div class="dropdown-menu__body">
-						<div class="dropdown-menu__column">
-							<!-- This Menu LVL active on 768 breakpoint --> 
-							<div class="wrap ui accordion">
-								<div class="dropdown-menu__header title">
-									Online Casinos 1
-									<svg>
-										<use xlink:href="#down-arrow"></use>
-									</svg>
-								</div>
-								<div class="wrap-body">
-									<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
-										<div class="dropdown-link__header title nav__link">
-											Online Casinos
-											<svg>
-												<use xlink:href="#down-arrow"></use>
-											</svg>
-										</div>
-										<div class="link-body content">
-											<a href="#" class="dropdown-menu__nav-link nav__link">
-												Online Casinos
-											</a>
-											<a href="#" class="dropdown-menu__nav-link nav__link">
-												Online Casinos
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<a class="nav__link" data-component='menuLink'>
-				Online Casinos 2
-				<svg>
-					<use xlink:href="#down-arrow"></use>
-				</svg>
-			</a>
-			<div class="ui fluid popup dropdown-menu" data-component='menuLinkBody'>
-				<div class="container">
-					<div class="dropdown-menu__body">
-						<div class="dropdown-menu__column">
-							<!-- This Menu LVL active on 768 breakpoint --> 
-							<div class="wrap ui accordion">
-								<div class="dropdown-menu__header title">
-									Online Casinos 2
-									<svg>
-										<use xlink:href="#down-arrow"></use>
-									</svg>
-								</div>
-								<div class="wrap-body">
-									<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
-										<div class="dropdown-link__header title nav__link">
-											Online Casinos
-											<svg>
-												<use xlink:href="#down-arrow"></use>
-											</svg>
-										</div>
-										<div class="link-body content">
-											<a href="#" class="dropdown-menu__nav-link nav__link">
-												Online Casinos
-											</a>
-											<a href="#" class="dropdown-menu__nav-link nav__link">
-												Online Casinos
-											</a>
-											<div class="accordion">
-												<div class="dropdown-link__header title nav__link">
-												Online Casinos
-													<svg>
-														<use xlink:href="#down-arrow"></use>
-													</svg>
-												</div>
-												<div class="link-body content">
-													<a href="#" class="dropdown-menu__nav-link nav__link">
-														Online Casinos
-													</a>
-													<a href="#" class="dropdown-menu__nav-link nav__link">
-														Online Casinos
-													</a>
-													
-												</div>
-											</div>
-											
+		<!-- Dropdown Menu -->
 
-										</div>
-									</div>
+		<!--
+
+Default Structure
+
+	<a class="nav__link title">
+		{ Пункт }
+		<svg>
+			<use xlink:href="#down-arrow"></use>
+		</svg>
+	</a>
+
+	<div class="dropdown-menu content">
+		<div class="container">
+			<div class="dropdown-menu__body">
+				<div class="dropdown-menu__column">
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							...{ Пункт (название колонки) }...
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+
+
+							...{ Ссылки или  }...
+
+							// Аккардион //
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
 								</div>
 							</div>
+
+							// Простая ссылка //
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+							
 						</div>
 					</div>
 				</div>
 			</div>
-			<a class="nav__link" data-id="3">
-				Online Casinos 3
-				<svg>
-					<use xlink:href="#down-arrow"></use>
-				</svg>
-			</a>
-			<a class="nav__link" data-id="4">
-				Online Casinos 4
-				<svg>
-					<use xlink:href="#down-arrow"></use>
-				</svg>
-			</a>
 		</div>
+	</div>
+
+ -->
+
+ <!-- Dropdown Menu -->
+
+<div id="nav" class="ui accordion nav">
+	<!-- Special For Mobile -->
+
+	<button id="navClose">
+		<svg>
+			<use xlink:href="#close"></use>
+		</svg>
+	</button>
+
+
+	<a class="nav__link title" data-component='menuLink'>
+		Online Casinos
+		<svg>
+			<use xlink:href="#down-arrow"></use>
+		</svg>
+	</a>
+
+	<div class="dropdown-menu content" data-component='menuLinkBody'>
+		<div class="container">
+			<div class="dropdown-menu__body">
+				<div class="dropdown-menu__column">
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown-menu__column">
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown-menu__column">
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown-menu__column">
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<a class="nav__link title" data-component='menuLink'>
+		Online Casinos
+		<svg>
+			<use xlink:href="#down-arrow"></use>
+		</svg>
+	</a>
+
+	<div class="dropdown-menu content" data-component='menuLinkBody'>
+		<div class="container">
+			<div class="dropdown-menu__body">
+				<div class="dropdown-menu__column">
+					<!-- Active on 768 -->
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown-menu__column">
+					<!-- Active on 768 -->
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown-menu__column">
+					<!-- Active on 768 -->
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown-menu__column">
+					<!-- Active on 768 -->
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<a class="nav__link title" data-component='menuLink'>
+		Online Casinos
+		<svg>
+			<use xlink:href="#down-arrow"></use>
+		</svg>
+	</a>
+
+	<div class="dropdown-menu content" data-component='menuLinkBody'>
+		<div class="container">
+			<div class="dropdown-menu__body">
+				<div class="dropdown-menu__column">
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown-menu__column">
+					<!-- Active on 768 -->
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown-menu__column">
+					<!-- Active on 768 -->
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown-menu__column">
+					<!-- Active on 768 -->
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<a class="nav__link title" data-component='menuLink'>
+		Online Casinos
+		<svg>
+			<use xlink:href="#down-arrow"></use>
+		</svg>
+	</a>
+
+	<div class="dropdown-menu content" data-component='menuLinkBody'>
+		<div class="container">
+			<div class="dropdown-menu__body">
+				<div class="dropdown-menu__column">
+					<!-- Active on 768 -->
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown-menu__column">
+					<!-- Active on 768 -->
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown-menu__column">
+					<!-- Active on 768 -->
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dropdown-menu__column">
+					<!-- Active on 768 -->
+					<div class="ui accordion">
+						<div class="dropdown-menu__header title nav__link">
+							Online Casinos 1
+							<svg>
+								<use xlink:href="#down-arrow"></use>
+							</svg>
+						</div>
+						<div class="column-body">
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
+								<div class="title nav__link">
+									Online Casinos
+									<svg>
+										<use xlink:href="#down-arrow"></use>
+									</svg>
+								</div>
+								<div class="link-body content">
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+									<a href="#" class="dropdown-menu__nav-link nav__link">
+										Online Casinos
+									</a>
+								</div>
+							</div>
+							<a href="#" class="dropdown-menu__nav-link nav__link">
+								Online Casinos
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- End Menu -->
+
+		<!-- End Menu -->
 		<button class="mobileSearchButton" id="mobileSearchButton">
 			<svg>
 				<use xlink:href="#search"></use>
@@ -259,138 +1059,12 @@
 		<div class="mobileSearch" id="mobileSearch">
 			<input placeholder="Search" type="text" class="default-input search">
 		</div>
-<!-- 		<div class="ui popup fluid">
-			<input class="default-input search">
-		</div> -->
 		<input class="default-input search" type="text" placeholder="Search"/>
 		<a href="#" class="default-button header__button">
 			My account
 		</a>
 	</div>
 </header>
-    <!-- <div id="dropdown-menu" class="dropdown-menu">
-	<div class="container">
-		<div class="dropdown-menu__body">
-			<div class="dropdown-menu__column">
-				<div class="wrap ui accordion">
-					<div class="dropdown-menu__header title">
-						Online Casinos
-						<svg>
-							<use xlink:href="#down-arrow"></use>
-						</svg>
-					</div>
-					<div class="wrap-body">
-						<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
-							<div class="dropdown-link__header title nav__link">
-								Online Casinos
-								<svg>
-									<use xlink:href="#down-arrow"></use>
-								</svg>
-							</div>
-							<div class="link-body content">
-								<a href="#" class="dropdown-menu__nav-link nav__link">
-									Online Casinos
-								</a>
-								<a href="#" class="dropdown-menu__nav-link nav__link">
-									Online Casinos
-								</a>
-								<div class="accordion">
-									<div class="dropdown-link__header title nav__link">
-									Online Casinos
-										<svg>
-											<use xlink:href="#down-arrow"></use>
-										</svg>
-									</div>
-									<div class="link-body content">
-										<a href="#" class="dropdown-menu__nav-link nav__link">
-											Online Casinos
-										</a>
-										<a href="#" class="dropdown-menu__nav-link nav__link">
-											Online Casinos
-										</a>
-										
-									</div>
-								</div>
-								
-
-							</div>
-						</div>
-						<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
-							<div class="dropdown-link__header title nav__link">
-								Online Casinos
-								<svg>
-									<use xlink:href="#down-arrow"></use>
-								</svg>
-							</div>
-							<div class="link-body content">
-								<a href="#" class="dropdown-menu__nav-link nav__link">
-									Online Casinos
-								</a>
-								<a href="#" class="dropdown-menu__nav-link nav__link">
-									Online Casinos
-								</a>
-								<div class="accordion">
-									<div class="dropdown-link__header title nav__link">
-									Online Casinos
-										<svg>
-											<use xlink:href="#down-arrow"></use>
-										</svg>
-									</div>
-									<div class="link-body content">
-										<a href="#" class="dropdown-menu__nav-link nav__link">
-											Online Casinos
-										</a>
-										<a href="#" class="dropdown-menu__nav-link nav__link">
-											Online Casinos
-										</a>
-										
-									</div>
-								</div>
-								
-
-							</div>
-						</div>
-						<div class="ui accordion dropdown-menu__nav-link nav__link dropdown-link">
-							<div class="dropdown-link__header title nav__link">
-								Online Casinos
-								<svg>
-									<use xlink:href="#down-arrow"></use>
-								</svg>
-							</div>
-							<div class="link-body content">
-								<a href="#" class="dropdown-menu__nav-link nav__link">
-									Online Casinos
-								</a>
-								<a href="#" class="dropdown-menu__nav-link nav__link">
-									Online Casinos
-								</a>
-								<div class="accordion">
-									<div class="dropdown-link__header title nav__link">
-									Online Casinos
-										<svg>
-											<use xlink:href="#down-arrow"></use>
-										</svg>
-									</div>
-									<div class="link-body content">
-										<a href="#" class="dropdown-menu__nav-link nav__link">
-											Online Casinos
-										</a>
-										<a href="#" class="dropdown-menu__nav-link nav__link">
-											Online Casinos
-										</a>
-										
-									</div>
-								</div>
-								
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
 
     <div class="casino-rate-label">
 	<div class="container">
