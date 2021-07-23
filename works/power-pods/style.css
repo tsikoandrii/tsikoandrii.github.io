@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Footer */
+
+.container {
+    padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+
+.footer {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.guarantee {
+    display: flex;
+    flex-direction: column;
+}
+
+.guarantee img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.guarantee strong {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #313131;
+    margin-bottom: 4px;
+}
+
+.guarantee p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    color: #626262;
+    margin-bottom: 15px;
+}
+
+.logotype img {
+    width: 142px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #124D95;
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    text-decoration-line: underline;
+}
+
+.payments {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.payment {
+    width: 22.5%;
+    box-shadow: 0px 4px 10px rgba(172, 172, 172, 0.25);
+    border-radius: 3px;
+}
+
+.payment img {
+    width: 100%;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact img {
+    width: 23px;
+    margin-right: 10px;
+}
+
+.contact {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #313131;
+    text-decoration: none;
+}
+
+.contact:first-child {
+    margin-bottom: 10px;
+}
+
+
+/* Quiz Styles */
+
+.quiz {
+    background-color: #F5F5F5;
+    background-image: url('./img/bg.svg');
+    background-size: 100%;
+    background-position: bottom;
+}
+
+.quiz .container {
+    min-height: 600px;
+    padding-top: 48px;
+    padding-bottom: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+}
+
+.question.hidden {
+    display: none;
+}
+
+.question__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #124D95;
+    min-height: 82px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question__title h4 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.question__answers {
+    background: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 25px 16px;
+
+}
+
+.question__answer:last-child {
+    margin-bottom: 0;
+}
+
+.question__answer {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #313131;
+    display: flex;
+    align-items: center;
+    background: #ECECEC;
+    border-radius: 150px;
+    padding: 0px 10px;
+    min-height: 60px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.question__answer input {
+    display: none;
+}
+
+/* Active State */
+
+.question__answer input:checked ~ .answer-decor:before {
+    opacity: 1;
+    transition: opacity 0.1s;
+}
+
+.question__answer .answer-decor {
+    display: block;
+    min-width: 30px;
+    height: 30px;
+    background: #F8F8F8;
+    box-shadow: 0px 7px 15px #CDCDCD;
+    border-radius: 150px;
+    margin-right: 9px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.question__answer .answer-decor:before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    display: block;
+    opacity: 0;
+    background: #008FFF;
+    border-radius: 150px;
+    transition: opacity 0.05s;
+}
+
+/* Final Block
+ */
+
+
+.final-screen {
+    
+}
+
+.final-screen.hidden {
+    display: none;
+}
+
+.final__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #124D95;
+    margin-bottom: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.final__title:before, .final__title:after {
+    display: block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url('./img/icons/final.svg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.final__title:before {
+    margin-right: 10px;
+}
+
+.final__title:after {
+    margin-left: 10px;
+}
+
+.final-card {
+    width: 100%;
+    background: #124D95;
+    border-radius: 10px;
+    padding: 26px 20px 32px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanks-label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 17px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.link-label {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #19AF42;
+    border-radius: 3px;
+    padding: 12px 0px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 30px;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.progress-bar.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.progress-bar-body {
+    width: 100%;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 150px;
+    display: flex;
+    align-items: center;
+    padding: 0px 4px;
+}
+
+.progress-value {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #313131;
+    margin-bottom: 10px;
+}
+
+.progress-bar-body div {
+    width: 76px;
+    height: 24px;
+    background: #008FFF;
+    border-radius: 15px;
+    transition: width 0.2s;
+}

@@ -1,0 +1,230 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Power Pods</title>
+</head>
+<body>
+    <form id="form">
+        <div class="quiz">
+            <div class="container">
+
+                <!-- First : 0 -->
+                <div class="question" data-component="question">
+                    <div class="question__title"><h4>Make your choice!</h4></div>
+                    <div class="question__answers">
+                        <label class="question__answer">
+                            <input name="00" type="radio" data-to="1">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">Buy at full price of $34.95</span>
+                        </label>
+                        <label class="question__answer">
+                            <input name="00" type="radio" data-to="2">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">
+                                Give some correct answers for a chance to buy for $19.95
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Warning : 1 -->
+                <div class="question" data-component="question">
+                    <div class="question__title">
+                        <span>
+                            We appreciate your desire to pay
+                        a full price. <strong>But we don't want you to overpay 😍</strong>
+                        </span>
+                    </div>
+                    <div class="question__answers">
+                        <label class="question__answer">
+                            <input name="01" type="radio" data-to="2">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">Fine, I’ll take the quiz</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Second : 2 -->
+
+                <div class="question" data-component="question">
+                    <div class="question__title">
+                        <span>
+                            Attention check 🤓 <br/>
+                            <strong>What’s the name of the product</strong>
+                        </span>
+                    </div>
+                    <div class="question__answers">
+                        <label class="question__answer">
+                            <input name="02" type="radio">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">Power Nod</span>
+                        </label>
+                        <label class="question__answer">
+                            <input name="02" type="radio">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">Power Nod</span>
+                        </label>
+                        <label class="question__answer">
+                            <input name="02" type="radio">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">Power Nod</span>
+                        </label>
+                        <label class="question__answer">
+                            <input name="02" type="radio">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">Power Nod</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Third : 3 -->
+
+                <div class="question" data-component="question">
+                    <div class="question__title">
+                        <strong>
+                            How much power does <br/>
+                            it give?
+                        </strong>
+                    </div>
+                    <div class="question__answers">
+                        <label class="question__answer">
+                            <input name="03" type="radio">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">Depends on its mood</span>
+                        </label>
+                        <label class="question__answer">
+                            <input name="03" type="radio">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">It just takes energy and never gives it back</span>
+                        </label>
+                        <label class="question__answer">
+                            <input name="03" type="radio">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">Depends on the weather</span>
+                        </label>
+                        <label class="question__answer">
+                            <input name="03" type="radio">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">A good several hours (depends on model and usage)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Fourth : 4 -->
+
+                <div class="question" data-component="question">
+                    <div class="question__title">
+                        <strong>
+                            Where does the product ship from and how long does it take
+                        </strong>
+                    </div>
+                    <div class="question__answers">
+                        <label class="question__answer">
+                            <input name="04" type="radio">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">Azerbaijan, 17 week</span>
+                        </label>
+                        <label class="question__answer">
+                            <input name="04" type="radio">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">Nevada, 48-72 hours</span>
+                        </label>
+                        <label class="question__answer">
+                            <input name="04" type="radio">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">Runner from Ethiopia, 1 year</span>
+                        </label>
+                        <label class="question__answer">
+                            <input name="04" type="radio">
+                            <span class="answer-decor"></span>
+                            <span class="answer-label">Low probability that the package will be delivered</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+
+                <div class="progress-bar" data-component="progressBar">
+                    <div class="progress-value">35% complete</div>
+                    <div class="progress-bar-body">
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="final-screen" data-component="finalBlock">
+                    <div class="final__title">
+                        <h4>Congrats!</h4>
+                    </div>
+                    <div class="final-card">
+                        <div class="thanks-label">
+                            Thanks for taking a quiz! <br/>
+                            We hope it was funny and informative
+                        </div>
+                        <div class="link-label">
+                            Here is your link to the discounted product:
+                        </div>
+                        <a href="#" class="button">Proceed to checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+<footer class="footer">
+        <div class="container">
+            <div class="guarantee">
+                <img class="guarantee__image" src="img/guarantee.png" alt="guarantee">
+                <strong class="guarantee__title">
+                    60 Day Money-Back Guarantee - It Works or You Don't Pay
+                </strong>
+                <p class="guarantee__text">
+                    We want you to be 100% satisfied with everything you . And if you’re not entirely happy with your purchase we will refund your money, or exchange the goods. All we ask is that you contact our customer services and then return the charger back to us.
+                </p>
+            </div>
+            <div class="logotype">
+                <img src="img/logotype.png" alt="">
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Terms & Conditions</a>
+                |
+                <a href="#" class="footer-link">Privacy Policy</a>
+            </div>
+            <div class="payments">
+                <div class="payment">
+                    <img src="img/payments/visa.png" alt="payment">
+                </div>
+                <div class="payment">
+                    <img src="img/payments/mc.png" alt="payment">
+                </div>
+                <div class="payment">
+                    <img src="img/payments/paypal.png" alt="payment">
+                </div>
+                <div class="payment">
+                    <img src="img/payments/american-express.png" alt="payment">
+                </div>
+            </div>
+            <div class="contacts">
+                <a href="mailto:powerpodshop@rephelpdesk.com" class="contact">
+                    <img src="img/icons/email.svg" alt="icon">
+                    powerpodshop@rephelpdesk.com
+                </a>
+                <a href="tel:8886456496" class="contact">
+                    <img src="img/icons/phone.svg" alt="icon">
+                    888-645-6496.
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.min.js"></script>
+</body>
+</html>
