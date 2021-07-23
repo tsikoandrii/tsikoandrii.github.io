@@ -1,4 +1,7 @@
 const QuizInit = (form, start) => {
+  // UTM метки
+  let utm = window.location.href.split('?')[1] || '';
+
   const questions = form.querySelectorAll('[data-component="question"]')
   const finalBlock = form.querySelector('[data-component="finalBlock"]')
   const progressBar = form.querySelector('[data-component="progressBar"]')
@@ -23,10 +26,12 @@ const QuizInit = (form, start) => {
   }
 
   const nextQuestion = (index) => {
+
     if (index >= questions.length) {
       questions[current].classList.add('hidden');
       progressBar.classList.add('hidden');
       current = null;
+      finalBlock.querySelector('a.button').href += '?' + utm
       finalBlock.classList.remove('hidden');
       return false;
     }
@@ -52,9 +57,9 @@ const QuizInit = (form, start) => {
   form.addEventListener('change', ({target}) => {
     // Functional for Branching!
     if (target.dataset.to) {
-      setTimeout(() => nextQuestion(Number(target.dataset.to)), 200)
+      setTimeout(() => nextQuestion(Number(target.dataset.to)), 100)
     } else {
-      setTimeout(() => nextQuestion(current + 1), 150)
+      setTimeout(() => nextQuestion(current + 1), 100)
     }
   })
 }
