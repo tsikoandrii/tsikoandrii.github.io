@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <title>Moni Pai - 2</title>
+    <title>Moni Pai - 2.1</title>
   </head>
   <body>
     <div class="backdrop"></div>
@@ -86,93 +86,429 @@
         </div>
       </div>
     </div>
+    <div class="backdrop cart-backdrop active"></div>
     <div class="categories-block default-block">
+      <div class="container"><h4 class="default-title">OR FIND IN CATEGORIES</h4></div>
+      <div class="select-bar">
+        <div class="container">
+          <div class="select-bar__items">
+            <div class="select-bar__item category-mini">
+              <img src="img/categories/fresh.png" alt="category" class="category-mini__image" />
+              <p class="category-mini__title">Fresh foods</p>
+              <button class="category-mini__delete">
+                <svg><use xlink:href="#close"></use></svg>
+              </button>
+            </div>
+            <div class="select-bar__item category-mini">
+              <img src="img/categories/fresh.png" alt="category" class="category-mini__image" />
+              <p class="category-mini__title">Fresh foods</p>
+              <button class="category-mini__delete">
+                <svg><use xlink:href="#close"></use></svg>
+              </button>
+            </div>
+            <div class="select-bar__item category-mini">
+              <img src="img/categories/fresh.png" alt="category" class="category-mini__image" />
+              <p class="category-mini__title">Fresh foods</p>
+              <button class="category-mini__delete">
+                <svg><use xlink:href="#close"></use></svg>
+              </button>
+            </div>
+          </div>
+          <button class="cart-btn" id="cartBtn">
+            <p class="cart-btn__value">3 item</p>
+            <div class="cart-btn__icon">
+              <svg><use xlink:href="#cart"></use></svg>
+            </div>
+          </button>
+          <div class="cart">
+            <div class="cart__header">
+              <div class="cart-btn non-action">
+                <p class="cart-btn__value">3 item</p>
+                <div class="cart-btn__icon">
+                  <svg><use xlink:href="#cart"></use></svg>
+                </div>
+              </div>
+              <div class="cart__title">Cart</div>
+              <button class="cart-btn">
+                <p class="cart-btn__value">3 item</p>
+                <div class="cart-btn__icon">
+                  <svg><use xlink:href="#close"></use></svg>
+                </div>
+              </button>
+            </div>
+            <div class="cart__body">
+              <div class="cart__item">
+                <div class="cart-set-item">
+                  <div class="cart-set-item__header">
+                    <div class="cart-set-item__logotype"><img src="img/products/set-items/01.png" alt="product" /></div>
+                    <div class="cart-set-item__info">
+                      <p class="cart-set-item__title">Green Apple</p>
+                      <p class="cart-set-item__value">1 kg</p>
+                    </div>
+                    <div class="cart-set-item__price">
+                      <span>$29.80</span>
+                      <div class="s"><s>$37.25</s></div>
+                    </div>
+                  </div>
+                  <div class="cart-set-item__counter counter">
+                    <button class="counter__plus counter__icon">
+                      <svg><use xlink:href="#minus-icon"></use></svg>
+                    </button>
+                    <div class="counter__value">1</div>
+                    <button class="counter__minus counter__icon">
+                      <svg><use xlink:href="#plus-icon"></use></svg>
+                    </button>
+                  </div>
+                  <div class="swiper-container cart-set-item__other-items mini-slider">
+                    <div class="mini-slider__header">
+                      <button class="mini-slider__left mini-slider__icon">
+                        <svg><use xlink:href="#arrow"></use></svg>
+                      </button>
+                      <div class="mini-slider__desc">You can see other items</div>
+                      <button class="mini-slider__right mini-slider__icon">
+                        <svg><use xlink:href="#arrow"></use></svg>
+                      </button>
+                    </div>
+                    <div class="swiper-wrapper mini-slider__body">
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__item-delete">
+                  <svg><use xlink:href="#close"></use></svg>
+                </div>
+              </div>
+              <div class="cart__item">
+                <div class="cart-set-item">
+                  <div class="cart-set-item__header">
+                    <div class="cart-set-item__logotype"><img src="img/products/set-items/01.png" alt="product" /></div>
+                    <div class="cart-set-item__info">
+                      <p class="cart-set-item__title">Green Apple</p>
+                      <p class="cart-set-item__value">1 kg</p>
+                    </div>
+                    <div class="cart-set-item__price">
+                      <span>$29.80</span>
+                      <div class="s"><s>$37.25</s></div>
+                    </div>
+                  </div>
+                  <div class="cart-set-item__counter counter">
+                    <button class="counter__plus counter__icon">
+                      <svg><use xlink:href="#minus-icon"></use></svg>
+                    </button>
+                    <div class="counter__value">1</div>
+                    <button class="counter__minus counter__icon">
+                      <svg><use xlink:href="#plus-icon"></use></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="cart__item-delete">
+                  <svg><use xlink:href="#close"></use></svg>
+                </div>
+              </div>
+              <div class="cart__item">
+                <div class="cart-set-item">
+                  <div class="cart-set-item__header">
+                    <div class="cart-set-item__logotype"><img src="img/products/set-items/01.png" alt="product" /></div>
+                    <div class="cart-set-item__info">
+                      <p class="cart-set-item__title">Green Apple</p>
+                      <p class="cart-set-item__value">1 kg</p>
+                    </div>
+                    <div class="cart-set-item__price">
+                      <span>$29.80</span>
+                      <div class="s"><s>$37.25</s></div>
+                    </div>
+                  </div>
+                  <div class="cart-set-item__counter counter">
+                    <button class="counter__plus counter__icon">
+                      <svg><use xlink:href="#minus-icon"></use></svg>
+                    </button>
+                    <div class="counter__value">1</div>
+                    <button class="counter__minus counter__icon">
+                      <svg><use xlink:href="#plus-icon"></use></svg>
+                    </button>
+                  </div>
+                  <div class="swiper-container cart-set-item__other-items mini-slider">
+                    <div class="mini-slider__header">
+                      <button class="mini-slider__left mini-slider__icon">
+                        <svg><use xlink:href="#arrow"></use></svg>
+                      </button>
+                      <div class="mini-slider__desc">You can see other items</div>
+                      <button class="mini-slider__right mini-slider__icon">
+                        <svg><use xlink:href="#arrow"></use></svg>
+                      </button>
+                    </div>
+                    <div class="swiper-wrapper mini-slider__body">
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                      <div class="swiper-slide mini-slider__slide">
+                        <img src="img/products/set-items/01.png" alt="slide" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__item-delete">
+                  <svg><use xlink:href="#close"></use></svg>
+                </div>
+              </div>
+            </div>
+            <div class="cart__footer">
+              <div class="cart__toolbar">
+                <div class="cart__total">
+                  <div class="cart__total-title">Total</div>
+                  <div class="cart__total-value">$29.80</div>
+                </div>
+                <div class="cart__btns">
+                  <button class="cart__btns-item">Add to My List</button> <button class="cart__btns-item">Buy</button>
+                </div>
+              </div>
+              <div class="cart__item-delete">
+                <svg><use xlink:href="#delete"></use></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="products-block default-block">
       <div class="container">
-        <h4 class="default-title">OR FIND IN CATEGORIES</h4>
-        <div class="categories-block__list">
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
+        <div class="products">
+          <div class="product">
+            <div class="product__image">
+              <img src="img/products/02.png" alt="product" />
+              <div class="product__discount">
+                SAVE &nbsp; <strong>$7.45</strong>
+                <div class="product__label">-25%</div>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="product__title">Red Apple</div>
+              <div class="product__price">
+                <span>$29.80/kg</span>
+                <div class="s"><s>$37.25/kg</s></div>
+              </div>
+            </div>
+            <a href="#" class="product__button default-button cart-button"
+              ><svg><use xlink:href="#cart"></use></svg> Add to cart</a
+            >
           </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
+          <div class="product">
+            <div class="product__image">
+              <img src="img/products/02.png" alt="product" />
+              <div class="product__discount">
+                SAVE &nbsp; <strong>$7.45</strong>
+                <div class="product__label">-25%</div>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="product__title">Red Apple</div>
+              <div class="product__price">
+                <span>$29.80/kg</span>
+                <div class="s"><s>$37.25/kg</s></div>
+              </div>
+            </div>
+            <a href="#" class="product__button default-button cart-button"
+              ><svg><use xlink:href="#cart"></use></svg> Add to cart</a
+            >
           </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
+          <div class="product">
+            <div class="product__image">
+              <img src="img/products/02.png" alt="product" />
+              <div class="product__discount">
+                SAVE &nbsp; <strong>$7.45</strong>
+                <div class="product__label">-25%</div>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="product__title">Red Apple</div>
+              <div class="product__price">
+                <span>$29.80/kg</span>
+                <div class="s"><s>$37.25/kg</s></div>
+              </div>
+            </div>
+            <a href="#" class="product__button default-button cart-button"
+              ><svg><use xlink:href="#cart"></use></svg> Add to cart</a
+            >
           </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
+          <div class="product">
+            <div class="product__image">
+              <img src="img/products/02.png" alt="product" />
+              <div class="product__discount">
+                SAVE &nbsp; <strong>$7.45</strong>
+                <div class="product__label">-25%</div>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="product__title">Red Apple</div>
+              <div class="product__price">
+                <span>$29.80/kg</span>
+                <div class="s"><s>$37.25/kg</s></div>
+              </div>
+            </div>
+            <a href="#" class="product__button default-button cart-button"
+              ><svg><use xlink:href="#cart"></use></svg> Add to cart</a
+            >
           </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
+          <div class="product">
+            <div class="product__image">
+              <img src="img/products/02.png" alt="product" />
+              <div class="product__discount">
+                SAVE &nbsp; <strong>$7.45</strong>
+                <div class="product__label">-25%</div>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="product__title">Red Apple</div>
+              <div class="product__price">
+                <span>$29.80/kg</span>
+                <div class="s"><s>$37.25/kg</s></div>
+              </div>
+            </div>
+            <a href="#" class="product__button default-button cart-button"
+              ><svg><use xlink:href="#cart"></use></svg> Add to cart</a
+            >
           </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
+          <div class="product">
+            <div class="product__image">
+              <img src="img/products/02.png" alt="product" />
+              <div class="product__discount">
+                SAVE &nbsp; <strong>$7.45</strong>
+                <div class="product__label">-25%</div>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="product__title">Red Apple</div>
+              <div class="product__price">
+                <span>$29.80/kg</span>
+                <div class="s"><s>$37.25/kg</s></div>
+              </div>
+            </div>
+            <a href="#" class="product__button default-button cart-button"
+              ><svg><use xlink:href="#cart"></use></svg> Add to cart</a
+            >
           </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
+          <div class="product">
+            <div class="product__image">
+              <img src="img/products/02.png" alt="product" />
+              <div class="product__discount">
+                SAVE &nbsp; <strong>$7.45</strong>
+                <div class="product__label">-25%</div>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="product__title">Red Apple</div>
+              <div class="product__price">
+                <span>$29.80/kg</span>
+                <div class="s"><s>$37.25/kg</s></div>
+              </div>
+            </div>
+            <a href="#" class="product__button default-button cart-button"
+              ><svg><use xlink:href="#cart"></use></svg> Add to cart</a
+            >
           </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
+          <div class="product">
+            <div class="product__image">
+              <img src="img/products/02.png" alt="product" />
+              <div class="product__discount">
+                SAVE &nbsp; <strong>$7.45</strong>
+                <div class="product__label">-25%</div>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="product__title">Red Apple</div>
+              <div class="product__price">
+                <span>$29.80/kg</span>
+                <div class="s"><s>$37.25/kg</s></div>
+              </div>
+            </div>
+            <a href="#" class="product__button default-button cart-button"
+              ><svg><use xlink:href="#cart"></use></svg> Add to cart</a
+            >
           </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
+          <div class="product">
+            <div class="product__image">
+              <img src="img/products/02.png" alt="product" />
+              <div class="product__discount">
+                SAVE &nbsp; <strong>$7.45</strong>
+                <div class="product__label">-25%</div>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="product__title">Red Apple</div>
+              <div class="product__price">
+                <span>$29.80/kg</span>
+                <div class="s"><s>$37.25/kg</s></div>
+              </div>
+            </div>
+            <a href="#" class="product__button default-button cart-button"
+              ><svg><use xlink:href="#cart"></use></svg> Add to cart</a
+            >
           </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
-          </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
-          </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
-          </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
-          </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
-          </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
-          </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
-          </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
-          </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
-          </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
-          </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
-          </div>
-          <div class="categories-block__item category">
-            <div class="category__image"><img src="img/categories/fresh.png" alt="category" /></div>
-            <span class="category__title">Fresh foods</span>
+          <div class="product">
+            <div class="product__image">
+              <img src="img/products/02.png" alt="product" />
+              <div class="product__discount">
+                SAVE &nbsp; <strong>$7.45</strong>
+                <div class="product__label">-25%</div>
+              </div>
+            </div>
+            <div class="product__info">
+              <div class="product__title">Red Apple</div>
+              <div class="product__price">
+                <span>$29.80/kg</span>
+                <div class="s"><s>$37.25/kg</s></div>
+              </div>
+            </div>
+            <a href="#" class="product__button default-button cart-button"
+              ><svg><use xlink:href="#cart"></use></svg> Add to cart</a
+            >
           </div>
         </div>
       </div>
