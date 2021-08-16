@@ -33,11 +33,10 @@
             <a href="#" class="nav__link">My Lists</a> <a href="#" class="nav__link">Sales & Discounts</a>
           </nav>
         </div>
-        <div class="header__cart cart-label">
-          <svg class="cart-label__icon"><use xlink:href="#cart"></use></svg>
-          <div class="cart-label__count"><mark>2</mark> <span>item</span></div>
-        </div>
-        <a href="#" class="header__account-button">Sign In</a>
+        <a href="#" class="header__cart cart-label"
+          ><svg class="cart-label__icon"><use xlink:href="#cart"></use></svg>
+          <div class="cart-label__count"><mark>2</mark> <span>item</span></div></a
+        ><a href="#" class="header__account-button">Sign In</a>
         <div class="mb-account-button">
           <svg><use xlink:href="#mb-account-icon"></use></svg>
         </div>
@@ -58,10 +57,10 @@
         />
       </div>
       <div class="container">
-        <div class="main-title">
+        <h1 class="main-title">
           YOU CAN <span class="red-text">SAVE</span> <span class="yellow-text">UP TO 50$</span><br />ON AVERAGE SMART
           GROCERY SHOPPING
-        </div>
+        </h1>
         <p class="intro-block__desc default-subtitle">
           Plan your shopping, find cheapest grocery prices<br />and save more.
         </p>
@@ -516,6 +515,211 @@
         />
       </symbol>
     </svg>
+    <div id="cartBackdrop" class="backdrop cart-backdrop"></div>
+    <div data-component="cart" class="cart">
+      <div class="cart__header">
+        <div class="cart-btn non-action">
+          <p class="cart-btn__value">3 item</p>
+          <div class="cart-btn__icon">
+            <svg><use xlink:href="#cart"></use></svg>
+          </div>
+        </div>
+        <div class="cart__title">Cart</div>
+        <button class="cart-btn">
+          <p class="cart-btn__value">3 item</p>
+          <div class="cart-btn__icon cart-btn__close">
+            <svg><use xlink:href="#close"></use></svg>
+          </div>
+        </button>
+      </div>
+      <div class="cart__body">
+        <div class="cart__item">
+          <div class="cart-set-item">
+            <div class="cart-set-item__header">
+              <div class="cart-set-item__logotype"><img src="img/products/30.png" alt="product" /></div>
+              <div class="cart-set-item__info">
+                <p class="cart-set-item__title">Green Apple</p>
+                <p class="cart-set-item__value">1 kg</p>
+              </div>
+              <div class="cart-set-item__price">
+                <span>$29.80</span>
+                <div class="s"><s>$37.25</s></div>
+              </div>
+            </div>
+            <div class="cart-set-item__counter counter">
+              <button class="counter__plus counter__icon">
+                <svg><use xlink:href="#minus-icon"></use></svg>
+              </button>
+              <div class="counter__value">1</div>
+              <button class="counter__minus counter__icon">
+                <svg><use xlink:href="#plus-icon"></use></svg>
+              </button>
+            </div>
+            <div class="swiper-container cart-set-item__other-items mini-slider">
+              <div class="mini-slider__header">
+                <button class="mini-slider__left mini-slider__icon">
+                  <svg><use xlink:href="#arrow"></use></svg>
+                </button>
+                <div class="mini-slider__desc">You can see other items</div>
+                <button class="mini-slider__right mini-slider__icon">
+                  <svg><use xlink:href="#arrow"></use></svg>
+                </button>
+              </div>
+              <div class="swiper-wrapper mini-slider__body">
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+              </div>
+            </div>
+          </div>
+          <div class="cart__item-delete">
+            <svg><use xlink:href="#close"></use></svg>
+          </div>
+        </div>
+        <div class="cart__item">
+          <div class="cart-set-item">
+            <div class="cart-set-item__header">
+              <div class="cart-set-item__logotype"><img src="img/products/27.png" alt="product" /></div>
+              <div class="cart-set-item__info">
+                <p class="cart-set-item__title">Organic Red Apple</p>
+                <p class="cart-set-item__value">1 kg</p>
+              </div>
+              <div class="cart-set-item__price">
+                <span>$29.80</span>
+                <div class="s"><s>$37.25</s></div>
+              </div>
+            </div>
+            <div class="cart-set-item__counter counter">
+              <button class="counter__plus counter__icon">
+                <svg><use xlink:href="#minus-icon"></use></svg>
+              </button>
+              <div class="counter__value">1</div>
+              <button class="counter__minus counter__icon">
+                <svg><use xlink:href="#plus-icon"></use></svg>
+              </button>
+            </div>
+          </div>
+          <div class="cart__item-delete">
+            <svg><use xlink:href="#close"></use></svg>
+          </div>
+        </div>
+        <div class="cart__item">
+          <div class="cart-set-item">
+            <div class="cart-set-item__header">
+              <div class="cart-set-item__logotype"><img src="img/products/27.png" alt="product" /></div>
+              <div class="cart-set-item__info">
+                <p class="cart-set-item__title">Organic Red Apple</p>
+                <p class="cart-set-item__value">1 kg</p>
+              </div>
+              <div class="cart-set-item__price">
+                <span>$29.80</span>
+                <div class="s"><s>$37.25</s></div>
+              </div>
+            </div>
+            <div class="cart-set-item__counter counter">
+              <button class="counter__plus counter__icon">
+                <svg><use xlink:href="#minus-icon"></use></svg>
+              </button>
+              <div class="counter__value">1</div>
+              <button class="counter__minus counter__icon">
+                <svg><use xlink:href="#plus-icon"></use></svg>
+              </button>
+            </div>
+            <div class="swiper-container cart-set-item__other-items mini-slider">
+              <div class="mini-slider__header">
+                <button class="mini-slider__left mini-slider__icon">
+                  <svg><use xlink:href="#arrow"></use></svg>
+                </button>
+                <div class="mini-slider__desc">You can see other items</div>
+                <button class="mini-slider__right mini-slider__icon">
+                  <svg><use xlink:href="#arrow"></use></svg>
+                </button>
+              </div>
+              <div class="swiper-wrapper mini-slider__body">
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+              </div>
+            </div>
+          </div>
+          <div class="cart__item-delete">
+            <svg><use xlink:href="#close"></use></svg>
+          </div>
+        </div>
+        <div class="cart__item">
+          <div class="cart-set-item">
+            <div class="cart-set-item__header">
+              <div class="cart-set-item__logotype"><img src="img/products/27.png" alt="product" /></div>
+              <div class="cart-set-item__info">
+                <p class="cart-set-item__title">Organic Red Apple</p>
+                <p class="cart-set-item__value">1 kg</p>
+              </div>
+              <div class="cart-set-item__price">
+                <span>$29.80</span>
+                <div class="s"><s>$37.25</s></div>
+              </div>
+            </div>
+            <div class="cart-set-item__counter counter">
+              <button class="counter__plus counter__icon">
+                <svg><use xlink:href="#minus-icon"></use></svg>
+              </button>
+              <div class="counter__value">1</div>
+              <button class="counter__minus counter__icon">
+                <svg><use xlink:href="#plus-icon"></use></svg>
+              </button>
+            </div>
+            <div class="swiper-container cart-set-item__other-items mini-slider">
+              <div class="mini-slider__header">
+                <button class="mini-slider__left mini-slider__icon">
+                  <svg><use xlink:href="#arrow"></use></svg>
+                </button>
+                <div class="mini-slider__desc">You can see other items</div>
+                <button class="mini-slider__right mini-slider__icon">
+                  <svg><use xlink:href="#arrow"></use></svg>
+                </button>
+              </div>
+              <div class="swiper-wrapper mini-slider__body">
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+                <div class="swiper-slide mini-slider__slide"><img src="img/products/27.png" alt="slide" /></div>
+              </div>
+            </div>
+          </div>
+          <div class="cart__item-delete">
+            <svg><use xlink:href="#close"></use></svg>
+          </div>
+        </div>
+      </div>
+      <div class="cart__footer">
+        <div class="cart__toolbar">
+          <div class="cart__total">
+            <div class="cart__total-title">Total</div>
+            <div class="cart__total-value">$29.80</div>
+          </div>
+          <div class="cart__btns">
+            <button class="cart__btns-item">Add to My List</button> <button class="cart__btns-item">Buy</button>
+          </div>
+        </div>
+        <div class="cart__item-delete">
+          <svg><use xlink:href="#delete"></use></svg>
+        </div>
+      </div>
+    </div>
     <div class="popup-backdrop"></div>
     <div class="default-popup search-popup" id="first-popup">
       <div class="default-popup__header">
