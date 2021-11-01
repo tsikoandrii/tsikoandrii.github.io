@@ -1,31 +1,36 @@
 function initPhoneMask() {
-  $('input[type=tel]').each(function (index, element) {
+  $('input[type=tel]').each(function(index, element) {
     var mask = IMask(element, {
-      mask: [{
-        mask: '+7 (000) 000-00-00',
-        startsWith: '+7',
-        country: 'Russia'
-      }, {
-        mask: '+7 (000) 000-00-00',
-        startsWith: '7',
-        country: 'Russia'
-      }, {
-        mask: '0 (000) 000-00-00',
-        startsWith: '8',
-        country: 'Russia'
-      }, {
-        mask: '+7 (000) 000-00-00',
-        startsWith: '',
-        country: 'unknown'
-      }],
+      mask: [
+        {
+          mask: '+7 (000) 000-00-00',
+          startsWith: '+7',
+          country: 'Russia',
+        },
+        {
+          mask: '+7 (000) 000-00-00',
+          startsWith: '7',
+          country: 'Russia',
+        },
+        {
+          mask: '0 (000) 000-00-00',
+          startsWith: '8',
+          country: 'Russia',
+        },
+        {
+          mask: '+7 (000) 000-00-00',
+          startsWith: '',
+          country: 'unknown',
+        },
+      ],
       dispatch: function dispatch(appended, dynamicMasked) {
         var number = (dynamicMasked.value + appended).replace(/\D/g, '');
-        return dynamicMasked.compiledMasks.find(function (m) {
+        return dynamicMasked.compiledMasks.find(function(m) {
           return number.indexOf(m.startsWith) === 0;
         });
-      }
+      },
     });
-    $(this).blur(function () {
+    $(this).blur(function() {
       var maskValue = mask.unmaskedValue;
       var startWith = 10;
 
@@ -40,22 +45,22 @@ function initPhoneMask() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
   // Tabs
   var tabs = document.querySelectorAll('.tab');
   initTabs(tabs);
   var mobileButtonOpen = document.querySelector('#openMenu');
   var mobileButtonClose = document.querySelector('#closeMenu');
   var menu = document.querySelector('#mobileNav');
-  menu.addEventListener('click', function (e) {
+  menu.addEventListener('click', function(e) {
     if (e.target.classList.contains('nav-link')) {
       menu.classList.remove('active');
     }
   });
-  mobileButtonOpen.addEventListener('click', function () {
+  mobileButtonOpen.addEventListener('click', function() {
     menu.classList.add('active');
   });
-  mobileButtonClose.addEventListener('click', function () {
+  mobileButtonClose.addEventListener('click', function() {
     menu.classList.remove('active');
   });
   initPhoneMask();
@@ -82,10 +87,12 @@ document.addEventListener('DOMContentLoaded', function () {
       modal.classList.add('active');
     };
 
-    modal.querySelector('[data-element="close"]').addEventListener('click', close);
+    modal
+      .querySelector('[data-element="close"]')
+      .addEventListener('click', close);
     return {
       close: close,
-      open: open
+      open: open,
     };
   };
 
@@ -96,18 +103,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var backdrop = document.querySelector('#backdrop');
 
   if (openButtons) {
-    openButtons.forEach(function (button) {
-      button.addEventListener('click', function () {
+    openButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
         mainModal.open();
       });
     });
-    backdrop.addEventListener('click', function (e) {
+    backdrop.addEventListener('click', function(e) {
       if (e.target.dataset.isbackdrop) {
         mainModal.close();
 
         if (thanksModalActive) {
-          thanksModal.close(function () {
-            return window.location.href = "/";
+          thanksModal.close(function() {
+            return (window.location.href = '/');
           });
         }
       }
@@ -118,19 +125,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var emailModal = initModal('email-modal');
 
   if (emailModalBtn) {
-    emailModalBtn.addEventListener('click', function () {
+    emailModalBtn.addEventListener('click', function() {
       emailModal.open();
     });
-    backdrop.addEventListener('click', function (e) {
+    backdrop.addEventListener('click', function(e) {
       if (e.target.dataset.isbackdrop) {
         emailModal.close();
       }
     });
   } // Form
 
-
   var modalForm = document.querySelector('#modalForm');
-  modalForm.addEventListener('submit', function (e) {
+  modalForm.addEventListener('submit', function(e) {
     e.preventDefault(); // Your Code
     // If status === 200
 
