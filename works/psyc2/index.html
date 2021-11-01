@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Главная страница</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="preload" href="/css/libs.min.css" as="style">
+<link rel="preload" href="/css/app.css" as="style">
+<link rel="stylesheet" href="/css/libs.min.css">
+<link rel="stylesheet" href="/css/app.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="img/logotype.svg" alt="logo">
+        </a>
+        <nav class="navigation">
+            <a href="/#about" class="nav-link">О нас</a>
+            <a href="/#reviews" class="nav-link">Как начать? </a>
+            <a href="/#reviews" class="nav-link">Наши специалисты</a>
+            <a href="/#reviews" class="nav-link">Отзывы</a>
+        </nav>
+        <a href="/quiz.html" class="default-button header-button">
+            Начать сейчас
+        </a>
+        <div id="openMenu" class="menuBurger">
+            <img src="img/menu.svg" alt="menu">
+        </div>
+    </div>
+</header>
+<div id="mobileNav" class="mobile-menu">
+    <ul class="mob-nav">
+        <li><a href="/#about" class="nav-link">О нас</a></li>
+        <li><a href="/#reviews" class="nav-link">Отзывы</a></li>
+        <li><a href="/#faq" class="nav-link">Вопросы-ответы</a></li>
+    </ul>
+    <div id="closeMenu" class="close-button">
+        &times;
+    </div>
+</div>
+
+
+  <section class="block01 grey">
+      <div class="container">
+          <div class="text-block">
+              <h1 class="default-title default-h1">
+                  Пройдите короткий тест прямо сейчас
+              </h1>
+              <p class="default-subtitle">
+                  По результатам теста мы сможем определить ваш психологический портрет и разработать для вас персональную программу.
+              </p>
+              <a href="/quiz.html" class="default-button block01-button">
+                  Начать сейчас
+              </a>
+          </div>
+      </div>
+  </section>
+  <section id="about" class="stats">
+      <div class="container">
+          <div class="stats-list">
+              <div class="stats-item">
+                  <div class="wrap">
+                      <span class="num">73</span>
+                      <p class="default-subtitle">Квалифицированных специалиста</p>
+                  </div>
+              </div>
+              <div class="stats-item">
+                  <div class="wrap">
+                      <span class="num">5 253</span>
+                      <p class="default-subtitle">Человека получили поддержку</p>
+                  </div>
+              </div>
+              <div class="stats-item">
+                  <div class="wrap">
+                      <span class="num">10</span>
+                      <p class="default-subtitle">Лет средний опыт специалистов</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="topics">
+      <div class="container">
+          <div class="text-block">
+              <h1 class="default-title">
+                  Мы сделаем вашу жизнь счастливой!
+              </h1>
+              <p class="default-subtitle">
+                  Специально для вас мы подберем лицензированного психолога, который поможет вам справиться со следующими проблемами:
+              </p>
+          </div>
+          <div class="topics-list">
+              <div class="topic">
+                  <div class="image">
+                      <img src="img/topics/topic01.png" alt="image">
+                  </div>
+                  <div class="topic-text">
+                      <span class="title">
+                          Депрессия
+                      </span>
+                      <p class="text default-subtitle">
+                          Вернуть хорошее настроение, избавиться от подавленности
+                      </p>
+                  </div>
+              </div>
+
+              <div class="topic">
+                  <div class="image">
+                      <img src="img/topics/topic02.png" alt="image">
+                  </div>
+                  <div class="topic-text">
+                      <span class="title">
+                          Стресс
+                      </span>
+                      <p class="text default-subtitle">
+                          Справиться со стрессом на работе, учёбе, в материнстве или отцовстве
+                      </p>
+                  </div>
+              </div>
+
+              <div class="topic">
+                  <div class="image">
+                      <img src="img/topics/topic03.png" alt="image">
+                  </div>
+                  <div class="topic-text">
+                      <span class="title">
+                          Тревожность
+                      </span>
+                      <p class="text default-subtitle">
+                          Побороть страхи, фобии, панические атаки
+                      </p>
+                  </div>
+              </div>
+
+              <div class="topic">
+                  <div class="image">
+                      <img src="img/topics/topic04.png" alt="image">
+                  </div>
+                  <div class="topic-text">
+                      <span class="title">
+                          Отношения
+                      </span>
+                      <p class="text default-subtitle">
+                          Достичь взаимопонимания, открытости и гармонии с близкими людьми
+                      </p>
+                  </div>
+              </div>
+
+              <div class="topic">
+                  <div class="image">
+                      <img src="img/topics/topic05.png" alt="image">
+                  </div>
+                  <div class="topic-text">
+                      <span class="title">
+                          Горе
+                      </span>
+                      <p class="text default-subtitle">
+                          Справиться с утратой, неожиданными трудностями, последствиями травмы
+                      </p>
+                  </div>
+              </div>
+
+              <div class="topic">
+                  <div class="image">
+                      <img src="img/topics/topic06.png" alt="image">
+                  </div>
+                  <div class="topic-text">
+                      <span class="title">
+                          Самооценка
+                      </span>
+                      <p class="text default-subtitle">
+                          Научиться жить в гармонии с собой
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="tutorial grey">
+      <div class="container">
+          <h2 class="default-title">Как получить доступ?</h2>
+          <div class="tutorial-steps">
+              <div class="tutorial-step">
+                  <img src="img/icons/step01.svg" class="icon">
+                  <span>
+                      Пройдите короткий тест
+                  </span>
+              </div>
+              <div class="tutorial-step">
+                  <img src="img/icons/step02.svg" class="icon">
+                  <span>
+                      Заполнить анкету
+                  </span>
+              </div>
+              <div class="tutorial-step">
+                  <img src="img/icons/step03.svg" class="icon">
+                  <span>
+                      Оформить подписку и оплатить
+                  </span>
+              </div>
+              <div class="tutorial-step">
+                  <img src="img/icons/step04.svg" class="icon">
+                  <span>
+                      Готово! <br>
+                      Доступ получен
+                  </span>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="specialists">
+      <div class="container">
+          <div class="text-block">
+              <h2 class="default-title">
+                  Наши специалисты
+              </h2>
+              <p class="default-subtitle">
+                  Мы сотрудничаем только с сертифицированными психологами. Это значит, что с вами будет работать компетентный сотрудник, способный решить ваши проблемы.
+              </p>
+          </div>
+          <div class="swiper-container">
+              <div class="specialists-group swiper-wrapper">
+                  <div class="specialist swiper-slide">
+                      <img src="img/specialists/01.png" alt="avatar" class="avatar">
+                      <span class="name">Марина —  13 лет опыта</span>
+                      <p class="desc">
+                          Высшее психологическое образование, более 10 дополнительных сертификатов.
+                      </p>
+                  </div>
+                  <div class="specialist swiper-slide">
+                      <img src="img/specialists/02.png" alt="avatar" class="avatar">
+                      <span class="name">Ольга  —  11 лет опыта</span>
+                      <p class="desc">
+                          Высшее психологическое образование, более 3000 часов индивидуальных консультаций.
+                      </p>
+                  </div>
+                  <div class="specialist swiper-slide">
+                      <img src="img/specialists/03.png" alt="avatar" class="avatar">
+                      <span class="name">Елизавета   —  11 лет опыта</span>
+                      <p class="desc">
+                          Клинический психолог. <br>
+                          Мичиганский университет.
+                      </p>
+                  </div>
+              </div>
+              <div class="swiper-navigation">
+                  <div class="swiper-prev">
+                      <img src="img/slider-arrow.svg" alt="arrow">
+                  </div>
+                  <div class="swiper-next">
+                      <img src="img/slider-arrow.svg" alt="arrow">
+                  </div>
+              </div>
+          </div>
+          <a href="/quiz.html" class="default-link">И еще много других опытных специалистов.</a>
+      </div>
+  </section>
+  <section id="reviews" class="reviews">
+      <div class="container">
+          <h2 class="default-title">
+              Отзывы наших клиентов
+          </h2>
+          <div class="reviews-container">
+              <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="review swiper-slide">
+                          <img src="img/reviews/01.png" alt="avatar" class="avatar">
+                          <div class="review-info">
+                            <span class="name">
+                                Ксения Шнайдер
+                            </span>
+                            <p class="review-body">
+                                PSY-PSY терапия это одна из лучших вещей, которую я когда либо пробовала для себя.
+                            </p>
+                          </div>
+                      </div>
+
+                      <div class="review swiper-slide">
+                          <img src="img/reviews/02.png" alt="avatar" class="avatar">
+                          <div class="review-info">
+                            <span class="name">
+                                Георгий Карамов
+                            </span>
+                              <p class="review-body">
+                                  Я начинал работу с огромным количеством негативных эмоций, которые тянули меня вниз. Уверен каждый должен попробовать PSY-PSY, даже если он думает, что чувствует себя хорошо.
+                              </p>
+                          </div>
+                      </div>
+                      <div class="review swiper-slide">
+                          <img src="img/reviews/03.png" alt="avatar" class="avatar">
+                          <div class="review-info">
+                            <span class="name">
+                                Анна Островская
+                            </span>
+                              <p class="review-body">
+                                  Раньше ходила к обычному психологу, но имела возможность ходить только раз в месяц. Благодаря PSY-PSY я постоянно на связи со своим психологом и чувствую себя гораздо лучше.
+                              </p>
+                          </div>
+                      </div>
+                      <div class="review swiper-slide">
+                          <img src="img/reviews/04.png" alt="avatar" class="avatar">
+                          <div class="review-info">
+                            <span class="name">
+                                Владислав Калганов
+                            </span>
+                              <p class="review-body">
+                                  Душевное равновесие гораздо важнее, чем кажется на первый взгляд. Оказалось, что оно отлично помогает в бизнесе и личной жизни.
+                              </p>
+                          </div>
+                      </div>
+                      <div class="review swiper-slide">
+                          <img src="img/reviews/05.png" alt="avatar" class="avatar">
+                          <div class="review-info">
+                            <span class="name">
+                                Алла Сороколет
+                            </span>
+                              <p class="review-body">
+                                  Хорошо и удобно, когда под рукой всегда есть специалист, который тебя выслушает, поймёт и поддержит.
+                              </p>
+                          </div>
+                      </div>
+                      <div class="review swiper-slide">
+                          <img src="img/reviews/06.png" alt="avatar" class="avatar">
+                          <div class="review-info">
+                            <span class="name">
+                                Иоланта Самойлова
+                            </span>
+                              <p class="review-body">
+                                  Современной женщине тяжело сохранить ментальное спокойствие живя в большом городе. Стрессы, работа, отношения. PSY-PSY помогли мне больше, чем я думала. Спасибо и до новых сессий.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="last-block grey">
+      <div class="container">
+          <h2 class="default-title">
+              Пройдите короткий тест прямо сейчас
+          </h2>
+          <p class="default-subtitle">
+              По результатам теста мы сможем определить ваш психологический портрет и разработать для вас персональную программу.
+          </p>
+          <a href="/quiz.html" class="default-button">
+              Пройти тест
+          </a>
+      </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="about-company">
+            <a href="/" class="logo">
+                <img src="img/logotype.svg" alt="logo">
+            </a>
+            <p class="about-info">
+                <span>ООО "Займвсем"</span> <br>
+                <span>107113, город Москва, Маленковская ул, <br> д. 14 к. 3, помещ. 4 ком. 4</span> <br>
+                <span>ИНН: 9718174634  ОГРН: 1217700269687    КПП: 771801001</span> <br>
+            </p>
+        </div>
+        <div class="footer-navigation">
+            <a href="/#about" class="nav-link">О нас</a>
+            <a href="/#reviews" class="nav-link">Как начать?</a>
+            <a href="/#reviews" class="nav-link">Наши специалисты</a>
+            <a href="/#reviews" class="nav-link">Отзывы</a>
+            <a id="cancel-sub" class="nav-link">Отменить подписку</a>
+        </div>
+        <div class="footer-documents">
+            <a href="/agreement.html" class="doc">Соглашение</a>
+            <a href="/politics.html" class="doc">Политика обработки данных</a>
+            <a href="/oferta.html" class="doc">Публичная оферта</a>
+            <a href="/consent.html" class="doc">Согласие на обработку персональных данных</a>
+            <a href="/recurrent.html" class="doc">Соглашение по услуге «Рекуррентный платеж»</a>
+        </div>
+        <div class="email">
+            <a href="mailto:info@psytesto.ru" class="value">info@psytesto.ru</a>
+            <div class="label">Напишите нам</div>
+        </div>
+    </div>
+</footer>
+<div class="bottom-footer">
+    © PSYTESTO 2021. Все права защищены
+</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<div class="backdrop" data-isBackdrop="true" id="backdrop">
+    <div id="main-modal" class="popup main-popup">
+        <button data-element="close" class="close-modal">&times;</button>
+        <form id="modalForm" class="popup-wrapper">
+            <div class="text-block">
+                <h4 class="default-title">
+                    Неделя с психологом PSYPSY.XYZ
+                </h4>
+                <p class="default-subtitle">
+                    Подобранный психолог сам напишет Вам в выбранный мессенджер и начнёт процесс консультирования.
+                </p>
+            </div>
+            <div class="modal-form">
+                <div class="form-input">
+                    <span class="input-title">Ваша почта</span>
+                    <div class="input-desc">Чтобы психолог знал как с Вами связаться</div>
+                    <input class="default-input" placeholder="sample@mail.ru" name="email" type="email">
+                </div>
+            </div>
+            <strong>Каждые 7 дней:  1990 ₽  </strong>
+            <button class="default-button">Оплатить 1990₽</button>
+            <p class="popup-notice">
+                Нажимая на любую кнопку, вы соглашаетесь с <a href="#">условиями предоставления услуг</a> и даёте согласие
+                на <a href="#">обработку персональных данных</a>.
+            </p>
+        </form>
+    </div>
+    <div id="email-modal" class="popup email-popup">
+        <button data-element="close" class="close-modal">&times;</button>
+        <form id="emailForm" class="popup-wrapper">
+            <div class="text-block">
+                <h4 class="default-title">
+                    Отменить подписку на PSYTESTO.RU
+                </h4>
+            </div>
+            <div class="modal-form">
+                <div class="form-input">
+                    <span class="input-title">Ваша почта</span> <br>
+                    <div class="input-desc">Чтобы мы нашли ваш аккаунт</div>
+                    <input class="default-input" placeholder="sample@mail.ru" name="email" type="email">
+                </div>
+            </div>
+            <button class="default-button">Отменить подписку</button>
+        </form>
+    </div>
+    <div id="thanks-modal" class="popup thanks-popup">
+        <button data-element="close" class="close-modal">&times;</button>
+        <div class="popup-wrapper">
+            <div class="text-block">
+                <h4 class="default-title">
+                    Отлично!
+                </h4>
+                <p class="default-subtitle">
+                    Подобранный психолог сам напишет Вам в выбранный мессенджер и начнёт процесс консультирования.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script defer="" src="/js/libs.min.js"></script>
+<script defer="" src="/js/app.js"></script>
+
+  <script>
+    const swiper = new Swiper('.reviews-container .swiper-container', {
+      // Optional parameters
+      loop: true,
+
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 112,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      breakpoints: {
+        1140: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        1000: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        },
+        1: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        },
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+
+    if (window.innerWidth <= 640) {
+      const specialists = new Swiper('.specialists .swiper-container', {
+        loop: false,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: '.swiper-next',
+          prevEl: '.swiper-prev',
+        },
+      })
+    }
+  </script>
+</body>
+</html>
