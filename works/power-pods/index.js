@@ -1,6 +1,35 @@
+// Param Getter
+
+const getUrlParameter = function getUrlParameter(sParam) {
+  var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+    sURLVariables = sPageURL.split('&'),
+    sParameterName,
+    i;
+
+  for (i = 0; i < sURLVariables.length; i++) {
+    sParameterName = sURLVariables[i].split('=');
+
+    if (sParameterName[0] === sParam) {
+      return sParameterName[1] === undefined ? true : sParameterName[1];
+    }
+  }
+};
+
+const rewriteUTM = (options) => {
+  const readyParams = options.map(item => {
+    const value = getUrlParameter(item.name) || ''
+    if (item.replacement) {
+      return `${item.replacement}=${value}`
+    } else {
+      return `${item.name}=${value}`
+    }
+  })
+
+  return readyParams.join('&')
+}
+
 const QuizInit = (form, start) => {
   // UTM метки
-  let utm = window.location.href.split('?')[1] || '';
 
   const questions = form.querySelectorAll('[data-component="question"]')
   const finalBlock = form.querySelector('[data-component="finalBlock"]')
@@ -31,7 +60,6 @@ const QuizInit = (form, start) => {
       questions[current].classList.add('hidden');
       progressBar.classList.add('hidden');
       current = null;
-      finalBlock.querySelector('a.button').href += '?' + utm
       finalBlock.classList.remove('hidden');
       return false;
     }
