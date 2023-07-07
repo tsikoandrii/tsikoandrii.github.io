@@ -44,6 +44,10 @@
 			<path d="M0 .999h66m-66 13.5h66" stroke="#4E6C51" stroke-width="2"></path>
 		</symbol>
 	
+		<symbol id="icon-menu-close" viewBox="0 0 45 45">
+			<path d="M45 45H0V0h45v45zM3.173 41.827h38.654V3.173H3.173v38.654z"></path><path d="M2.645.653L.401 2.896l41.815 41.815 2.243-2.244L2.645.653z"></path><path d="M42.21.637L.396 42.451l2.243 2.244L44.453 2.88 42.21.637z"></path>
+		</symbol>
+	
 		<symbol id="icon-partner-border" viewBox="0 0 214 214">
 			<path d="M7.575.729c-.673.56-1.387.704-3.494.704H1.433v2.811c0 2.357-.116 2.917-.716 3.46C.007 8.347 0 8.808 0 56.314c0 47.722.004 47.961.717 47.961.671 0 .716.239.716 3.762 0 3.524-.045 3.763-.716 3.763-.693 0-.717.239-.717 7.167 0 6.927.024 7.166.717 7.166.712 0 .716.239.716 43.538v43.537h79.013c78.773 0 79.012.003 79.012.717 0 .709.239.717 23.595.717 23.139 0 23.607-.014 24.243-.717.536-.593 1.103-.717 3.28-.717h2.632v-2.632c0-2.177.124-2.744.717-3.28.71-.643.717-1.104.717-48.789 0-47.901-.004-48.14-.717-48.14-.671 0-.717-.239-.717-3.763 0-3.523.046-3.762.717-3.762.692 0 .717-.239.717-6.988 0-6.748-.025-6.987-.717-6.987-.713 0-.717-.239-.717-43.717V1.433h-79.012c-78.774 0-79.013-.002-79.013-.716 0-.71-.235-.717-23.381-.705C9.088.024 8.397.044 7.575.729m-2.2 2.247c0 .059-.564.655-1.254 1.324L2.867 5.516V4.191c0-1.275.047-1.324 1.254-1.324.69 0 1.254.049 1.254.109m206.4 42.891c0 37.983-.063 43-.537 43-.46 0-.538 1.015-.538 6.987s.078 6.988.538 6.988c.443 0 .537.657.537 3.762 0 3.106-.094 3.763-.537 3.763-.476 0-.538 5.482-.538 47.187v47.187l-2.979 2.98-2.98 2.979H182.1c-19.887 0-22.642.065-22.642.538 0 .476-8.938.537-78.296.537H2.867v-42.821c0-37.824.062-42.821.537-42.821.46 0 .538-1.035.538-7.166 0-6.132-.078-7.167-.538-7.167-.443 0-.537-.657-.537-3.763 0-3.105.094-3.762.537-3.762.475 0 .538-5.482.538-47.187V9.9l2.979-2.979L9.9 3.942h22.642c19.887 0 22.641-.066 22.641-.538 0-.476 8.939-.537 78.296-.537h78.296v43m-20.783-38.88c0 .462 1.134.538 8.062.538h8.063v9.496c0 9.257.018 9.496.716 9.496.7 0 .717-.239.717-10.034V6.45h-8.779c-7.565 0-8.779.074-8.779.537M6.808 198.696v10.212h8.806c8.193 0 8.797-.043 8.685-.627-.11-.572-.838-.635-8.268-.723l-8.148-.096v-9.49c0-8.195-.073-9.489-.537-9.489-.465 0-.538 1.374-.538 10.213M211.775 210.7c0 .97-.112 1.075-1.142 1.075h-1.142l1.03-1.075c.566-.591 1.08-1.075 1.142-1.075.062 0 .112.484.112 1.075" fill-rule="evenodd"></path>
 		</symbol>
@@ -168,7 +172,7 @@
                 <path class="cls-1" d="M1731.83,459.18V392.5h308.82l-.3,66.68H1919.86V682.42h-66.68V459.18Z" transform="translate(-72.84 -75.81)" />
             </svg>
         </a>
-        <button class="outline-button slide-up-effect">
+        <button class="outline-button slide-up-effect" id="menu-open">
             MENU
             <svg>
                 <use xlink:href="#icon-menu"></use>
@@ -176,6 +180,77 @@
         </button>
     </div>
 </header>
+
+        <div class="menu" id="menu">
+    <div class="menu-header">
+        <div class="menu-header__title">MENU</div>
+        <button class="menu-header-close" id="menu-close">
+            <svg>
+                <use xlink:href="#icon-menu-close"></use>
+            </svg>
+        </button>
+    </div>
+    <a href="#" class="menu-item">
+        <span class="menu-item-text">
+            <strong>SERVICES</strong> (> 'we call it metadesign')
+        </span>
+        <button class="menu-item-close">
+            <svg>
+                <use xlink:href="#icon-menu-close"></use>
+            </svg>
+        </button>
+    </a>
+    <a href="#" class="menu-item">
+        <span class="menu-item-text">
+            <strong>CASES</strong> (> 'create entire worlds')
+        </span>
+        <button class="menu-item-close">
+            <svg>
+                <use xlink:href="#icon-menu-close"></use>
+            </svg>
+        </button>
+    </a>
+    <a href="#" class="menu-item">
+        <span class="menu-item-text">
+            <strong>PARTNERS</strong>  (> 'we work with')
+        </span>
+        <button class="menu-item-close">
+            <svg>
+                <use xlink:href="#icon-menu-close"></use>
+            </svg>
+        </button>
+    </a>
+    <a href="#" class="menu-item">
+        <span class="menu-item-text">
+            <strong>TEAM</strong> (> 'choose your fighter')
+        </span>
+        <button class="menu-item-close">
+            <svg>
+                <use xlink:href="#icon-menu-close"></use>
+            </svg>
+        </button>
+    </a>
+    <a href="#" class="menu-item">
+        <span class="menu-item-text">
+            <strong>BLOG</strong>  (> CTRL+C/CTRL+V)
+        </span>
+        <button class="menu-item-close">
+            <svg>
+                <use xlink:href="#icon-menu-close"></use>
+            </svg>
+        </button>
+    </a>
+    <a href="#" class="menu-item">
+        <span class="menu-item-text">
+            <strong>CONTACT</strong> (> 'let's talk')
+        </span>
+        <button class="menu-item-close">
+            <svg>
+                <use xlink:href="#icon-menu-close"></use>
+            </svg>
+        </button>
+    </a>
+</div>
 
 
         <button class="default-button theme-switcher">
@@ -326,7 +401,7 @@
             </div>
             <div class="line-marquee second-screen-marquee marquee">
                 <div>
-                    <pre class="code-text hacker-effect">^^^^^AHSJZAHJ   SGHS   SJHSJHS   ^^^^^AHSJZAHJ   SGHS   SJHSJHS   SGHS   SJHSJHS</pre>
+                    <pre class="code-text">^^^^^AHSJZAHJ   SGHS   SJHSJHS   ^^^^^AHSJZAHJ   SGHS   SJHSJHS   SGHS   SJHSJHS</pre>
                 </div>
             </div>
             <div class="second-screen-main">
@@ -389,13 +464,13 @@
                         </div>
                         <div class="line-marquee third-screen-marquee marquee">
                             <div>
-                                <pre class="code-text hacker-effect">^^^^^AHSJZAHJ   WEB3   DIGITAL FASHION   ^^^^^AHSJZAHJ   WEB3   METADESIGN   ^^^^^AHSJZAHJ   WEB3   VR / AR / XR   ^^^^^AHSJZAHJ   WEB3   METAVERSE ARCITECTURE</pre>
+                                <pre class="code-text">^^^^^AHSJZAHJ   WEB3   DIGITAL FASHION   <span>^^^^^AHSJZAHJ   WEB3   METADESIGN</span>   ^^^^^AHSJZAHJ   WEB3   VR / AR / XR   <span>^^^^^AHSJZAHJ   WEB3   METAVERSE ARCITECTURE</span></pre>
                             </div>
                         </div>
                         <div class="third-screen-middle">
                             <h4 class="third-screen-middle__title">Digital</h4>
                             <div class="third-screen-middle__image">
-                                <img src="images/dark/second/second.png" alt="second">
+                                <img src="images/dark/third/image.png" alt="second">
                             </div>
                             <pre class="code-text hacker-effect third-screen-middle__left-code">^^(3.0_FASHION) DGTL 151.582</pre>
                             <pre class="code-text hacker-effect  third-screen-middle__right-code">*^(3.0_11) DGTL 22.582</pre>
@@ -438,13 +513,13 @@
                         </div>
                         <div class="line-marquee third-screen-marquee marquee">
                             <div>
-                                <pre class="code-text hacker-effect">^^^^^AHSJZAHJ   WEB3   DIGITAL FASHION   ^^^^^AHSJZAHJ   WEB3   METADESIGN   ^^^^^AHSJZAHJ   WEB3   VR / AR / XR   ^^^^^AHSJZAHJ   WEB3   METAVERSE ARCITECTURE</pre>
+                                <pre class="code-text">^^^^^AHSJZAHJ   WEB3   DIGITAL FASHION   <span>^^^^^AHSJZAHJ   WEB3   METADESIGN</span>   ^^^^^AHSJZAHJ   WEB3   VR / AR / XR   <span>^^^^^AHSJZAHJ   WEB3   METAVERSE ARCITECTURE</span></pre>
                             </div>
                         </div>
                         <div class="third-screen-middle">
                             <h4 class="third-screen-middle__title">Digital</h4>
                             <div class="third-screen-middle__image">
-                                <img src="images/dark/second/second.png" alt="second">
+                                <img src="images/dark/third/image.png" alt="second">
                             </div>
                             <pre class="code-text hacker-effect third-screen-middle__left-code">^^(3.0_FASHION) DGTL 151.582</pre>
                             <pre class="code-text hacker-effect  third-screen-middle__right-code">*^(3.0_11) DGTL 22.582</pre>
@@ -487,13 +562,13 @@
                         </div>
                         <div class="line-marquee third-screen-marquee marquee">
                             <div>
-                                <pre class="code-text hacker-effect">^^^^^AHSJZAHJ   WEB3   DIGITAL FASHION   ^^^^^AHSJZAHJ   WEB3   METADESIGN   ^^^^^AHSJZAHJ   WEB3   VR / AR / XR   ^^^^^AHSJZAHJ   WEB3   METAVERSE ARCITECTURE</pre>
+                                <pre class="code-text">^^^^^AHSJZAHJ   WEB3   DIGITAL FASHION   <span>^^^^^AHSJZAHJ   WEB3   METADESIGN</span>   ^^^^^AHSJZAHJ   WEB3   VR / AR / XR   <span>^^^^^AHSJZAHJ   WEB3   METAVERSE ARCITECTURE</span></pre>
                             </div>
                         </div>
                         <div class="third-screen-middle">
                             <h4 class="third-screen-middle__title">Digital</h4>
                             <div class="third-screen-middle__image">
-                                <img src="images/dark/second/second.png" alt="second">
+                                <img src="images/dark/third/image.png" alt="second">
                             </div>
                             <pre class="code-text hacker-effect third-screen-middle__left-code">^^(3.0_FASHION) DGTL 151.582</pre>
                             <pre class="code-text hacker-effect  third-screen-middle__right-code">*^(3.0_11) DGTL 22.582</pre>
@@ -555,8 +630,8 @@
                         Open your portal to web3.
                     </h4>
                 </div>
+                <img src="images/dark/marquee-screen/item.png" alt="item" class="marquee-screen-image">
             </div>
-            <img src="images/dark/marquee-screen/item.png" alt="item" class="marquee-screen-image">
         </section>
         <!-- 4st screen -->
         <section id="fourth-screen" class="fourth-screen">
@@ -624,7 +699,6 @@ DHSGJ SDHKSH
                 </div>
             </div>
             <div class="fifth-screen-main" id="hover-group">
-
                 <div class="project">
                     <div class="project-preview">
                         <div class="project-preview-top">
@@ -764,9 +838,9 @@ DHSGJ SDHKSH
                         </div>
                         <div class="project-preview-left"></div>
                         <div class="project-preview-num">
-                            02
+                            <div class="hacker-effect">02</div>
                         </div>
-                        <pre class="project-preview-code">
+                        <pre class="project-preview-code hacker-effect">
 DHSGJ SDHKSH
 
 //////////////
@@ -829,9 +903,9 @@ DHSGJ SDHKSH
                         </div>
                         <div class="project-preview-left"></div>
                         <div class="project-preview-num">
-                            02
+                            <div class="hacker-effect">02</div>
                         </div>
-                        <pre class="project-preview-code">
+                        <pre class="project-preview-code hacker-effect">
 DHSGJ SDHKSH
 
 //////////////
@@ -894,9 +968,9 @@ DHSGJ SDHKSH
                         </div>
                         <div class="project-preview-left"></div>
                         <div class="project-preview-num">
-                            02
+                            <div class="hacker-effect">02</div>
                         </div>
-                        <pre class="project-preview-code">
+                        <pre class="project-preview-code hacker-effect">
 DHSGJ SDHKSH
 
 //////////////
@@ -959,9 +1033,9 @@ DHSGJ SDHKSH
                         </div>
                         <div class="project-preview-left"></div>
                         <div class="project-preview-num">
-                            02
+                            <div class="hacker-effect">02</div>
                         </div>
-                        <pre class="project-preview-code">
+                        <pre class="project-preview-code hacker-effect">
 DHSGJ SDHKSH
 
 //////////////
@@ -1015,11 +1089,140 @@ DHSGJ SDHKSH
                         </div>
                     </div>
                 </div>
+                <div class="project">
+                    <div class="project-preview">
+                        <div class="project-preview-top">
+                            <img src="images/dark/fifth/decor01.svg" alt="decor">
+                            <img src="images/dark/fifth/decor01.svg" alt="decor">
+                            <img src="images/dark/fifth/decor01.svg" alt="decor">
+                        </div>
+                        <div class="project-preview-left"></div>
+                        <div class="project-preview-num">
+                            <div class="hacker-effect">02</div>
+                        </div>
+                        <pre class="project-preview-code hacker-effect">
+DHSGJ SDHKSH
 
+//////////////
+
+
+         SDJ
+                    </pre>
+                        <div class="project-preview-bottom">
+                            <div class="project-preview-category">
+                                <svg><use xlink:href="#icon-door"></use></svg>
+                                \NFT
+                                <svg><use xlink:href="#icon-progress"></use></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-content-top">
+                            <div class="project-content-top__code">X3 Bra 44</div>
+
+                            <div class="project-code">
+                                <img src="images/dark/fifth/project/code.svg" alt="code">
+                                <span class="project-code__name">FULL STACK BRANDING</span>
+                                <svg><use xlink:href="#icon-warn"></use></svg>
+                            </div>
+
+                        </div>
+                        <div class="project-content-main">
+                            <div class="project-content-middle">
+                                <img src="images/dark/fifth/project/item.jpg" alt="item" class="project-image">
+                            </div>
+                            <div class="project-content-left">
+                                <h6 class="project-content-title"><span>S.u.G._</span>/NFT*</h6>
+                                <strong class="project-content-sub">charitable_nft_collectio</strong>
+                                <div class="project-content-text default-text">
+                                    <span>Lika Spivakovska</span> held an auction for <span>war-damaged art</span>. The artworks—some created in the <span>bomb shelter</span>, some sharpened by bullets—were <span>transformed</span> into <span>NFTs</span>, forming a fundraising initiative benefiting <span>Ukrainian</span> artists and <span>humanitarian aid</span>.
+                                    <br><br>
+                                    <p>NYT and Vogue supported the project.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content-bottom">
+                            <h4 class="project-title">Support Ukraine Gallery</h4>
+                            <h4 class="project-sub">X1 support & charity</h4>
+                            <div class="project-preview-category">
+                                <svg><use xlink:href="#icon-door"></use></svg>
+                                \NFT
+                                <svg><use xlink:href="#icon-progress"></use></svg>
+                            </div>
+                            <div class="project-content-bottom__year">© 2022</div>
+                            <div class="project-content-bottom__num">01</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-preview">
+                        <div class="project-preview-top">
+                            <img src="images/dark/fifth/decor01.svg" alt="decor">
+                            <img src="images/dark/fifth/decor01.svg" alt="decor">
+                            <img src="images/dark/fifth/decor01.svg" alt="decor">
+                        </div>
+                        <div class="project-preview-left"></div>
+                        <div class="project-preview-num">
+                            <div class="hacker-effect">02</div>
+                        </div>
+                        <pre class="project-preview-code hacker-effect">
+DHSGJ SDHKSH
+
+//////////////
+
+
+         SDJ
+                    </pre>
+                        <div class="project-preview-bottom">
+                            <div class="project-preview-category">
+                                <svg><use xlink:href="#icon-door"></use></svg>
+                                \NFT
+                                <svg><use xlink:href="#icon-progress"></use></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-content-top">
+                            <div class="project-content-top__code">X3 Bra 44</div>
+
+                            <div class="project-code">
+                                <img src="images/dark/fifth/project/code.svg" alt="code">
+                                <span class="project-code__name">FULL STACK BRANDING</span>
+                                <svg><use xlink:href="#icon-warn"></use></svg>
+                            </div>
+
+                        </div>
+                        <div class="project-content-main">
+                            <div class="project-content-middle">
+                                <img src="images/dark/fifth/project/item.jpg" alt="item" class="project-image">
+                            </div>
+                            <div class="project-content-left">
+                                <h6 class="project-content-title"><span>S.u.G._</span>/NFT*</h6>
+                                <strong class="project-content-sub">charitable_nft_collectio</strong>
+                                <div class="project-content-text default-text">
+                                    <span>Lika Spivakovska</span> held an auction for <span>war-damaged art</span>. The artworks—some created in the <span>bomb shelter</span>, some sharpened by bullets—were <span>transformed</span> into <span>NFTs</span>, forming a fundraising initiative benefiting <span>Ukrainian</span> artists and <span>humanitarian aid</span>.
+                                    <br><br>
+                                    <p>NYT and Vogue supported the project.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content-bottom">
+                            <h4 class="project-title">Support Ukraine Gallery</h4>
+                            <h4 class="project-sub">X1 support & charity</h4>
+                            <div class="project-preview-category">
+                                <svg><use xlink:href="#icon-door"></use></svg>
+                                \NFT
+                                <svg><use xlink:href="#icon-progress"></use></svg>
+                            </div>
+                            <div class="project-content-bottom__year">© 2022</div>
+                            <div class="project-content-bottom__num">01</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- 6st screen -->
-        <section class="sixth-screen">
+        <section id="sixth-screen" class="sixth-screen">
             <h4 class="default-title sixth-screen-title">
                 <mark>We work with</mark>
             </h4>
@@ -1198,6 +1401,7 @@ DHSGJ SDHKSH
                     <div class="progress-item__text">124.124</div>
                 </div>
             </div>
+            <img src="images/dark/sixth/bottom-decor.svg" alt="bottom" class="sixth-screen-slider-bottom">
             <div class="sixth-screen-decor">
                 <div class="code-item code-item--left hacker-effect">__00f-2</div>
                 <div class="code-item code-item--left"><span class="hacker-effect">__00f-2</span><br><div class="hacker-effect">834903353</div></div>
@@ -1241,6 +1445,7 @@ DHSGJ SDHKSH
         <section class="decor-block">
             <img src="images/dark/decor-block.svg" alt="progress" class="decor-block-image">
         </section>
+        <!-- 7st screen -->
         <section class="seventh-screen">
             <div class="seventh-screen-header">
                 <h4 class="default-title seventh-screen__title">
@@ -1363,7 +1568,16 @@ DHSGJ SDHKSH
                                 <div class="team-card-title">Den</div>
                                 <p class="team-card-position">CEO & Co-founder</p>
                             </div>
-                            <div class="team-card-buttons"></div>
+                            <div class="team-card-buttons">
+                                <a href="#" class="back-button">
+                                    <span class="back-button-text">Back</span>
+                                    <span class="back-button-notice">_*PT4 2X 345</span>
+                                </a>
+                                <a href="#" class="next-button">
+                                    <span class="next-button-text">Next</span>
+                                    <span class="next-button-notice">_*PT4 2X 345</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1464,7 +1678,16 @@ DHSGJ SDHKSH
                                 <div class="team-card-title">Den</div>
                                 <p class="team-card-position">CEO & Co-founder</p>
                             </div>
-                            <div class="team-card-buttons"></div>
+                            <div class="team-card-buttons">
+                                <a href="#" class="back-button">
+                                    <span class="back-button-text">Back</span>
+                                    <span class="back-button-notice">_*PT4 2X 345</span>
+                                </a>
+                                <a href="#" class="next-button">
+                                    <span class="next-button-text">Next</span>
+                                    <span class="next-button-notice">_*PT4 2X 345</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1565,7 +1788,16 @@ DHSGJ SDHKSH
                                 <div class="team-card-title">Den</div>
                                 <p class="team-card-position">CEO & Co-founder</p>
                             </div>
-                            <div class="team-card-buttons"></div>
+                            <div class="team-card-buttons">
+                                <a href="#" class="back-button">
+                                    <span class="back-button-text">Back</span>
+                                    <span class="back-button-notice">_*PT4 2X 345</span>
+                                </a>
+                                <a href="#" class="next-button">
+                                    <span class="next-button-text">Next</span>
+                                    <span class="next-button-notice">_*PT4 2X 345</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1666,7 +1898,16 @@ DHSGJ SDHKSH
                                 <div class="team-card-title">Den</div>
                                 <p class="team-card-position">CEO & Co-founder</p>
                             </div>
-                            <div class="team-card-buttons"></div>
+                            <div class="team-card-buttons">
+                                <a href="#" class="back-button">
+                                    <span class="back-button-text">Back</span>
+                                    <span class="back-button-notice">_*PT4 2X 345</span>
+                                </a>
+                                <a href="#" class="next-button">
+                                    <span class="next-button-text">Next</span>
+                                    <span class="next-button-notice">_*PT4 2X 345</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1767,7 +2008,16 @@ DHSGJ SDHKSH
                                 <div class="team-card-title">Den</div>
                                 <p class="team-card-position">CEO & Co-founder</p>
                             </div>
-                            <div class="team-card-buttons"></div>
+                            <div class="team-card-buttons">
+                                <a href="#" class="back-button">
+                                    <span class="back-button-text">Back</span>
+                                    <span class="back-button-notice">_*PT4 2X 345</span>
+                                </a>
+                                <a href="#" class="next-button">
+                                    <span class="next-button-text">Next</span>
+                                    <span class="next-button-notice">_*PT4 2X 345</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1868,7 +2118,16 @@ DHSGJ SDHKSH
                                 <div class="team-card-title">Den</div>
                                 <p class="team-card-position">CEO & Co-founder</p>
                             </div>
-                            <div class="team-card-buttons"></div>
+                            <div class="team-card-buttons">
+                                <a href="#" class="back-button">
+                                    <span class="back-button-text">Back</span>
+                                    <span class="back-button-notice">_*PT4 2X 345</span>
+                                </a>
+                                <a href="#" class="next-button">
+                                    <span class="next-button-text">Next</span>
+                                    <span class="next-button-notice">_*PT4 2X 345</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1969,7 +2228,16 @@ DHSGJ SDHKSH
                                 <div class="team-card-title">Den</div>
                                 <p class="team-card-position">CEO & Co-founder</p>
                             </div>
-                            <div class="team-card-buttons"></div>
+                            <div class="team-card-buttons">
+                                <a href="#" class="back-button">
+                                    <span class="back-button-text">Back</span>
+                                    <span class="back-button-notice">_*PT4 2X 345</span>
+                                </a>
+                                <a href="#" class="next-button">
+                                    <span class="next-button-text">Next</span>
+                                    <span class="next-button-notice">_*PT4 2X 345</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -2070,720 +2338,23 @@ DHSGJ SDHKSH
                                 <div class="team-card-title">Den</div>
                                 <p class="team-card-position">CEO & Co-founder</p>
                             </div>
-                            <div class="team-card-buttons"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="team-card">
-                            <div class="team-card-content">
-                                <div class="team-card-image">
-                                    <img src="images/dark/seventh/01.jpg" alt="seventh">
-                                </div>
-                                <div class="team-card-main">
-                                    <div class="team-card-title">Den</div>
-                                    <p class="team-card-position">CEO & Co-founder</p>
-                                    <div class="team-card-attrs">
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Enthusiastic</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Marketing</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Sexy mustache</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <img src="images/dark/seventh/icons.svg" alt="icons" class="team-card-attr-icons">
-                                    </div>
-                                </div>
-                                <button class="team-card-close">
-                                    <svg>
-                                        <use xlink:href="#icon-close-team"></use>
-                                    </svg>
-                                </button>
+                            <div class="team-card-buttons">
+                                <a href="#" class="back-button">
+                                    <span class="back-button-text">Back</span>
+                                    <span class="back-button-notice">_*PT4 2X 345</span>
+                                </a>
+                                <a href="#" class="next-button">
+                                    <span class="next-button-text">Next</span>
+                                    <span class="next-button-notice">_*PT4 2X 345</span>
+                                </a>
                             </div>
-                            <div class="team-card-demo">
-                                <div class="team-card-title">Den</div>
-                                <p class="team-card-position">CEO & Co-founder</p>
-                            </div>
-                            <div class="team-card-buttons"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="team-card">
-                            <div class="team-card-content">
-                                <div class="team-card-image">
-                                    <img src="images/dark/seventh/01.jpg" alt="seventh">
-                                </div>
-                                <div class="team-card-main">
-                                    <div class="team-card-title">Den</div>
-                                    <p class="team-card-position">CEO & Co-founder</p>
-                                    <div class="team-card-attrs">
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Enthusiastic</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Marketing</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Sexy mustache</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <img src="images/dark/seventh/icons.svg" alt="icons" class="team-card-attr-icons">
-                                    </div>
-                                </div>
-                                <button class="team-card-close">
-                                    <svg>
-                                        <use xlink:href="#icon-close-team"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="team-card-demo">
-                                <div class="team-card-title">Den</div>
-                                <p class="team-card-position">CEO & Co-founder</p>
-                            </div>
-                            <div class="team-card-buttons"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="team-card">
-                            <div class="team-card-content">
-                                <div class="team-card-image">
-                                    <img src="images/dark/seventh/01.jpg" alt="seventh">
-                                </div>
-                                <div class="team-card-main">
-                                    <div class="team-card-title">Den</div>
-                                    <p class="team-card-position">CEO & Co-founder</p>
-                                    <div class="team-card-attrs">
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Enthusiastic</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Marketing</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Sexy mustache</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <img src="images/dark/seventh/icons.svg" alt="icons" class="team-card-attr-icons">
-                                    </div>
-                                </div>
-                                <button class="team-card-close">
-                                    <svg>
-                                        <use xlink:href="#icon-close-team"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="team-card-demo">
-                                <div class="team-card-title">Den</div>
-                                <p class="team-card-position">CEO & Co-founder</p>
-                            </div>
-                            <div class="team-card-buttons"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="team-card">
-                            <div class="team-card-content">
-                                <div class="team-card-image">
-                                    <img src="images/dark/seventh/01.jpg" alt="seventh">
-                                </div>
-                                <div class="team-card-main">
-                                    <div class="team-card-title">Den</div>
-                                    <p class="team-card-position">CEO & Co-founder</p>
-                                    <div class="team-card-attrs">
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Enthusiastic</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Marketing</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Sexy mustache</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <img src="images/dark/seventh/icons.svg" alt="icons" class="team-card-attr-icons">
-                                    </div>
-                                </div>
-                                <button class="team-card-close">
-                                    <svg>
-                                        <use xlink:href="#icon-close-team"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="team-card-demo">
-                                <div class="team-card-title">Den</div>
-                                <p class="team-card-position">CEO & Co-founder</p>
-                            </div>
-                            <div class="team-card-buttons"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="team-card">
-                            <div class="team-card-content">
-                                <div class="team-card-image">
-                                    <img src="images/dark/seventh/01.jpg" alt="seventh">
-                                </div>
-                                <div class="team-card-main">
-                                    <div class="team-card-title">Den</div>
-                                    <p class="team-card-position">CEO & Co-founder</p>
-                                    <div class="team-card-attrs">
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Enthusiastic</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Marketing</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Sexy mustache</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <img src="images/dark/seventh/icons.svg" alt="icons" class="team-card-attr-icons">
-                                    </div>
-                                </div>
-                                <button class="team-card-close">
-                                    <svg>
-                                        <use xlink:href="#icon-close-team"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="team-card-demo">
-                                <div class="team-card-title">Den</div>
-                                <p class="team-card-position">CEO & Co-founder</p>
-                            </div>
-                            <div class="team-card-buttons"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="team-card">
-                            <div class="team-card-content">
-                                <div class="team-card-image">
-                                    <img src="images/dark/seventh/01.jpg" alt="seventh">
-                                </div>
-                                <div class="team-card-main">
-                                    <div class="team-card-title">Den</div>
-                                    <p class="team-card-position">CEO & Co-founder</p>
-                                    <div class="team-card-attrs">
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Enthusiastic</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Marketing</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Sexy mustache</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <img src="images/dark/seventh/icons.svg" alt="icons" class="team-card-attr-icons">
-                                    </div>
-                                </div>
-                                <button class="team-card-close">
-                                    <svg>
-                                        <use xlink:href="#icon-close-team"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="team-card-demo">
-                                <div class="team-card-title">Den</div>
-                                <p class="team-card-position">CEO & Co-founder</p>
-                            </div>
-                            <div class="team-card-buttons"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="team-card">
-                            <div class="team-card-content">
-                                <div class="team-card-image">
-                                    <img src="images/dark/seventh/01.jpg" alt="seventh">
-                                </div>
-                                <div class="team-card-main">
-                                    <div class="team-card-title">Den</div>
-                                    <p class="team-card-position">CEO & Co-founder</p>
-                                    <div class="team-card-attrs">
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Enthusiastic</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Marketing</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <div class="team-card-attr">
-                                            <span class="team-card-attr__name">Sexy mustache</span>
-                                            <div class="team-card-attr__level">
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item team-card-attr__level_item--active"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                                <div class="team-card-attr__level_item"></div>
-                                            </div>
-                                        </div>
-                                        <img src="images/dark/seventh/icons.svg" alt="icons" class="team-card-attr-icons">
-                                    </div>
-                                </div>
-                                <button class="team-card-close">
-                                    <svg>
-                                        <use xlink:href="#icon-close-team"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="team-card-demo">
-                                <div class="team-card-title">Den</div>
-                                <p class="team-card-position">CEO & Co-founder</p>
-                            </div>
-                            <div class="team-card-buttons"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="eighth-screen">
+        <!-- 8st screen -->
+        <section id="eighth-screen" class="eighth-screen">
             <div class="eighth-screen-header">
                 <div class="eighth-screen-decor">
                     <pre class="code-item hacker-effect">^^^^^4TFSPOR//////////////   5   WEB3.-0</pre>
@@ -2919,7 +2490,7 @@ DHSGJ SDHKSH
                 </div>
             </div>
         </section>
-        <section class="feedback-screen">
+        <section id="feedback-screen" class="feedback-screen">
             <div class="feedback-screen-decor">
                 <div class="codes-block-item animated-by-cursor">
                     <div class="code-item code-item--left"><span class="hacker-effect">__00f-2</span><br><span class="hacker-effect">834903353</span></div>
@@ -2986,10 +2557,59 @@ Y65- 5-4-__4567
                 </div>
             </form>
         </section>
-        <section class="line-marquee marquee">
+        <section class="line-marquee marquee footer-marquee">
             <pre class="code-text hacker-effect">^^^^^4TFSPORTAL   345   WEB3.-0      <span>^^^^^4TFSPORTAL   345   WEB3.-0 ?????//// ///</span>      ^^^^^4TFSPORTAL   345   WEB3.-0      ^^^^^4TFSPORTAL   345   WEB3.-0</pre>
         </section>
-        
+        <div class="footer">
+    <div class="footer-left">
+        <div class="footer-left__title">
+            <span>Sign up</span> for personalized offers
+        </div>
+        <label class="email-input">
+            <input type="text" placeholder="Enter your email">
+            <button class="email-input__clear">
+                <svg><use xlink:href="#icon-close"></use></svg>
+            </button>
+        </label>
+        <div class="footer-socials">
+            <a href="#" class="footer-socials-item">
+                <svg><use xlink:href="#icon-twitter"></use></svg>
+            </a>
+            <a href="#" class="footer-socials-item">
+                <svg><use xlink:href="#icon-twitter"></use></svg>
+            </a>
+            <a href="#" class="footer-socials-item">
+                <svg><use xlink:href="#icon-twitter"></use></svg>
+            </a>
+            <a href="#" class="footer-socials-item">
+                <svg><use xlink:href="#icon-twitter"></use></svg>
+            </a>
+        </div>
+        <div class="footer-copyright">© Copyright 2023 C/A/D ©. All rights reserved.</div>
+    </div>
+    <div class="footer-right">
+        <div class="footer-nav">
+            <div class="footer-nav-title">Linkes</div>
+            <a href="#" class="footer-nav-link">Home</a>
+            <a href="#" class="footer-nav-link">Projects</a>
+            <a href="#" class="footer-nav-link">Blog</a>
+            <a href="#" class="footer-nav-link">Team</a>
+        </div>
+        <div class="footer-nav">
+            <div class="footer-nav-title">Legal & Terms</div>
+            <a href="#" class="footer-nav-link">Partners</a>
+            <a href="#" class="footer-nav-link">Contact US</a>
+        </div>
+        <div class="footer-nav">
+            <div class="footer-nav-title">Contacts</div>
+            <a href="#" class="footer-nav-link">Kyiv, Ukraine</a>
+            <a href="#" class="footer-nav-link footer-nav-link--td">info@ctrlartd.com</a>
+        </div>
+        <img src="images/dark/footer/bg.svg" alt="bg" class="footer-progress">
+        <img src="images/dark/logo.svg" alt="logo" class="footer-logo">
+    </div>
+</div>
+
 	</main>
 
 <div class="backdrop"></div>
