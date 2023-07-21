@@ -41,7 +41,7 @@
 		</symbol>
 	
 		<symbol id="icon-menu" viewBox="0 0 66 16">
-			<path d="M0 .999h66m-66 13.5h66" stroke="#4E6C51" stroke-width="2"></path>
+			<path d="M.11.99v.99h65.78V0H.11v.99m0 13.475v.935h65.78v-1.87H.11v.935" fill-rule="evenodd"></path>
 		</symbol>
 	
 		<symbol id="icon-menu-close" viewBox="0 0 45 45">
@@ -517,7 +517,21 @@
 <div class="backdrop"></div>
 <!-- Code for Popups -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" integrity="sha512-/6TZODGjYL7M8qb7P6SflJB/nTGE79ed1RfJk3dfm/Ib6JwCT4+tOfrrseEHhxkIhwG8jCl+io6eaiWLS/UX1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/app.min.js"></script>
+<script>
+  const scene = document.getElementById('scene');
+  const parallaxInstance = new Parallax(scene);
+
+  const scene02 = document.getElementById('second-screen-scene');
+  const parallaxInstance02 = new Parallax(scene02);
+
+  const scene03 = document.getElementById('fourth-screen-scene');
+  const parallaxInstance03 = new Parallax(scene03);
+
+  const scene04 = document.getElementById('seventh-screen-scene');
+  const parallaxInstance04 = new Parallax(scene04);
+</script>
 </body>
 </html>
 
